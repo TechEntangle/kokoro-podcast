@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kokoro Audiobooks</title>
+    <description>AI-generated audiobooks powered by Kokoro TTS, running locally on Apple Silicon.</description>
+    <language>en-us</language>
+    <link>https://techentangle.github.io/kokoro-podcast</link>
+    <ns0:link href="https://techentangle.github.io/kokoro-podcast/feed.xml" rel="self" type="application/rss+xml" />
+    <ns1:author>Tushar Vartak</ns1:author>
+    <ns1:explicit>no</ns1:explicit>
+    <ns1:owner>
+      <ns1:name>Tushar Vartak</ns1:name>
+      <ns1:email>tushar@techentangle.io</ns1:email>
+    </ns1:owner>
+    <ns1:category text="Arts">
+      <ns1:category text="Books" />
+    </ns1:category>
+    <item>
+      <title>Part 4</title>
+      <description>AI-generated audiobook: Part 4</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/004_Part_4.mp3" length="525644" type="audio/mpeg" />
+      <guid isPermaLink="false">2baef53342238680e791134d5f5071e1</guid>
+      <pubDate>Thu, 12 Feb 2026 05:24:47 +0000</pubDate>
+      <ns1:duration>00:00:26</ns1:duration>
+      <ns1:explicit>no</ns1:explicit>
+    </item>
+    <item>
+      <title>Part 3</title>
+      <description>AI-generated audiobook: Part 3</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/003_Part_3.mp3" length="2596364" type="audio/mpeg" />
+      <guid isPermaLink="false">bac88272cde30df41b3cb44e755c8ac4</guid>
+      <pubDate>Thu, 12 Feb 2026 05:24:41 +0000</pubDate>
+      <ns1:duration>00:02:09</ns1:duration>
+      <ns1:explicit>no</ns1:explicit>
+    </item>
+    <item>
+      <title>Part 2</title>
+      <description>AI-generated audiobook: Part 2</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/002_Part_2.mp3" length="2609804" type="audio/mpeg" />
+      <guid isPermaLink="false">380f8c895476e2691959a7b8eb66bcd1</guid>
+      <pubDate>Thu, 12 Feb 2026 05:24:08 +0000</pubDate>
+      <ns1:duration>00:02:10</ns1:duration>
+      <ns1:explicit>no</ns1:explicit>
+    </item>
+    <item>
+      <title>Part 1</title>
+      <description>AI-generated audiobook: Part 1</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/001_Part_1.mp3" length="2508524" type="audio/mpeg" />
+      <guid isPermaLink="false">82b50f80dc275b9fadd2fd5c9d0d3b2c</guid>
+      <pubDate>Thu, 12 Feb 2026 05:23:36 +0000</pubDate>
+      <ns1:duration>00:02:05</ns1:duration>
+      <ns1:explicit>no</ns1:explicit>
+    </item>
+  </channel>
+</rss>
