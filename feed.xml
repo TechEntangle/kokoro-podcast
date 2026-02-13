@@ -1,49 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>CyberPulse</title>
     <description>Audiobooks and stories, narrated and produced using cutting-edge text-to-speech technology. Narrated by a digital voice.</description>
     <language>en-us</language>
     <link>https://techentangle.github.io/kokoro-podcast</link>
     <copyright>© 2026 Tushar Vartak / TechEntangle Systems</copyright>
-    <ns0:link href="https://techentangle.github.io/kokoro-podcast/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://techentangle.github.io/kokoro-podcast/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://techentangle.github.io/kokoro-podcast/cover.png</url>
       <title>CyberPulse</title>
       <link>https://techentangle.github.io/kokoro-podcast</link>
     </image>
-    <ns1:author>Tushar Vartak</ns1:author>
-    <ns1:explicit>no</ns1:explicit>
-    <ns1:type>serial</ns1:type>
-    <ns1:owner>
-      <ns1:name>Tushar Vartak</ns1:name>
-      <ns1:email>tushar@techentangle.io</ns1:email>
-    </ns1:owner>
-    <ns1:category text="Arts">
-      <ns1:category text="Books" />
-    </ns1:category>
-    <ns1:image href="https://techentangle.github.io/kokoro-podcast/cover.png" />
-    <item>
-      <title>The Agent Internet Is Already Leaking</title>
-      <description>The Agent Internet Is Already Leaking</description>
-      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Agent_Internet_Is_Already_Leaking.mp3" length="8106092" type="audio/mpeg" />
-      <guid isPermaLink="false">22b67aa035166b7cc1021e006bab06b8</guid>
-      <pubDate>Fri, 13 Feb 2026 04:14:57 +0000</pubDate>
-      <ns1:duration>00:05:37</ns1:duration>
-      <ns1:explicit>no</ns1:explicit>
-      <ns1:episodeType>full</ns1:episodeType>
-      <ns1:episode>2</ns1:episode>
-    </item>
+    <itunes:author>Tushar Vartak</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:type>serial</itunes:type>
+    <itunes:image href="https://techentangle.github.io/kokoro-podcast/cover.png" />
+    <itunes:owner>
+      <itunes:name>Tushar Vartak</itunes:name>
+      <itunes:email>tusharvartak@live.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Arts">
+      <itunes:category text="Books" />
+    </itunes:category>
     <item>
       <title>The AI You Learned in January No Longer Exists</title>
       <description>The AI You Learned in January No Longer Exists</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_AI_You_Learned_in_January_No_Longer_Exists.mp3" length="9689516" type="audio/mpeg" />
       <guid isPermaLink="false">c248581f6183a4bdf76cf62b2d1ca9d2</guid>
       <pubDate>Thu, 12 Feb 2026 17:21:25 +0000</pubDate>
-      <ns1:duration>00:06:43</ns1:duration>
-      <ns1:explicit>no</ns1:explicit>
-      <ns1:episodeType>full</ns1:episodeType>
-      <ns1:episode>1</ns1:episode>
+      <itunes:duration>00:06:43</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>1</itunes:episode>
     </item>
   </channel>
 </rss>
