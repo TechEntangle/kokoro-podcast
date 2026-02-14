@@ -33,18 +33,6 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>2</itunes:episode>
-    </item>
-    <item>
-      <title>The AI You Learned in January No Longer Exists</title>
-      <description>The AI You Learned in January No Longer Exists</description>
-      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_AI_You_Learned_in_January_No_Longer_Exists.mp3" length="9689516" type="audio/mpeg" />
-      <guid isPermaLink="false">c248581f6183a4bdf76cf62b2d1ca9d2</guid>
-      <pubDate>Thu, 12 Feb 2026 17:21:25 +0000</pubDate>
-      <itunes:duration>00:06:43</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:author>Tushar Vartak</itunes:author>
-      <itunes:episodeType>full</itunes:episodeType>
       <itunes:episode>1</itunes:episode>
     </item>
   </channel>
