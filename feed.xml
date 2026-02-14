@@ -24,6 +24,18 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Death of Human Error</title>
+      <description>The Death of Human Error</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Death_of_Human_Error.mp3" length="9433772" type="audio/mpeg" />
+      <guid isPermaLink="false">2006a6bf1927c773b74e84b4cb937a68</guid>
+      <pubDate>Sat, 14 Feb 2026 03:47:27 +0000</pubDate>
+      <itunes:duration>00:06:33</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>3</itunes:episode>
+    </item>
+    <item>
       <title>The Agent Internet Is Already Leaking</title>
       <description>The Agent Internet Is Already Leaking</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Agent_Internet_Is_Already_Leaking.mp3" length="8645804" type="audio/mpeg" />
