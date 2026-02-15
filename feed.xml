@@ -24,6 +24,18 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>When Cloud Break-Ins Move at AI Speed</title>
+      <description>When Cloud Break-Ins Move at AI Speed</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/When_Cloud_Break-Ins_Move_at_AI_Speed.mp3" length="5844716" type="audio/mpeg" />
+      <guid isPermaLink="false">eeba653ddb43f1a682c8fae07ff3ed8c</guid>
+      <pubDate>Sun, 15 Feb 2026 04:27:36 +0000</pubDate>
+      <itunes:duration>00:04:03</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>4</itunes:episode>
+    </item>
+    <item>
       <title>The AI You Learned in January No Longer Exists</title>
       <description>The AI You Learned in January No Longer Exists</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_AI_You_Learned_in_January_No_Longer_Exists.mp3" length="11043116" type="audio/mpeg" />
