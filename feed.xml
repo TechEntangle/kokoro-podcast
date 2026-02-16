@@ -24,6 +24,18 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>When Your AI Agent Becomes the Attack Surface</title>
+      <description>When Your AI Agent Becomes the Attack Surface</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/When_Your_AI_Agent_Becomes_the_Attack_Surface.mp3" length="8113004" type="audio/mpeg" />
+      <guid isPermaLink="false">3fd747fd0e89ffd5141e512c0183b694</guid>
+      <pubDate>Mon, 16 Feb 2026 09:16:08 +0000</pubDate>
+      <itunes:duration>00:05:37</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>5</itunes:episode>
+    </item>
+    <item>
       <title>When Cloud Break-Ins Move at AI Speed</title>
       <description>When Cloud Break-Ins Move at AI Speed</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/When_Cloud_Break-Ins_Move_at_AI_Speed.mp3" length="5844716" type="audio/mpeg" />
