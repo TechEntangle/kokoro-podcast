@@ -24,18 +24,6 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
-      <title>The Criminal Marketplace Youre Not Monitoring</title>
-      <description>The Criminal Marketplace Youre Not Monitoring</description>
-      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Criminal_Marketplace_Youre_Not_Monitoring.mp3" length="9506348" type="audio/mpeg" />
-      <guid isPermaLink="false">dc96a8de851aaf9e803c3ac96b7b99ec</guid>
-      <pubDate>Tue, 17 Feb 2026 04:39:43 +0000</pubDate>
-      <itunes:duration>00:06:36</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:author>Tushar Vartak</itunes:author>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>6</itunes:episode>
-    </item>
-    <item>
       <title>When Your AI Agent Becomes the Attack Surface</title>
       <description>When Your AI Agent Becomes the Attack Surface</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/When_Your_AI_Agent_Becomes_the_Attack_Surface.mp3" length="8113004" type="audio/mpeg" />
