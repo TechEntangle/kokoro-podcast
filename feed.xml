@@ -24,6 +24,18 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Ghost With Admin Access</title>
+      <description>The Ghost With Admin Access</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Ghost_With_Admin_Access.mp3" length="9237356" type="audio/mpeg" />
+      <guid isPermaLink="false">47f4df95cded89a999ac09ead2c27c8c</guid>
+      <pubDate>Wed, 18 Feb 2026 17:43:47 +0000</pubDate>
+      <itunes:duration>00:06:24</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>8</itunes:episode>
+    </item>
+    <item>
       <title>The 17 Billion Warning Sign</title>
       <description>The 17 Billion Warning Sign</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_17_Billion_Warning_Sign.mp3" length="4526252" type="audio/mpeg" />
