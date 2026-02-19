@@ -2,7 +2,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>CyberPulse</title>
-    <description>Audiobooks and stories, narrated and produced using cutting-edge text-to-speech technology. Narrated by a digital voice.</description>
+    <description>Your daily dose of cybersecurity intelligence — from AI-powered attacks and quantum preparedness to cloud breaches and emerging digital risks. Narrated by a digital voice.</description>
     <language>en-us</language>
     <link>https://techentangle.github.io/kokoro-podcast</link>
     <copyright>© 2026 Tushar Vartak</copyright>
