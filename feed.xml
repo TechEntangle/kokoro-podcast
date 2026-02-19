@@ -24,6 +24,18 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>Your Face Is Not Your Own</title>
+      <description>Your Face Is Not Your Own</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Your_Face_Is_Not_Your_Own.mp3" length="9851372" type="audio/mpeg" />
+      <guid isPermaLink="false">5f9131a97097aaeed4f3666942b166d1</guid>
+      <pubDate>Thu, 19 Feb 2026 04:33:19 +0000</pubDate>
+      <itunes:duration>00:06:50</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>9</itunes:episode>
+    </item>
+    <item>
       <title>The Ghost With Admin Access</title>
       <description>The Ghost With Admin Access</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Ghost_With_Admin_Access.mp3" length="9237356" type="audio/mpeg" />
