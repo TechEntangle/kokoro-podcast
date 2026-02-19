@@ -5,7 +5,7 @@
     <description>Audiobooks and stories, narrated and produced using cutting-edge text-to-speech technology. Narrated by a digital voice.</description>
     <language>en-us</language>
     <link>https://techentangle.github.io/kokoro-podcast</link>
-    <copyright>© 2026 Tushar Vartak / TechEntangle Systems</copyright>
+    <copyright>© 2026 Tushar Vartak</copyright>
     <atom:link href="https://techentangle.github.io/kokoro-podcast/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://techentangle.github.io/kokoro-podcast/cover.png</url>
