@@ -24,6 +24,18 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Malware That Thinks</title>
+      <description>The Malware That Thinks</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Malware_That_Thinks.mp3" length="9822572" type="audio/mpeg" />
+      <guid isPermaLink="false">15f888aff0021231c32f5d39d505c354</guid>
+      <pubDate>Fri, 20 Feb 2026 06:43:28 +0000</pubDate>
+      <itunes:duration>00:06:49</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>11</itunes:episode>
+    </item>
+    <item>
       <title>Your AI Takes Instructions From Strangers</title>
       <description>Your AI Takes Instructions From Strangers</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Your_AI_Takes_Instructions_From_Strangers.mp3" length="8453996" type="audio/mpeg" />
