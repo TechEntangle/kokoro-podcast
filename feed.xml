@@ -24,6 +24,18 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>Your AI Read Your Secrets</title>
+      <description>Your AI Read Your Secrets</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Your_AI_Read_Your_Secrets.mp3" length="10561580" type="audio/mpeg" />
+      <guid isPermaLink="false">ec7bbc30834559317aa92f362de00560</guid>
+      <pubDate>Sat, 21 Feb 2026 06:10:54 +0000</pubDate>
+      <itunes:duration>00:07:20</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>12</itunes:episode>
+    </item>
+    <item>
       <title>The Malware That Thinks</title>
       <description>The Malware That Thinks</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Malware_That_Thinks.mp3" length="9822572" type="audio/mpeg" />
