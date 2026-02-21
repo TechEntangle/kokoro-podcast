@@ -24,6 +24,18 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Machine Underground</title>
+      <description>The Machine Underground</description>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Machine_Underground.mp3" length="12633452" type="audio/mpeg" />
+      <guid isPermaLink="false">0d9856cefbda059d21e1ebfbd95d2a63</guid>
+      <pubDate>Sat, 21 Feb 2026 19:56:23 +0000</pubDate>
+      <itunes:duration>00:08:46</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>13</itunes:episode>
+    </item>
+    <item>
       <title>Your AI Read Your Secrets</title>
       <description>Your AI Read Your Secrets</description>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Your_AI_Read_Your_Secrets.mp3" length="10561580" type="audio/mpeg" />
