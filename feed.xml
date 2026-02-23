@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>CyberPulse</title>
-    <description>Audiobooks and stories, narrated and produced using cutting-edge text-to-speech technology. Narrated by a digital voice.</description>
+    <description>Your daily dose of cybersecurity intelligence — from AI-powered attacks and quantum preparedness to cloud breaches and emerging digital risks. Narrated by a digital voice.</description>
     <language>en-us</language>
     <link>https://techentangle.github.io/kokoro-podcast</link>
-    <copyright>© 2026 Tushar Vartak / TechEntangle Systems</copyright>
+    <copyright>© 2026 Tushar Vartak</copyright>
     <atom:link href="https://techentangle.github.io/kokoro-podcast/feed.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://techentangle.github.io/kokoro-podcast/cover.png</url>
@@ -24,8 +24,22 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Script Kiddie Who Brought an AI</title>
+      <description>A low-skill, Russian-speaking hacker used commercial AI services to breach over 600 enterprise firewalls across 55 countries in five weeks. No zero-days required. Amazon just showed us what the automation of mediocrity looks like at scale.</description>
+      <content:encoded><![CDATA[<p>A low-skill, Russian-speaking hacker used commercial AI services to breach over 600 enterprise firewalls across 55 countries in five weeks. No zero-days required. Amazon just showed us what the automation of mediocrity looks like at scale.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/">https://aws.amazon.com/blogs/security/ai-augmented-threat-actor-accesses-fortigate-devices-at-scale/</a></li><li><a href="https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breached-600-fortigate-firewalls-in-5-weeks/">https://www.bleepingcomputer.com/news/security/amazon-ai-assisted-hacker-breached-600-fortigate-firewalls-in-5-weeks/</a></li><li><a href="https://thehackernews.com/2026/02/ai-assisted-threat-actor-compromises.html">https://thehackernews.com/2026/02/ai-assisted-threat-actor-compromises.html</a></li><li><a href="https://cybersecuritynews.com/600-fortigate-devices-hacked/">https://cybersecuritynews.com/600-fortigate-devices-hacked/</a></li><li><a href="https://blog.cloudflare.com/cloudflare-outage-february-20-2026/">https://blog.cloudflare.com/cloudflare-outage-february-20-2026/</a></li><li><a href="https://cybersecuritynews.com/cloudflare-down-6-hour-of-massive-global-service-outage/">https://cybersecuritynews.com/cloudflare-down-6-hour-of-massive-global-service-outage/</a></li><li><a href="https://cybersecuritynews.com/cybersecurity-news-weekly/">https://cybersecuritynews.com/cybersecurity-news-weekly/</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Script_Kiddie_Who_Brought_an_AI.mp3" length="13571180" type="audio/mpeg" />
+      <guid isPermaLink="false">a6f86d01382a45edce8aef73fcd005d1</guid>
+      <pubDate>Mon, 23 Feb 2026 06:34:29 +0000</pubDate>
+      <itunes:duration>00:09:25</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>14</itunes:episode>
+    </item>
+    <item>
       <title>The Machine Underground</title>
       <description>The Machine Underground</description>
+      <content:encoded><![CDATA[<p>The Machine Underground</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Machine_Underground.mp3" length="12633452" type="audio/mpeg" />
       <guid isPermaLink="false">0d9856cefbda059d21e1ebfbd95d2a63</guid>
       <pubDate>Sat, 21 Feb 2026 19:56:23 +0000</pubDate>
@@ -38,6 +52,7 @@
     <item>
       <title>Your AI Read Your Secrets</title>
       <description>Your AI Read Your Secrets</description>
+      <content:encoded><![CDATA[<p>Your AI Read Your Secrets</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Your_AI_Read_Your_Secrets.mp3" length="10561580" type="audio/mpeg" />
       <guid isPermaLink="false">ec7bbc30834559317aa92f362de00560</guid>
       <pubDate>Sat, 21 Feb 2026 06:10:54 +0000</pubDate>
@@ -50,6 +65,7 @@
     <item>
       <title>The Malware That Thinks</title>
       <description>The Malware That Thinks</description>
+      <content:encoded><![CDATA[<p>The Malware That Thinks</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Malware_That_Thinks.mp3" length="9822572" type="audio/mpeg" />
       <guid isPermaLink="false">15f888aff0021231c32f5d39d505c354</guid>
       <pubDate>Fri, 20 Feb 2026 06:43:28 +0000</pubDate>
@@ -62,6 +78,7 @@
     <item>
       <title>Your AI Takes Instructions From Strangers</title>
       <description>Your AI Takes Instructions From Strangers</description>
+      <content:encoded><![CDATA[<p>Your AI Takes Instructions From Strangers</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Your_AI_Takes_Instructions_From_Strangers.mp3" length="8453996" type="audio/mpeg" />
       <guid isPermaLink="false">cfb0c93544a80ec643c207c4e9652e85</guid>
       <pubDate>Thu, 19 Feb 2026 18:22:13 +0000</pubDate>
@@ -74,6 +91,7 @@
     <item>
       <title>Your Face Is Not Your Own</title>
       <description>Your Face Is Not Your Own</description>
+      <content:encoded><![CDATA[<p>Your Face Is Not Your Own</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Your_Face_Is_Not_Your_Own.mp3" length="9851372" type="audio/mpeg" />
       <guid isPermaLink="false">5f9131a97097aaeed4f3666942b166d1</guid>
       <pubDate>Thu, 19 Feb 2026 04:33:19 +0000</pubDate>
@@ -86,6 +104,7 @@
     <item>
       <title>The Ghost With Admin Access</title>
       <description>The Ghost With Admin Access</description>
+      <content:encoded><![CDATA[<p>The Ghost With Admin Access</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Ghost_With_Admin_Access.mp3" length="9237356" type="audio/mpeg" />
       <guid isPermaLink="false">47f4df95cded89a999ac09ead2c27c8c</guid>
       <pubDate>Wed, 18 Feb 2026 17:43:47 +0000</pubDate>
@@ -98,6 +117,7 @@
     <item>
       <title>The 17 Billion Warning Sign</title>
       <description>The 17 Billion Warning Sign</description>
+      <content:encoded><![CDATA[<p>The 17 Billion Warning Sign</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_17_Billion_Warning_Sign.mp3" length="4526252" type="audio/mpeg" />
       <guid isPermaLink="false">751bf4bfe2a38e5806df372c5d880454</guid>
       <pubDate>Wed, 18 Feb 2026 08:53:18 +0000</pubDate>
@@ -110,6 +130,7 @@
     <item>
       <title>The Criminal Marketplace Youre Not Monitoring</title>
       <description>The Criminal Marketplace Youre Not Monitoring</description>
+      <content:encoded><![CDATA[<p>The Criminal Marketplace Youre Not Monitoring</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Criminal_Marketplace_Youre_Not_Monitoring.mp3" length="6080876" type="audio/mpeg" />
       <guid isPermaLink="false">dc96a8de851aaf9e803c3ac96b7b99ec</guid>
       <pubDate>Tue, 17 Feb 2026 05:26:52 +0000</pubDate>
@@ -122,6 +143,7 @@
     <item>
       <title>When Your AI Agent Becomes the Attack Surface</title>
       <description>When Your AI Agent Becomes the Attack Surface</description>
+      <content:encoded><![CDATA[<p>When Your AI Agent Becomes the Attack Surface</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/When_Your_AI_Agent_Becomes_the_Attack_Surface.mp3" length="8113004" type="audio/mpeg" />
       <guid isPermaLink="false">3fd747fd0e89ffd5141e512c0183b694</guid>
       <pubDate>Mon, 16 Feb 2026 09:16:08 +0000</pubDate>
@@ -134,6 +156,7 @@
     <item>
       <title>When Cloud Break-Ins Move at AI Speed</title>
       <description>When Cloud Break-Ins Move at AI Speed</description>
+      <content:encoded><![CDATA[<p>When Cloud Break-Ins Move at AI Speed</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/When_Cloud_Break-Ins_Move_at_AI_Speed.mp3" length="5844716" type="audio/mpeg" />
       <guid isPermaLink="false">eeba653ddb43f1a682c8fae07ff3ed8c</guid>
       <pubDate>Sun, 15 Feb 2026 04:27:36 +0000</pubDate>
@@ -146,6 +169,7 @@
     <item>
       <title>The AI You Learned in January No Longer Exists</title>
       <description>The AI You Learned in January No Longer Exists</description>
+      <content:encoded><![CDATA[<p>The AI You Learned in January No Longer Exists</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_AI_You_Learned_in_January_No_Longer_Exists.mp3" length="11043116" type="audio/mpeg" />
       <guid isPermaLink="false">c248581f6183a4bdf76cf62b2d1ca9d2</guid>
       <pubDate>Sat, 14 Feb 2026 11:46:42 +0000</pubDate>
@@ -158,6 +182,7 @@
     <item>
       <title>The Agent Internet Is Already Leaking</title>
       <description>The Agent Internet Is Already Leaking</description>
+      <content:encoded><![CDATA[<p>The Agent Internet Is Already Leaking</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Agent_Internet_Is_Already_Leaking.mp3" length="8621036" type="audio/mpeg" />
       <guid isPermaLink="false">22b67aa035166b7cc1021e006bab06b8</guid>
       <pubDate>Sat, 14 Feb 2026 11:44:09 +0000</pubDate>
@@ -170,6 +195,7 @@
     <item>
       <title>The Death of Human Error</title>
       <description>The Death of Human Error</description>
+      <content:encoded><![CDATA[<p>The Death of Human Error</p>]]></content:encoded>
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Death_of_Human_Error.mp3" length="9433772" type="audio/mpeg" />
       <guid isPermaLink="false">2006a6bf1927c773b74e84b4cb937a68</guid>
       <pubDate>Sat, 14 Feb 2026 03:47:27 +0000</pubDate>
