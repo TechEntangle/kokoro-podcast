@@ -24,6 +24,19 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>One Password One Point Two Million Bank Accounts</title>
+      <description>A stolen civil servant credential gave an attacker weeks of unrestricted access to FICOBA — France's national bank account registry containing every bank account opened in the country. 1.2 million accounts were browsed, exposing IBANs, names, addresses, and tax IDs. No MFA, no anomaly detection, no rate limiting. The breach creates immediate SEPA direct debit fraud risk across the EU. Phishing campaigns targeting affected customers were already detected within days.</description>
+      <content:encoded><![CDATA[<p>A stolen civil servant credential gave an attacker weeks of unrestricted access to FICOBA — France's national bank account registry containing every bank account opened in the country. 1.2 million accounts were browsed, exposing IBANs, names, addresses, and tax IDs. No MFA, no anomaly detection, no rate limiting. The breach creates immediate SEPA direct debit fraud risk across the EU. Phishing campaigns targeting affected customers were already detected within days.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://www.bleepingcomputer.com/news/security/data-breach-at-french-bank-registry-impacts-12-million-accounts/">https://www.bleepingcomputer.com/news/security/data-breach-at-french-bank-registry-impacts-12-million-accounts/</a></li><li><a href="https://therecord.media/attackers-breach-france-national-bank-account-database">https://therecord.media/attackers-breach-france-national-bank-account-database</a></li><li><a href="https://www.helpnetsecurity.com/2026/02/19/ficoba-data-breach-bank-accounts/">https://www.helpnetsecurity.com/2026/02/19/ficoba-data-breach-bank-accounts/</a></li><li><a href="https://securityaffairs.com/188200/hacking/french-ministry-confirms-data-access-to-1-2-million-bank-accounts.html">https://securityaffairs.com/188200/hacking/french-ministry-confirms-data-access-to-1-2-million-bank-accounts.html</a></li><li><a href="https://www.techradar.com/pro/security/french-government-systems-hacked-over-1-2-million-private-financial-accounts-hit">https://www.techradar.com/pro/security/french-government-systems-hacked-over-1-2-million-private-financial-accounts-hit</a></li><li><a href="https://www.scworld.com/brief/hacker-accesses-1-2-million-french-bank-accounts-using-stolen-credentials">https://www.scworld.com/brief/hacker-accesses-1-2-million-french-bank-accounts-using-stolen-credentials</a></li><li><a href="https://www.webpronews.com/frances-financial-data-catastrophe-how-hackers-breached-government-systems-and-exposed-1-2-million-private-accounts/">https://www.webpronews.com/frances-financial-data-catastrophe-how-hackers-breached-government-systems-and-exposed-1-2-million-private-accounts/</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/One_Password_One_Point_Two_Million_Bank_Accounts.mp3" length="10498220" type="audio/mpeg" />
+      <guid isPermaLink="false">5b8d2743d0560974ea5af3a50f23acaf</guid>
+      <pubDate>Wed, 25 Feb 2026 04:47:38 +0000</pubDate>
+      <itunes:duration>00:07:17</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>16</itunes:episode>
+    </item>
+    <item>
       <title>They Poisoned the Bot That Guards the Code</title>
       <description>CyberPulse — February 24, 2026: "They Poisoned the Bot That Guards the Code"
 A supply chain attack on the Cline AI coding assistant used prompt injection against an AI triage bot to steal npm publishing credentials and silently install the OpenClaw autonomous agent on ~4,000 developer machines in an 8-hour window. The first real-world case of prompt injection weaponized into a software supply chain compromise.</description>
