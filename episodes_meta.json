@@ -142,5 +142,9 @@
   "The_Door_That_Pretended_to_Be_Guarded.mp3": {
     "description": "Classification: Operational Threat Intelligence Summary: Today’s edition focuses on active exploitation at the remote access edge, web platform administrator account creation, local privilege escalation, agent-assisted post-exploitation, trusted-interface phishing, and botnet infrastructure disruption.",
     "urls": "https://tusharvartak.com/posts/2026-06-01.html"
+  },
+  "The_Control_Plane_Is_the_Loot.mp3": {
+    "description": "Classification: Operational Threat Intelligence Summary: Today’s edition focuses on credential-stealing supply chain activity, active exploitation against remote access infrastructure, directory controller risk, artificial intelligence workflow exposure, trusted-interface phishing, and state-linked collection activity. The core message for Gulf security leaders: protect the systems that create trust before attackers turn them into authority.",
+    "urls": "https://tusharvartak.com/posts/2026-06-02.html"
   }
 }

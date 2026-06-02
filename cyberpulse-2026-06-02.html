@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberPulse Daily — The Control Plane Is the Loot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Playfair+Display:wght@700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090c;--panel:#11141a;--text:#e8e2d6;--muted:#a79f92;--accent:#c8372d;--gold:#e8a634;--line:#252a33}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#1b1111,#08090c 45%);color:var(--text);font-family:'Source Serif 4',serif;line-height:1.65}
+.progress{position:fixed;top:0;left:0;height:4px;width:100%;background:linear-gradient(90deg,var(--accent),#621a16);z-index:5}
+main{max-width:880px;margin:0 auto;padding:64px 24px 80px} header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:32px}
+.kicker{font-family:'IBM Plex Mono',monospace;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-weight:600}
+h1{font-family:'Playfair Display',serif;font-size:clamp(42px,7vw,76px);line-height:.95;margin:12px 0;color:#fff}
+.meta{font-family:'IBM Plex Mono',monospace;color:var(--muted);font-size:13px}.badge{display:inline-block;margin-top:18px;border:1px solid var(--accent);color:#fff;padding:6px 10px;border-radius:999px;font-family:'IBM Plex Mono',monospace;font-size:12px}
+section{animation:fade .8s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+p{font-size:20px;margin:0 0 22px}.actions{margin:34px 0;padding:22px 24px;background:rgba(232,166,52,.08);border-left:4px solid var(--gold)}
+.actions h2,.sources h2{font-family:'Playfair Display',serif;margin-top:0;color:#fff}.actions li{margin:12px 0;font-size:18px}
+.sources{margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}.source-item{margin:10px 0;color:var(--muted)}a{color:#f0c66c;text-decoration:none}a:hover{text-decoration:underline}
+.signoff{margin-top:34px;color:#fff;font-weight:600}
+</style>
+</head>
+<body><div class="progress"></div><main>
+<header><div class="kicker">CyberPulse Daily</div><h1>The Control Plane Is the Loot</h1><div class="meta">Tuesday, June second, twenty twenty six • Operational Threat Intelligence</div><div class="badge">Operational Threat Intelligence</div></header>
+<section>
+<p>Good morning. It is Tuesday, June second, twenty twenty six. This is CyberPulse Daily.</p>
+<p>Today’s signal is that attackers are no longer satisfied with stealing from the edge. They are trying to become the edge, the package maintainer, the artificial intelligence operator, and the directory administrator at the same time. For security teams across the Gulf, the uncomfortable question is not whether one product needs a fix. It is whether your control planes are still governed as infrastructure, or merely trusted because they have always been trusted.</p>
+<p>The lead story is a software supply chain compromise affecting an enterprise package namespace, where malicious packages were modified to behave like a credential-stealing worm. The tactic matters more than the brand. A developer installs what looks familiar, automation pulls what appears legitimate, and secrets move before a human has time to notice. In a region where cloud migration and platform engineering are accelerating together, package trust is now board-level risk. The update pipeline is not just a delivery mechanism. It is a privileged identity system with write access to the future.</p>
+<p>P zero for today: freeze and inspect recent package pulls from high-trust internal build systems, especially where packages are mirrored automatically into private registries. Rotate tokens exposed to build runners, development containers, and continuous integration jobs. Assume that any secret available to the package install process was a target, not an accident.</p>
+<p>P one: enforce provenance controls on software dependencies. Require signed packages where possible, restrict maintainer changes, alert on sudden version jumps, and block install scripts from reaching sensitive environment variables unless explicitly justified. If your build process can quietly export credentials, it is already a privileged workflow and should be monitored like one.</p>
+<p>P two: run a dependency governance review across application teams. The question is simple: who is allowed to introduce code that production will trust automatically? If the answer is unclear, the organization does not have a supply chain strategy. It has a hope strategy.</p>
+<p>The second signal is active exploitation against a widely deployed remote access gateway flaw. This class of bug remains dangerous because it sits at the point where identity, network reachability, and administrative exception handling collide. An exposed gateway is not a box at the perimeter. It is a decision engine for who gets inside. When authentication bypass moves into live exploitation, defenders should treat every successful session as a security-relevant event, not a routine login.</p>
+<p>The third signal is pressure on directory infrastructure. Reports of exploitation against a critical remote code execution flaw in domain controller services should make every enterprise pause. Directory systems are the memory of the organization: users, groups, policies, delegated rights, service accounts, and the quiet exceptions that accumulate for years. If that layer is reachable, unpatched, and under-monitored, attackers do not need to own every system. They need to own the system that tells every other system whom to trust.</p>
+<p>P zero here is direct: confirm exposure and patch status for directory controllers and remote access gateways today. Validate from network telemetry, not spreadsheets. Spreadsheets do not get exploited; forgotten interfaces do.</p>
+<p>The fourth signal is the artificial intelligence application layer. A critical flaw in a workflow platform for language-model applications has proof-of-concept exploitation risk, while attackers are also abusing shared assistant content to run phishing campaigns. These are two sides of the same problem. Enterprises are adopting artificial intelligence interfaces faster than they are defining the trust boundaries around them. A shared prompt, a generated page, a connector, or a workflow agent can become a delivery path, an exfiltration path, or a command surface.</p>
+<p>P one: inventory artificial intelligence workflow tools, shared-link features, browser extensions, and connectors that touch enterprise data. Disable public sharing where there is no business case. Require logging for prompt execution, connector calls, and file access. The goal is not to slow adoption. The goal is to stop invisible adoption from becoming invisible compromise.</p>
+<p>The fifth signal is state-linked activity against diplomatic and institutional targets, using stealthier staging and persistence methods. The details vary, but the strategic pattern is consistent: collection-focused operators are blending commodity tooling, living-off-the-land behavior, and patient access development. For Gulf enterprises that support public-sector, energy, logistics, finance, or telecom ecosystems, the key point is adjacency. You may not be the primary target. You may be the route.</p>
+<p>P two: refresh third-party access reviews for strategic suppliers, law firms, consultancies, managed service providers, and joint-venture technology partners. Look for dormant accounts, broad remote access, weak device posture, and service accounts with human-style behavior. The soft edge of a high-value organization is often another organization.</p>
+<p>The executive takeaway is sharp: attackers are optimizing for authority, not noise. They want the package that developers trust, the gateway that users pass through, the directory that grants privilege, and the artificial intelligence surface that employees now believe. Defenders should respond by protecting trust itself as a tier-zero asset.</p>
+<div class="actions"><h2>Priority actions</h2><ul>
+<li><strong>P zero:</strong> Freeze and inspect recent package pulls from high-trust build systems; rotate tokens exposed to build runners, development containers, and continuous integration jobs.</li>
+<li><strong>P one:</strong> Enforce provenance controls on software dependencies, restrict maintainer changes, alert on version jumps, and inventory artificial intelligence workflow tools and connectors that touch enterprise data.</li>
+<li><strong>P two:</strong> Run dependency governance and third-party access reviews, focusing on who can introduce trusted production code and which partners retain broad or dormant access.</li>
+</ul></div>
+<section class="sources"><h2>Sources</h2><ul>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html">The Hacker News — Miasma Supply Chain Attack Compromises Enterprise npm Packages</a></li>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/weekly-recap-new-linux-flaw-pan-os.html">The Hacker News — Weekly Recap: Linux Flaw, PAN-OS Exploit, AI-Powered Attacks, OAuth Phishing</a></li>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/china-aligned-groups-ramp-up-attacks.html">The Hacker News — State-Aligned Groups Ramp Up Attacks</a></li>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html">The Hacker News — Codex Authentication Tokens Stolen in npm Supply Chain Attack</a></li>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html">The Hacker News — Critical WP Maps Pro Flaw Actively Exploited</a></li>
+<li class="source-item"><a href="https://www.infosecurity-magazine.com/news/flowise-mcp-rce-poc/">Infosecurity Magazine — Critical Flowise Flaw Gives Attackers Full Server Control</a></li>
+<li class="source-item"><a href="https://www.infosecurity-magazine.com/news/palo-alto-highseverity-bug/">Infosecurity Magazine — High-Severity Gateway Bug Actively Exploited</a></li>
+<li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/critical-windows-netlogon-rce-flaw-now-exploited-in-attacks/">BleepingComputer — Critical Directory Service Flaw Exploited in Attacks</a></li>
+</ul></section>
+<p class="signoff">That is your CyberPulse Daily for Tuesday, June second, twenty twenty six.</p>
+</section></main></body></html>
