@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CyberPulse Daily — The Control Plane Squeeze</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Playfair+Display:wght@700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#08090c;--panel:#11141a;--text:#e8e2d6;--muted:#a79f92;--accent:#c8372d;--gold:#e8a634;--line:#252a33}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top left,#1b1111,#08090c 45%);color:var(--text);font-family:'Source Serif 4',serif;line-height:1.65}
+.progress{position:fixed;top:0;left:0;height:4px;width:100%;background:linear-gradient(90deg,var(--accent),#621a16);z-index:5}
+main{max-width:880px;margin:0 auto;padding:64px 24px 80px} header{border-bottom:1px solid var(--line);padding-bottom:28px;margin-bottom:32px;animation:fade .8s ease both}
+.mast{display:flex;justify-content:space-between;gap:16px;align-items:center}.logo{font-family:'IBM Plex Mono',monospace;color:#fff;letter-spacing:.18em;text-transform:uppercase;font-size:12px}.dateline{font-family:'IBM Plex Mono',monospace;color:var(--muted);font-size:12px;text-align:right}
+.kicker{font-family:'IBM Plex Mono',monospace;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;font-size:12px;font-weight:600;margin-top:28px}
+h1{font-family:'Playfair Display',serif;font-weight:900;font-size:clamp(42px,7vw,76px);line-height:.95;margin:12px 0;color:#fff} h1 em{color:var(--accent);font-style:normal}
+.subtitle{font-size:22px;color:var(--muted);font-style:italic}.badge{display:inline-block;margin-top:18px;border:1px solid var(--accent);color:#fff;padding:6px 10px;border-radius:999px;font-family:'IBM Plex Mono',monospace;font-size:12px}.badge:before{content:'● ';color:var(--accent)}
+section{animation:fade .8s ease both}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+p{font-size:20px;margin:0 0 22px}.emphasis{border-left:3px solid var(--accent);padding-left:24px;font-style:italic;color:#fff}.break{display:flex;align-items:center;gap:14px;margin:34px 0 22px;color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase}.break:before,.break:after{content:'';height:1px;background:var(--line);flex:1}
+.actions{margin:34px 0;padding:22px 24px;background:rgba(232,166,52,.08);border:1px solid rgba(232,166,52,.25);border-left:4px solid var(--gold);border-radius:0 14px 14px 0}.actions h2,.sources h2{font-family:'Playfair Display',serif;margin-top:0;color:#fff}.actions li{margin:12px 0;font-size:18px}.label{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:600}
+.sources{margin-top:42px;padding-top:24px;border-top:1px solid var(--line)}.source-item{margin:10px 0;color:var(--muted)}a{color:#f0c66c;text-decoration:none}a:hover{text-decoration:underline}.signoff{margin-top:34px;text-align:center;color:var(--muted);font-family:'IBM Plex Mono',monospace;font-size:13px}
+@media(max-width:640px){main{padding:42px 18px}.mast{display:block}.dateline{text-align:left;margin-top:8px}p{font-size:18px}}
+</style>
+</head>
+<body><div class="progress"></div><main>
+<header><div class="mast"><div class="logo">CyberPulse</div><div class="dateline">Thursday, June fourth, twenty twenty-six</div></div><div class="kicker">Threat Intelligence Update</div><h1>The Control <em>Plane</em> Squeeze</h1><p class="subtitle">Trusted systems are becoming attack surfaces: web gateways, telemetry, mobile tokens, AI assistants, and endpoint controls.</p><div class="badge">Operational Threat Intelligence</div></header>
+<section>
+<p class="emphasis">Today’s CyberPulse Daily Brief is about control planes under compression. Attackers are pushing on the systems that route traffic, issue tokens, automate responses, run mobile productivity, expose operational telemetry, and hold cloud credentials.</p>
+<p>For enterprise security leaders across the Gulf, the pattern is uncomfortable: the breach no longer begins only at the server edge. It begins wherever automation is trusted, identity is delegated, or infrastructure quietly reports its state to the internet.</p>
+<div class="break">Availability layer</div>
+<p>The lead signal is a new denial-of-service technique against HTTP/2 implementations. Research published this week describes a request pattern that can crash vulnerable web servers in under a minute. The strategic issue is not just availability. Modern digital businesses use application gateways, reverse proxies, service meshes, and web application firewalls as coordination layers. When those layers fail, customer portals, payment journeys, partner APIs, and internal workflows fail with them.</p>
+<div class="actions"><div class="label">P0 / P1</div><ul><li><strong>P0:</strong> Identify externally reachable HTTP/2 termination points, confirm vendor mitigations, and run controlled resilience tests against staging infrastructure.</li><li><strong>P1:</strong> Make sure rate limiting, connection controls, and emergency downgrade procedures are documented before a live incident forces improvisation.</li></ul></div>
+<div class="break">Operational telemetry</div>
+<p>The second story is operational technology exposure. An emergency infrastructure advisory warned that automatic tank gauge systems are still being placed directly online, often with weak or unchanged credentials. For the region’s energy, logistics, aviation, and facilities operators, this is a textbook example of low-complexity risk. Attackers do not need a cinematic industrial exploit if exposed monitoring equipment gives them telemetry, tampering opportunity, or a foothold into adjacent networks.</p>
+<div class="actions"><div class="label">P0 / P1 / P2</div><ul><li><strong>P0:</strong> Search for internet-exposed tank monitoring, fuel management, and facility telemetry systems across owned and contracted environments.</li><li><strong>P1:</strong> Remove direct exposure, rotate credentials, and require brokered remote access with logging.</li><li><strong>P2:</strong> Add these systems to the same asset governance process used for mainstream information technology.</li></ul></div>
+<div class="break">Mobile identity</div>
+<p>The third signal is mobile identity leakage. New reporting says a leftover debug flag in widely deployed productivity apps on Android could allow another app on the same device to steal account tokens. Separately, security researchers showed how malicious notifications could manipulate an on-device artificial intelligence assistant. The combined message is sharp: mobile is now a privileged identity surface, an application runtime, and an AI interaction layer at the same time.</p>
+<p>P1: require mobile patch visibility for executives, finance, legal, and administrators. P2: review mobile application protection policies, notification privacy settings, and token revocation workflows. If a compromised phone can approve payments, reset passwords, or access board material, it belongs in the threat model.</p>
+<div class="break">Rediscovery at scale</div>
+<p>The fourth story is artificial intelligence accelerating vulnerability discovery. An autonomous tool reportedly found a two-year-old remote code execution flaw in a widely used in-memory database. This should not be read as novelty theatre. It is a preview of a market shift: old code paths, obscure parser behavior, and stale internal services will become easier to rediscover at scale.</p>
+<p>For defenders, the answer is not to fear every AI tool. It is to assume vulnerability rediscovery will speed up. P1: prioritize exposed databases, message brokers, caches, and developer services that were previously considered lower urgency because no exploit was public. P2: improve software bill of materials coverage for internal platforms, not just customer-facing applications.</p>
+<div class="break">Trusted channels</div>
+<p>The fifth signal is malware delivery through trusted advertising and notification channels. Reporting this week describes malspam abusing an advertising platform to deliver a remote access trojan, while another campaign uses messaging-style notifications to manipulate assistant behavior. The tactic is psychological and technical at once: attackers are borrowing familiar user experiences to cross the boundary between attention and execution.</p>
+<p>Security teams should tune controls around user-initiated downloads, browser isolation for high-risk roles, and behavior analytics for suspicious script execution. Awareness training alone will not carry this risk. The control has to live where the click becomes code.</p>
+<div class="break">Strategic infrastructure</div>
+<p>The sixth story is espionage pressure on financial market infrastructure. A global exchange was reportedly targeted in an operation focused on intelligence collection. The regional lesson is broader than any single venue: capital markets, payment rails, clearing functions, and market-data providers are strategic dependency layers. Intrusion there can create business intelligence loss, operational fragility, and trust damage even without destructive activity.</p>
+<p>P1: review third-party connectivity into trading, treasury, and market-data environments. P2: test whether monitoring can distinguish normal privileged administration from quiet reconnaissance.</p>
+<div class="break">Endpoint confidence</div>
+<p>The final thread is attacker automation against defensive tooling. Fresh analysis describes adversaries using AI to test endpoint detection evasion. That matters because defensive confidence often rests on yesterday’s detection logic. If attackers can iterate faster against the tools, leaders need proof of control effectiveness, not just dashboard coverage.</p>
+<p class="emphasis">The winning program is not the one with the longest list of tools. It is the one that knows which trusted systems can change the business, and can constrain them before attackers do.</p>
+<section class="sources"><h2>Sources</h2><ul>
+<li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/new-http-2-bomb-dos-attack-crashes-web-servers-in-under-a-minute">bleepingcomputer.com — HTTP/2 denial-of-service research</a></li>
+<li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-targeting-fuel-tank-monitoring-systems">bleepingcomputer.com — fuel tank monitoring systems exposure</a></li>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/microsoft-365-android-apps-let-any-app.html">thehackernews.com — Android productivity app token risk</a></li>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/whatsapp-slack-notifications-could.html">thehackernews.com — mobile notification assistant manipulation</a></li>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/autonomous-ai-tool-finds-2-year-old-rce.html">thehackernews.com — autonomous vulnerability discovery</a></li>
+<li class="source-item"><a href="https://thehackernews.com/2026/06/google-doubleclick-abused-in-new.html">thehackernews.com — trusted advertising malware delivery</a></li>
+<li class="source-item"><a href="https://www.securityweek.com/hackers-target-global-stock-exchange-in-espionage-operation">securityweek.com — global exchange espionage operation</a></li>
+<li class="source-item"><a href="https://www.darkreading.com/endpoint-security/attackers-automate-edr-evasion-testing">darkreading.com — AI-assisted endpoint evasion testing</a></li>
+</ul></section>
+<p class="signoff">That is your CyberPulse Daily for Thursday, June fourth, twenty twenty-six.</p>
+</section></main></body></html>
