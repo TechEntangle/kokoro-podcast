@@ -154,5 +154,9 @@
   "The_Control_Plane_Squeeze.mp3": {
     "description": "Today’s CyberPulse Daily Brief tracks pressure on web infrastructure, operational telemetry, mobile identity, artificial intelligence assistants, database exposure, malware delivery, financial market infrastructure, and endpoint controls. The operational message for Gulf security teams is direct: trusted control layers are now prime attack surfaces, and resilience depends on constraining who and what can change them.",
     "urls": "https://www.bleepingcomputer.com/news/security/new-http-2-bomb-dos-attack-crashes-web-servers-in-under-a-minute\nhttps://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-targeting-fuel-tank-monitoring-systems\nhttps://thehackernews.com/2026/06/microsoft-365-android-apps-let-any-app.html\nhttps://thehackernews.com/2026/06/whatsapp-slack-notifications-could.html\nhttps://thehackernews.com/2026/06/autonomous-ai-tool-finds-2-year-old-rce.html\nhttps://thehackernews.com/2026/06/google-doubleclick-abused-in-new.html\nhttps://www.securityweek.com/hackers-target-global-stock-exchange-in-espionage-operation\nhttps://www.darkreading.com/endpoint-security/attackers-automate-edr-evasion-testing\nhttps://tusharvartak.com/posts/2026-06-04.html"
+  },
+  "The_Trust_Boundary_Weekend.mp3": {
+    "description": "This board-level CyberPulse edition reframes fresh technical reporting as a governance challenge: automation, plugins, agents, package ecosystems, and operational systems are accumulating authority faster than many control frameworks can explain. The briefing asks leadership to verify where speed has been converted into delegated permission without matching oversight.",
+    "urls": "https://tusharvartak.com/posts/2026-06-05.html"
   }
 }
