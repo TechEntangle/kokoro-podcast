@@ -24,6 +24,19 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Autonomous Exposure Weekend</title>
+      <description>This board-level CyberPulse edition connects recent reporting on package ecosystem malware, mobile spyware, exposed infrastructure, industrial visibility, and agentic security programs into one governance theme: delegated authority is expanding faster than accountability. The briefing challenges leaders to prove which automated systems can act, how those actions are constrained, and whether the evidence would survive an incident review.</description>
+      <content:encoded><![CDATA[<p>This board-level CyberPulse edition connects recent reporting on package ecosystem malware, mobile spyware, exposed infrastructure, industrial visibility, and agentic security programs into one governance theme: delegated authority is expanding faster than accountability. The briefing challenges leaders to prove which automated systems can act, how those actions are constrained, and whether the evidence would survive an incident review.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-06.html">https://tusharvartak.com/posts/2026-06-06.html</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Autonomous_Exposure_Weekend.mp3" length="9214472" type="audio/mpeg" />
+      <guid isPermaLink="false">3847c8909c448ed4be2a93d47538ab15</guid>
+      <pubDate>Sat, 06 Jun 2026 04:05:01 +0000</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>54</itunes:episode>
+    </item>
+    <item>
       <title>The Trust Boundary Weekend</title>
       <description>This board-level CyberPulse edition reframes fresh technical reporting as a governance challenge: automation, plugins, agents, package ecosystems, and operational systems are accumulating authority faster than many control frameworks can explain. The briefing asks leadership to verify where speed has been converted into delegated permission without matching oversight.</description>
       <content:encoded><![CDATA[<p>This board-level CyberPulse edition reframes fresh technical reporting as a governance challenge: automation, plugins, agents, package ecosystems, and operational systems are accumulating authority faster than many control frameworks can explain. The briefing asks leadership to verify where speed has been converted into delegated permission without matching oversight.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-05.html">https://tusharvartak.com/posts/2026-06-05.html</a></li></ul>]]></content:encoded>
