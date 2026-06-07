@@ -162,5 +162,9 @@
   "The_Autonomous_Exposure_Weekend.mp3": {
     "description": "This board-level CyberPulse edition connects recent reporting on package ecosystem malware, mobile spyware, exposed infrastructure, industrial visibility, and agentic security programs into one governance theme: delegated authority is expanding faster than accountability. The briefing challenges leaders to prove which automated systems can act, how those actions are constrained, and whether the evidence would survive an incident review.",
     "urls": "https://tusharvartak.com/posts/2026-06-06.html"
+  },
+  "The_Control_Plane_Is_Bleeding.mp3": {
+    "description": "Today’s CyberPulse Daily frames the weekend threat picture around control-plane exposure: management systems under active attack, code supply chain automation at worm speed, artificial intelligence tools creating both discovery and leakage pressure, and residential proxy abuse weakening reputation-based defenses. The Gulf enterprise action path is clear: isolate management interfaces, constrain automation tokens, govern agent tools, and tune for behavior over origin.",
+    "urls": "https://tusharvartak.com/posts/2026-06-07.html"
   }
 }
