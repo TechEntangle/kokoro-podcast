@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPulse Daily — The Scam Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0a0c;
+      --bg-card: #16161a;
+      --text-primary: #e8e6e3;
+      --text-secondary: #9a9a9e;
+      --text-muted: #5a5a5e;
+      --accent: #c8372d;
+      --accent-secondary: #e8a634;
+      --border: rgba(232, 230, 227, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, rgba(200,55,45,0.13), transparent 34rem), var(--bg-primary);
+      color: var(--text-primary);
+      font-family: 'Source Serif 4', serif;
+      line-height: 1.72;
+      font-size: 18px;
+    }
+    .progress { position: fixed; top: 0; left: 0; height: 2px; background: var(--accent); z-index: 20; width: 0%; animation: progress 1s linear; }
+    @keyframes progress { from { width: 0; } to { width: 100%; } }
+    .container { max-width: 760px; margin: 0 auto; padding: 48px 22px 64px; }
+    header { padding: 28px 0 36px; border-bottom: 1px solid var(--border); animation: fadeIn 700ms ease-out both; }
+    .masthead { display: flex; justify-content: space-between; align-items: center; margin-bottom: 42px; gap: 18px; }
+    .logo { font-family: 'IBM Plex Mono', monospace; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); font-weight: 700; font-size: 13px; }
+    .dateline { font-family: 'IBM Plex Mono', monospace; color: var(--text-muted); font-size: 12px; text-align: right; }
+    .episode { font-family: 'IBM Plex Mono', monospace; color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 2.4px; font-size: 12px; margin-bottom: 16px; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(48px, 10vw, 88px); line-height: 0.92; margin: 0 0 22px; font-weight: 900; letter-spacing: -2px; }
+    h1 em { color: var(--accent); font-style: normal; }
+    .subtitle { color: var(--text-secondary); font-size: 22px; font-style: italic; margin: 0 0 24px; }
+    .badge { display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(200,55,45,0.34); color: var(--text-secondary); padding: 8px 12px; border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 1.4px; text-transform: uppercase; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 18px var(--accent); animation: pulse 1.8s infinite; }
+    @keyframes pulse { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    main { animation: fadeIn 900ms ease-out both; }
+    p { margin: 24px 0; }
+    .section-break { display: flex; align-items: center; gap: 14px; margin: 42px 0 28px; color: var(--accent); font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+    .section-break::before, .section-break::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .emphasis { border-left: 3px solid var(--accent); padding-left: 24px; color: var(--text-secondary); font-style: italic; }
+    .action { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--accent-secondary); padding: 18px 20px; margin: 24px 0; border-radius: 0 12px 12px 0; }
+    .action-label { display: block; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 2px; color: var(--accent-secondary); text-transform: uppercase; margin-bottom: 8px; }
+    .sources { margin-top: 52px; padding-top: 30px; border-top: 1px solid var(--border); }
+    .sources h2 { font-family: 'IBM Plex Mono', monospace; color: var(--text-secondary); letter-spacing: 2px; text-transform: uppercase; font-size: 13px; }
+    .source-item { display: block; margin: 14px 0; color: var(--text-secondary); font-size: 15px; }
+    .source-item a { color: var(--text-primary); text-decoration-color: var(--accent); text-underline-offset: 4px; }
+    .source-num { color: var(--accent-secondary); font-family: 'IBM Plex Mono', monospace; margin-right: 8px; }
+    .sign-off { text-align: center; color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; font-size: 12px; margin-top: 48px; letter-spacing: 1px; }
+    @media (max-width: 640px) { body { font-size: 17px; } .masthead { align-items: flex-start; flex-direction: column; } .dateline { text-align: left; } }
+  </style>
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="container">
+    <header>
+      <div class="masthead">
+        <div class="logo">CyberPulse</div>
+        <div class="dateline">Monday • June 8, 2026<br>Gulf Daily Brief</div>
+      </div>
+      <div class="episode">Threat Intelligence Update</div>
+      <h1>The <em>Scam Stack</em></h1>
+      <p class="subtitle">Fraud is no longer just a lure. It now has cloud delivery, trusted hosting, human impersonation, public web footholds, and credential theft built in.</p>
+      <div class="badge"><span class="dot"></span>Operational Threat Intelligence</div>
+    </header>
+
+    <main>
+      <p class="emphasis">Today’s CyberPulse Daily Brief is about fraud infrastructure becoming operational infrastructure. The sharper signal is that attackers are assembling the full stack needed to convert attention into access, access into data theft, and stolen data into pressure.</p>
+
+      <div class="section-break">Seasonal lures</div>
+      <p>Fresh reporting says fake global tournament sites, bogus ticket journeys, banking malware, and credential harvesting pages are already live long before the event begins. For enterprises across the Gulf, this is not only a consumer-protection story. Major sporting moments create travel bookings, executive hospitality, sponsorship workflows, procurement exceptions, payment approvals, and employee curiosity. Attackers know that seasonal urgency weakens verification.</p>
+
+      <div class="action"><span class="action-label">P0 — Event-themed fraud controls</span>Brief finance, travel, executive support, and procurement teams on tournament-themed lures. Block newly registered lookalike domains where possible, require out-of-band approval for travel and hospitality payments, and monitor for credential submissions to event-themed domains.</div>
+
+      <div class="section-break">Delivery infrastructure</div>
+      <p>The second signal is delivery infrastructure. Researchers described a campaign that hijacked more than 230 cloud servers across major providers to build a covert mail relay network. The goal was not flashy destruction. It was reliable sending capacity. That matters because email reputation, not malware sophistication, often decides whether a lure reaches an inbox.</p>
+
+      <p>When attackers steal cloud capacity for relay operations, defenders face messages that appear to come from infrastructure with ordinary trust signals. The fraud layer is borrowing the credibility of legitimate compute before the user ever sees the lure.</p>
+
+      <div class="action"><span class="action-label">P1 — Cloud mail anomaly hunt</span>Review outbound mail behavior from cloud workloads, especially systems that should not send mail. Alert on new Simple Mail Transfer Protocol traffic, unexpected bulk sending, and compute resources created outside approved patterns.</div>
+
+      <div class="section-break">Trusted links, hostile destinations</div>
+      <p>Security researchers reported phishing activity delivered through shared artificial intelligence content pages. The technique borrows the credibility of a familiar service and turns a link-sharing feature into a lure container. The lesson is practical: users do not evaluate only the final payload. They evaluate the platform that appears to host the content.</p>
+
+      <div class="action"><span class="action-label">P1 — Inspect the redirect chain</span>Update awareness guidance and secure web gateway rules so trusted collaboration and artificial intelligence sharing domains are not treated as automatically safe. Inspect the destination chain, not just the first link.</div>
+
+      <div class="section-break">Impersonation leaves the inbox</div>
+      <p>Reporting on an extortion crew describes operators impersonating information technology staff by phone and, in some cases, appearing in person. This is identity attack as theater. It bypasses malware controls by targeting the moment when a busy employee wants help, not conflict.</p>
+
+      <div class="action"><span class="action-label">P0 — Verify support, recovery, and visitors</span>Rehearse help-desk verification, password-reset, device-enrollment, and remote-access approval scenarios. Require callbacks to known numbers, manager confirmation for unusual recovery requests, and physical visitor validation that cannot be satisfied by confidence alone.</div>
+
+      <div class="section-break">Convenience software becomes staging</div>
+      <p>A critical form-plugin vulnerability is being exploited to seize websites. Separately, a critical flaw in a self-hosted artificial intelligence workflow platform can give attackers full server control with minimal interaction. These are different technologies, but the operational lesson is shared: public-facing convenience software often holds more business impact than its owners realize.</p>
+
+      <p>A form builder can become a malware staging point. A workflow platform can become a foothold into data, secrets, and internal integrations. The issue is not whether either category is glamorous. It is whether anyone owns it with the seriousness given to core applications.</p>
+
+      <div class="action"><span class="action-label">P0 — Patch exposed web and workflow tools</span>Identify internet-facing form plugins, self-hosted workflow tools, and artificial intelligence application builders. Patch exposed instances, disable unused plugins, restrict administrative access, and review recent uploads, new administrator accounts, and outbound connections.</div>
+
+      <div class="section-break">Secrets are the payout</div>
+      <p>Attackers reportedly backdoored packages under a well-known enterprise software namespace to steal cloud secrets. This is not a repeat of the recent supply-chain storyline. The fresh angle is monetization. The package does not need to destroy the build. It only needs to collect credentials that can be sold, reused, or converted into extortion.</p>
+
+      <div class="action"><span class="action-label">P1 — Rotate and prove package origin</span>Scan build logs and developer endpoints for suspicious package versions, rotate exposed cloud keys, and require provenance checks before internal systems ingest packages from public registries.</div>
+
+      <div class="section-break">Strategic read</div>
+      <p class="emphasis">Fraud is no longer a thin layer of fake websites and bad emails. It is a stack: seasonal lures, cloud mail relays, trusted sharing surfaces, voice scripts, physical impersonation, website takeovers, vulnerable workflow platforms, and credential theft from developer ecosystems.</p>
+
+      <p>For leaders, the uncomfortable question is not whether users can spot every scam. They cannot. The question is whether business processes make fraud expensive to complete. Add verification at payment moments. Add monitoring where cloud resources start sending mail. Add inspection where trusted services forward users to unknown destinations. Add proof requirements when someone claims to be support. Add ownership to public web tools that previously lived below executive attention.</p>
+
+      <p>The organizations that handle this well will not be the ones that send the longest warning email. They will be the ones that break the scam stack at each handoff: attention, delivery, trust, identity, web foothold, and credential payout.</p>
+
+      <section class="sources">
+        <h2>Sources</h2>
+        <span class="source-item"><span class="source-num">01</span><a href="https://thehackernews.com/2026/06/fifa-world-cup-2026-scams-are-already.html"><strong>The Hacker News</strong> — FIFA World Cup 2026 scams are already live</a></span>
+        <span class="source-item"><span class="source-num">02</span><a href="https://thehackernews.com/2026/06/pcpjack-hijacks-230-aws-google-cloud.html"><strong>The Hacker News</strong> — PCPJack hijacks cloud servers for covert SMTP relay network</a></span>
+        <span class="source-item"><span class="source-num">03</span><a href="https://www.infosecurity-magazine.com/news/attackers-shared-content-chatgpt/"><strong>Infosecurity Magazine</strong> — Attackers abuse shared content for phishing campaign</a></span>
+        <span class="source-item"><span class="source-num">04</span><a href="https://www.infosecurity-magazine.com/news/silent-ransom-group-it/"><strong>Infosecurity Magazine</strong> — Silent Ransom Group uses in-person IT impersonation</a></span>
+        <span class="source-item"><span class="source-num">05</span><a href="https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html"><strong>The Hacker News</strong> — Critical form-plugin flaw exploited to take over sites</a></span>
+        <span class="source-item"><span class="source-num">06</span><a href="https://www.infosecurity-magazine.com/news/flowise-mcp-rce-poc/"><strong>Infosecurity Magazine</strong> — Critical workflow platform flaw gives full server control</a></span>
+        <span class="source-item"><span class="source-num">07</span><a href="https://www.infosecurity-magazine.com/news/red-hat-npm-scope-backdoored/"><strong>Infosecurity Magazine</strong> — Package namespace backdoored to steal cloud secrets</a></span>
+      </section>
+
+      <div class="sign-off">CyberPulse Daily • Monday, June 8, 2026 • Stay vigilant.</div>
+    </main>
+  </div>
+</body>
+</html>

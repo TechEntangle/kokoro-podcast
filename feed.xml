@@ -24,6 +24,19 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Scam Stack</title>
+      <description>Today’s CyberPulse Daily frames fresh reporting around fraud infrastructure: seasonal lures, stolen cloud mail capacity, trusted sharing abuse, social engineering, web takeover, workflow platform compromise, and package-based credential theft. The operational message for regional security teams is direct: make fraud expensive to complete, not merely easier to warn about.</description>
+      <content:encoded><![CDATA[<p>Today’s CyberPulse Daily frames fresh reporting around fraud infrastructure: seasonal lures, stolen cloud mail capacity, trusted sharing abuse, social engineering, web takeover, workflow platform compromise, and package-based credential theft. The operational message for regional security teams is direct: make fraud expensive to complete, not merely easier to warn about.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-08.html">https://tusharvartak.com/posts/2026-06-08.html</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Scam_Stack.mp3" length="9361352" type="audio/mpeg" />
+      <guid isPermaLink="false">795afe836dbac61a489de51f8abacf32</guid>
+      <pubDate>Mon, 08 Jun 2026 04:20:07 +0000</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>56</itunes:episode>
+    </item>
+    <item>
       <title>The Control Plane Is Bleeding</title>
       <description>Today’s CyberPulse Daily frames the weekend threat picture around control-plane exposure: management systems under active attack, code supply chain automation at worm speed, artificial intelligence tools creating both discovery and leakage pressure, and residential proxy abuse weakening reputation-based defenses. The Gulf enterprise action path is clear: isolate management interfaces, constrain automation tokens, govern agent tools, and tune for behavior over origin.</description>
       <content:encoded><![CDATA[<p>Today’s CyberPulse Daily frames the weekend threat picture around control-plane exposure: management systems under active attack, code supply chain automation at worm speed, artificial intelligence tools creating both discovery and leakage pressure, and residential proxy abuse weakening reputation-based defenses. The Gulf enterprise action path is clear: isolate management interfaces, constrain automation tokens, govern agent tools, and tune for behavior over origin.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-07.html">https://tusharvartak.com/posts/2026-06-07.html</a></li></ul>]]></content:encoded>

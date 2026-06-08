@@ -166,5 +166,9 @@
   "The_Control_Plane_Is_Bleeding.mp3": {
     "description": "Today’s CyberPulse Daily frames the weekend threat picture around control-plane exposure: management systems under active attack, code supply chain automation at worm speed, artificial intelligence tools creating both discovery and leakage pressure, and residential proxy abuse weakening reputation-based defenses. The Gulf enterprise action path is clear: isolate management interfaces, constrain automation tokens, govern agent tools, and tune for behavior over origin.",
     "urls": "https://tusharvartak.com/posts/2026-06-07.html"
+  },
+  "The_Scam_Stack.mp3": {
+    "description": "Today’s CyberPulse Daily frames fresh reporting around fraud infrastructure: seasonal lures, stolen cloud mail capacity, trusted sharing abuse, social engineering, web takeover, workflow platform compromise, and package-based credential theft. The operational message for regional security teams is direct: make fraud expensive to complete, not merely easier to warn about.",
+    "urls": "https://tusharvartak.com/posts/2026-06-08.html"
   }
 }
