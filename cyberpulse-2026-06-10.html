@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CyberPulse Daily — The Recovery Surface</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg-primary:#0a0a0c;--bg-card:#16161a;--text-primary:#e8e6e3;--text-secondary:#9a9a9e;--text-muted:#5a5a5e;--accent:#c8372d;--accent-secondary:#e8a634;--border:#28282e}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,rgba(200,55,45,.18),transparent 32%),var(--bg-primary);color:var(--text-primary);font-family:'Source Serif 4',Georgia,serif;line-height:1.72}.progress{position:fixed;top:0;left:0;height:2px;width:100%;background:linear-gradient(90deg,var(--accent),#ff6b5f);z-index:10}.container{max-width:760px;margin:0 auto;padding:56px 22px 72px}.masthead{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:58px;font-family:'IBM Plex Mono',monospace;color:var(--text-muted);font-size:12px;text-transform:uppercase;letter-spacing:.16em}.logo{color:var(--text-primary);font-weight:700}.logo span{color:var(--accent)}.episode{font-family:'IBM Plex Mono',monospace;color:var(--accent-secondary);font-size:12px;text-transform:uppercase;letter-spacing:.22em;margin-bottom:18px}h1{font-family:'Playfair Display',serif;font-size:clamp(52px,10vw,96px);line-height:.9;margin:0 0 22px;letter-spacing:-.06em}h1 em{font-style:normal;color:var(--accent)}.subtitle{font-size:24px;line-height:1.35;color:var(--text-secondary);font-style:italic;margin:0 0 26px}.badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(200,55,45,.35);border-radius:999px;padding:9px 14px;font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--text-secondary)}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}article{margin-top:58px}.section-break{display:flex;align-items:center;gap:16px;margin:48px 0 28px;font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--text-muted)}.section-break:before,.section-break:after{content:"";height:1px;background:var(--border);flex:1}p{font-size:20px;margin:0 0 24px}.lead{font-size:24px;color:var(--text-primary)}.emphasis{border-left:3px solid var(--accent);padding-left:24px;color:var(--text-secondary);font-style:italic}.action{background:rgba(22,22,26,.82);border:1px solid var(--border);border-left:3px solid var(--accent-secondary);border-radius:0 18px 18px 0;padding:22px 24px;margin:22px 0}.action-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-secondary);font-weight:700;margin-bottom:8px}.action p{font-size:18px;margin:0;color:var(--text-secondary)}.sources{margin-top:64px;border-top:1px solid var(--border);padding-top:28px}.sources h2{font-family:'IBM Plex Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.22em;color:var(--text-muted)}.source-item{display:block;color:var(--text-secondary);font-size:16px;margin:12px 0;text-decoration:none}.source-item strong{color:var(--text-primary)}.signoff{text-align:center;margin-top:56px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted)}@media(max-width:640px){.masthead{display:block}.dateline{margin-top:10px}p{font-size:18px}.lead,.subtitle{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+<main class="container">
+<header>
+<div class="masthead"><div class="logo">Cyber<span>Pulse</span></div><div class="dateline">Wednesday · June 10 · 2026</div></div>
+<div class="episode">Threat Intelligence Update</div>
+<h1>The Recovery <em>Surface</em></h1>
+<p class="subtitle">The systems designed to restore business are becoming part of the attacker’s leverage model.</p>
+<div class="badge"><span class="dot"></span>Operational Threat Intelligence</div>
+</header>
+<article>
+<p class="lead">Today’s briefing is about the systems enterprises count on after something goes wrong: backup platforms, remote access gateways, code repositories, browsers, and development workflows. The sharper signal is not one exploit. It is the widening recovery surface.</p>
+<p class="emphasis">For enterprise security teams across the Gulf, the uncomfortable question is simple: if the tools designed to restore business become reachable, over-privileged, or slow to govern, how much resilience is real?</p>
+<div class="section-break">Backup becomes leverage</div>
+<p>Veeam issued fixes for a critical Backup &amp; Replication flaw, CVE-2026-44963, that reporting says can allow a domain user to trigger remote code execution against affected deployments. Backup systems are not ordinary servers. They hold credentials, replication paths, recovery copies, and the operational promise that ransomware will not become a business shutdown.</p>
+<p>If an ordinary domain account can become a path into the recovery layer, the incident has already crossed from compromise into coercion. This is why backup platforms should be managed like privileged infrastructure, not like storage utilities.</p>
+<div class="section-break">Remote access is under pressure</div>
+<p>Check Point warned that a critical authentication bypass in remote access and mobile access technology has been exploited in the wild, including by a ransomware affiliate. Remote access systems sit where identity, device posture, emergency connectivity, and third-party operations meet.</p>
+<p>The business impact is therefore not limited to one gateway. It challenges whether access decisions are segmented enough to survive credential theft, stolen sessions, and urgent operational exceptions.</p>
+<div class="section-break">Browsers and repositories widen the blast radius</div>
+<p>Google pushed an emergency Chrome update for a V8 zero-day, CVE-2026-11645, already exploited in the wild. A browser flaw is rarely just a desktop issue anymore. It is a route into privileged web sessions, developer consoles, finance platforms, help desks, and software-as-a-service administration.</p>
+<p>A major software vendor also restored some code repositories after a security incident involving dozens of open-source projects that were reportedly modified to inject an information stealer. The lesson is not that every repository is unsafe. The lesson is that trusted collaboration space can become a distribution layer before downstream teams notice.</p>
+<div class="section-break">Development velocity is outpacing governance</div>
+<p>Two governance stories round out the day. Infosecurity reported that three quarters of firms deploy vulnerable code under pressure, while separate coverage found near-universal adoption of artificial intelligence coding assistants with far weaker governance.</p>
+<p>That combination is dangerous. Assisted development can increase throughput, but if review discipline, dependency checks, and secure design gates do not scale with it, the organization has simply accelerated the production of unresolved risk.</p>
+<div class="section-break">Today’s actions</div>
+<div class="action"><div class="action-label">P0 · Recovery infrastructure</div><p>Inventory backup and recovery platforms, confirm the Veeam fix status, restrict management reachability, and review whether ordinary domain users have any route to sensitive backup functions.</p></div>
+<div class="action"><div class="action-label">P1 · Access and browser exposure</div><p>Emergency-review exposed remote access appliances and browser update compliance. Prioritize systems used by administrators, developers, finance, and managed service teams.</p></div>
+<div class="action"><div class="action-label">P2 · Development governance</div><p>Require code-signing and provenance checks for critical builds, isolate secrets from developer endpoints, and create a clear approval path for artificial intelligence assisted code in production systems.</p></div>
+<p class="emphasis">The executive takeaway: resilience is no longer proven by having backups, gateways, repositories, and secure coding policies. It is proven by whether those layers can resist becoming the next escalation path.</p>
+</article>
+<section class="sources">
+<h2>Sources</h2>
+<a class="source-item" href="https://thehackernews.com/2026/06/veeam-backup-replication-rce-flaw-lets.html"><strong>The Hacker News</strong> — Veeam Backup &amp; Replication RCE flaw lets domain users run remote code</a>
+<a class="source-item" href="https://www.cybersecuritydive.com/news/check-point-zero-day-ransomware/822372/"><strong>Cybersecurity Dive</strong> — Check Point warns of zero-day flaw targeted by ransomware affiliate</a>
+<a class="source-item" href="https://www.infosecurity-magazine.com/news/check-point-critical-auth-bypass/"><strong>Infosecurity Magazine</strong> — Critical authentication bypass exploited in the wild</a>
+<a class="source-item" href="https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html"><strong>The Hacker News</strong> — Chrome V8 zero-day exploited in the wild</a>
+<a class="source-item" href="https://www.infosecurity-magazine.com/news/google-patch-chrome-vulnerability/"><strong>Infosecurity Magazine</strong> — Google releases patch for exploited Chrome vulnerability</a>
+<a class="source-item" href="https://thehackernews.com/2026/06/microsoft-restores-some-github-repos.html"><strong>The Hacker News</strong> — Microsoft restores some repositories as probe continues</a>
+<a class="source-item" href="https://www.infosecurity-magazine.com/news/firms-deploy-vulnerable-code/"><strong>Infosecurity Magazine</strong> — Firms deploy vulnerable code under pressure</a>
+<a class="source-item" href="https://www.infosecurity-magazine.com/news/ai-coding-adoption-governance-lags/"><strong>Infosecurity Magazine</strong> — AI coding adoption rises while governance lags</a>
+<a class="source-item" href="https://thehackernews.com/2026/06/new-frost-attack-lets-websites-track.html"><strong>The Hacker News</strong> — FROST side-channel research tracks app and site activity</a>
+</section>
+<div class="signoff">CyberPulse Daily Brief · Wednesday, June 10, 2026 · Stay vigilant</div>
+</main>
+</body>
+</html>
