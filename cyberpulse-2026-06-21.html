@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPulse Daily — Secrets in Plain Sight</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,650&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0a0c;
+      --bg-card: #16161a;
+      --text-primary: #e8e6e3;
+      --text-secondary: #9a9a9e;
+      --text-muted: #5a5a5e;
+      --accent: #c8372d;
+      --accent-secondary: #e8a634;
+      --border: rgba(232, 230, 227, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(circle at top, #171014 0, var(--bg-primary) 42%); color: var(--text-primary); font-family: 'Source Serif 4', Georgia, serif; line-height: 1.72; }
+    .progress { position: fixed; top: 0; left: 0; height: 2px; width: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-secondary)); z-index: 20; transform-origin: left; animation: progress 1s ease-out; }
+    @keyframes progress { from { transform: scaleX(.18); } to { transform: scaleX(1); } }
+    .container { max-width: 760px; margin: 0 auto; padding: 56px 22px 72px; }
+    header { padding-bottom: 34px; border-bottom: 1px solid var(--border); animation: fade .75s ease-out both; }
+    @keyframes fade { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .masthead { display: flex; justify-content: space-between; gap: 24px; align-items: center; font-family: 'IBM Plex Mono', monospace; color: var(--text-muted); text-transform: uppercase; font-size: 12px; letter-spacing: 1.8px; }
+    .logo { color: var(--accent); font-weight: 600; }
+    .episode-label { margin-top: 52px; font-family: 'IBM Plex Mono', monospace; color: var(--accent-secondary); text-transform: uppercase; font-size: 12px; letter-spacing: 2.2px; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(50px, 9vw, 86px); line-height: .92; margin: 16px 0 22px; letter-spacing: -2.5px; }
+    h1 em { color: var(--accent); font-style: normal; }
+    .subtitle { color: var(--text-secondary); font-style: italic; font-size: 21px; line-height: 1.45; max-width: 690px; }
+    .badge { display: inline-flex; align-items: center; gap: 10px; margin-top: 26px; padding: 9px 13px; border: 1px solid rgba(200,55,45,.45); border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 1.4px; color: var(--text-secondary); text-transform: uppercase; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 18px var(--accent); animation: pulse 1.9s infinite; }
+    @keyframes pulse { 50% { opacity: .45; transform: scale(.82); } }
+    main { padding-top: 38px; }
+    p { font-size: 19px; margin: 0 0 24px; }
+    .lead { font-size: 22px; color: #f2efeb; }
+    .emphasis { border-left: 3px solid var(--accent); padding-left: 24px; color: var(--text-secondary); font-style: italic; }
+    .break { display: flex; align-items: center; gap: 16px; margin: 48px 0 28px; font-family: 'IBM Plex Mono', monospace; color: var(--accent); text-transform: uppercase; font-size: 11px; letter-spacing: 2px; }
+    .break:before, .break:after { content: ''; height: 1px; background: var(--border); flex: 1; }
+    .action { background: var(--bg-card); border: 1px solid var(--border); border-left: 3px solid var(--accent-secondary); border-radius: 0 14px 14px 0; padding: 22px 24px; margin: 22px 0; }
+    .action-label { font-family: 'IBM Plex Mono', monospace; color: var(--accent-secondary); text-transform: uppercase; font-size: 11px; letter-spacing: 2px; margin-bottom: 9px; }
+    .action p { margin: 0; font-size: 18px; }
+    .sources { margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--border); }
+    .sources h2 { font-family: 'IBM Plex Mono', monospace; color: var(--text-muted); text-transform: uppercase; font-size: 12px; letter-spacing: 2px; }
+    .source-item { display: block; color: var(--text-secondary); text-decoration: none; margin: 13px 0; font-size: 16px; }
+    .source-item strong { color: var(--text-primary); }
+    .signoff { margin-top: 50px; text-align: center; font-family: 'IBM Plex Mono', monospace; color: var(--text-muted); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; }
+    @media (max-width: 640px) { .masthead { align-items: flex-start; flex-direction: column; } p { font-size: 18px; } .container { padding-top: 36px; } }
+  </style>
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="container">
+    <header>
+      <div class="masthead"><div class="logo">CyberPulse</div><div>Sunday · June 21, 2026</div></div>
+      <div class="episode-label">Threat Intelligence Update</div>
+      <h1>Secrets in <em>Plain Sight</em></h1>
+      <p class="subtitle">This morning’s strongest signal is not a single spectacular intrusion. It is the operational leverage leaking through ordinary business systems: plugins, edge accounts, collaboration channels, developer lures, and security tools under pressure.</p>
+      <div class="badge"><span class="dot"></span>Operational Threat Intelligence</div>
+    </header>
+
+    <main>
+      <p class="lead">For enterprise security teams across the Gulf, the weekend’s reporting points to a blunt operating reality: attackers are finding value where ownership is weakest. A medium-severity plugin flaw can expose high-value tokens. A forgotten appliance account can become perimeter access. A collaboration channel with thin telemetry can become an approval path. A security tool can become the first thing attackers disable.</p>
+
+      <p>That makes today’s thesis simple. Secret inventory is no longer a background hygiene task. It is a frontline resilience control. Every application programming interface key, OAuth token, local administrator identity, mail connector, notification workflow, and privileged integration must be treated as an asset with ownership, rotation, monitoring, and a tested failure plan.</p>
+
+      <div class="break">Web layer exposure</div>
+
+      <p>A recently patched Gravity SMTP flaw for WordPress is being actively exploited to expose configuration data, application programming interface keys, secrets, and OAuth tokens. The issue was rated medium severity, but that label understates the operational consequence. If a public endpoint can return connector data, the exposed website becomes a route into mail delivery, customer notifications, workflow automation, and any service trusted by those credentials.</p>
+
+      <p class="emphasis">The lesson is not “patch the plugin” and move on. The lesson is to assume the secret has left the building until rotation, downstream log review, and integration scoping prove otherwise.</p>
+
+      <div class="break">Perimeter identity</div>
+
+      <p>Security reporting also described tens of thousands of exposed or compromised Fortinet edge devices in a campaign where default, built-in, generic, and organization-created accounts all matter. The account mix is the strategic detail. Attackers are not only exploiting weak appliances; they are pairing appliance exposure with credential reuse, stale local identities, and administrative shortcuts that should have been removed years ago.</p>
+
+      <p>For CISOs, this turns perimeter hardening into an identity governance test. The question is not whether a device is on the patch calendar. The question is whether every internet-facing administration surface has named ownership, enforced multi-factor authentication, disabled default identities, rotated local credentials, and telemetry that proves those controls are working.</p>
+
+      <div class="break">Defense evasion</div>
+
+      <p>The ransomware ecosystem is reinforcing the same message from the other side of the kill chain. A fast-moving ransomware service has been documented maintaining a portfolio of endpoint detection and response killers, including tooling that imitates security vendors and rapidly operationalizes newly public vulnerable-driver techniques. Affiliates are being equipped to blind defenders before the disruptive phase begins.</p>
+
+      <p>This is where resilience becomes measurable. Security operations teams need a controlled exercise that answers three questions: can they detect endpoint protection termination, can controls withstand vulnerable-driver abuse, and can containment continue when first-line endpoint visibility degrades?</p>
+
+      <div class="break">Abused channels</div>
+
+      <p>The web ecosystem remains a durable distribution layer. An international disruption removed SocGholish infrastructure and cleaned nearly fifteen thousand infected WordPress sites, showing both the value of coordinated takedowns and the persistence of neglected websites as criminal launch points. Attackers do not need every site to be sophisticated; they need enough unowned sites to keep redirect chains, fake updates, credential theft, and initial access moving.</p>
+
+      <p>Human channels show a similar gap. Survey data from Infosecurity Magazine reports that many security leaders lack strong confidence detecting threats across messaging, social, and collaboration platforms even as attacks move beyond email. That matters because approvals, escalation, vendor support, and finance workflows increasingly live in those channels. Controls that are mature in email but immature in chat invite attackers to route around the strongest gate.</p>
+
+      <p>Developer targeting is also adopting the language of legitimacy. A crypto-stealing campaign used fake project popularity, fabricated stars, inflated download counts, and narrated tutorial videos to make malicious tools look useful. The immediate target set may be retail-facing, but the method is enterprise relevant: manufactured social proof is becoming part of malware distribution.</p>
+
+      <div class="break">Action agenda</div>
+
+      <div class="action"><div class="action-label">P0 · Secret exposure response</div><p>Inventory and rotate secrets tied to internet-facing content systems, mail connectors, automation workflows, customer notification paths, and cloud integrations. Treat plugin exploitation as credential exposure until log review and downstream service validation prove otherwise.</p></div>
+
+      <div class="action"><div class="action-label">P1 · Edge identity reset</div><p>Review every internet-facing edge administration identity. Remove defaults, disable shared and generic accounts, enforce multi-factor authentication, rotate local credentials, restrict management paths, and validate logs for successful and failed administrative access.</p></div>
+
+      <div class="action"><div class="action-label">P2 · Visibility failure drill</div><p>Run a controlled exercise for endpoint protection termination, vulnerable-driver abuse, and collaboration-channel phishing. Measure whether alerting, containment, backup access, and executive escalation still work when the first defensive layer goes quiet.</p></div>
+
+      <p class="emphasis">The next material incident may not begin with a spectacular breach. It may begin with a secret nobody owned, an administrator account nobody retired, or a chat channel nobody monitored.</p>
+
+      <section class="sources">
+        <h2>Sources</h2>
+        <a class="source-item" href="https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html"><strong>The Hacker News</strong> — Hackers Exploit Gravity SMTP WordPress Plugin Bug to Expose API Keys</a>
+        <a class="source-item" href="https://thehackernews.com/2026/06/cisa-warns-fortinet-customers-as.html"><strong>The Hacker News</strong> — FortiBleed Hits 86,644 FortiGate Devices</a>
+        <a class="source-item" href="https://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html"><strong>The Hacker News</strong> — The Gentlemen RaaS Uses GentleKiller EDR Framework Targeting 400 Security Processes</a>
+        <a class="source-item" href="https://thehackernews.com/2026/06/operation-endgame-disrupts-socgholish.html"><strong>The Hacker News</strong> — Operation Endgame Disrupts SocGholish Servers, Cleans 14,971 WordPress Sites</a>
+        <a class="source-item" href="https://www.infosecurity-magazine.com/news/threat-detection-across-nonemail/"><strong>Infosecurity Magazine</strong> — Confidence Lacks in Threat Detection Across Non-Email Channels</a>
+        <a class="source-item" href="https://www.infosecurity-magazine.com/news/crypto-clipboard-hijacker-fake/"><strong>Infosecurity Magazine</strong> — Fake GitHub Stars and AI Videos Mask a Crypto Clipper</a>
+        <a class="source-item" href="https://www.infosecurity-magazine.com/news/aws-continuum-ai-vulnerability/"><strong>Infosecurity Magazine</strong> — AWS Unveils a New AI-Powered Vulnerability Management Platform</a>
+      </section>
+
+      <div class="signoff">CyberPulse Daily Brief · Sunday, June 21, 2026 · Stay vigilant</div>
+    </main>
+  </div>
+</body>
+</html>
