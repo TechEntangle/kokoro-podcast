@@ -206,5 +206,9 @@
   "Secrets_in_Plain_Sight.mp3": {
     "description": "Today’s CyberPulse Daily Brief connects plugin-exposed tokens, edge-device credential abuse, ransomware defense evasion, abused web infrastructure, collaboration-channel visibility gaps, developer social-proof lures, and agentic remediation governance. The central thesis: enterprise risk is increasingly shaped by machine secrets, unmanaged identities, and ordinary business channels that quietly convert exposure into operational leverage.",
     "urls": "https://thehackernews.com/2026/06/hackers-exploit-gravity-smtp-wordpress.html\nhttps://thehackernews.com/2026/06/cisa-warns-fortinet-customers-as.html\nhttps://thehackernews.com/2026/06/the-gentlemen-raas-uses-gentlekiller.html\nhttps://thehackernews.com/2026/06/operation-endgame-disrupts-socgholish.html\nhttps://www.infosecurity-magazine.com/news/threat-detection-across-nonemail/\nhttps://www.infosecurity-magazine.com/news/crypto-clipboard-hijacker-fake/\nhttps://www.infosecurity-magazine.com/news/aws-continuum-ai-vulnerability/\nhttps://tusharvartak.com/posts/2026-06-21.html"
+  },
+  "The_Defender_Is_in_Scope.mp3": {
+    "description": "Today’s brief examines a fresh operational pattern: attackers are increasingly targeting the tools, tokens, proxies, plugins, and AI workspaces enterprises rely on to defend and coordinate response. The action priority is resilience of the defensive layer itself — tamper resistance, delegated-access governance, and critical ownership for security infrastructure.",
+    "urls": "https://tusharvartak.com/posts/2026-06-23.html"
   }
 }

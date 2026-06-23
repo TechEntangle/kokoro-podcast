@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPulse Daily — The Defender Is in Scope</title>
+  <meta name="description" content="CyberPulse Daily Brief for June 23, 2026: attackers are increasingly targeting the defensive layer itself — security tooling, OAuth grants, plugins, AI tenancy, and proxy infrastructure." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0a0c;
+      --bg-card: #16161a;
+      --text-primary: #e8e6e3;
+      --text-secondary: #9a9a9e;
+      --text-muted: #5a5a5e;
+      --accent: #c8372d;
+      --accent-secondary: #e8a634;
+      --border: rgba(232,230,227,0.12);
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: radial-gradient(circle at 50% -20%, rgba(200,55,45,0.16), transparent 32rem), var(--bg-primary); color: var(--text-primary); font-family: 'Source Serif 4', serif; line-height: 1.72; }
+    .progress { position: fixed; top: 0; left: 0; height: 2px; width: 100%; background: linear-gradient(90deg, var(--accent), #ff7b6f); z-index: 20; transform-origin: left; animation: grow 1.4s ease-out; }
+    @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .container { max-width: 760px; margin: 0 auto; padding: 56px 22px 72px; }
+    header { padding: 34px 0 44px; border-bottom: 1px solid var(--border); animation: fade 900ms ease both; }
+    @keyframes fade { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .masthead { display: flex; justify-content: space-between; gap: 24px; align-items: center; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-secondary); font-size: 12px; }
+    .logo { color: var(--text-primary); font-weight: 700; }
+    .logo span { color: var(--accent); }
+    .episode { margin-top: 42px; font-family: 'IBM Plex Mono', monospace; color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 0.18em; font-size: 12px; font-weight: 700; }
+    h1 { margin: 14px 0 16px; font-family: 'Playfair Display', serif; font-size: clamp(46px, 9vw, 82px); line-height: 0.9; font-weight: 900; letter-spacing: -0.055em; }
+    h1 em { color: var(--accent); font-style: normal; }
+    .subtitle { margin: 0; color: var(--text-secondary); font-size: 21px; font-style: italic; line-height: 1.45; }
+    .badge { display: inline-flex; align-items: center; gap: 10px; margin-top: 26px; padding: 9px 13px; border: 1px solid rgba(200,55,45,0.34); border-radius: 999px; color: var(--text-secondary); font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+    .dot { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 16px rgba(200,55,45,0.9); }
+    main { padding-top: 36px; }
+    p { font-size: 19px; margin: 0 0 24px; }
+    .lead { font-size: 23px; line-height: 1.55; color: #f0eeea; }
+    .emphasis { border-left: 3px solid var(--accent); padding-left: 24px; margin: 34px 0; color: #f3e7df; font-style: italic; }
+    .section-break { display: flex; align-items: center; gap: 16px; margin: 44px 0 28px; color: var(--accent); font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.19em; font-weight: 700; }
+    .section-break::before, .section-break::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .action { background: rgba(22,22,26,0.86); border: 1px solid var(--border); border-left: 3px solid var(--accent-secondary); border-radius: 0 12px 12px 0; padding: 20px 22px; margin: 18px 0; }
+    .action-label { display: block; color: var(--accent-secondary); font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 700; margin-bottom: 8px; }
+    .action p { margin: 0; font-size: 17px; color: var(--text-primary); }
+    footer { margin-top: 54px; padding-top: 34px; border-top: 1px solid var(--border); }
+    .sources h2 { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-secondary); margin: 0 0 16px; }
+    .source-item { display: block; padding: 12px 0; border-top: 1px solid rgba(232,230,227,0.08); color: var(--text-secondary); text-decoration: none; font-size: 15px; }
+    .source-item strong { color: var(--text-primary); }
+    .source-item:hover { color: var(--text-primary); }
+    .signoff { margin-top: 38px; text-align: center; color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
+    @media (max-width: 640px) { .container { padding: 36px 18px 56px; } .masthead { align-items: flex-start; flex-direction: column; gap: 8px; } p { font-size: 18px; } .lead { font-size: 21px; } }
+  </style>
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="container">
+    <header>
+      <div class="masthead">
+        <div class="logo">Cyber<span>Pulse</span></div>
+        <div>Tuesday · June 23 · 2026</div>
+      </div>
+      <div class="episode">Threat Intelligence Update</div>
+      <h1>The Defender Is <em>in Scope</em></h1>
+      <p class="subtitle">The morning signal is not merely that business applications are exposed. It is that the defensive layer itself is being tested, bypassed, borrowed, and blinded.</p>
+      <div class="badge"><span class="dot"></span> Operational Threat Intelligence</div>
+    </header>
+
+    <main>
+      <p class="lead">Attackers are increasingly aiming at the systems enterprises rely on to investigate, authenticate, filter, proxy, and clean up the damage. That moves today’s risk discussion from perimeter exposure to defensive survivability.</p>
+
+      <p>Security software is being disabled before extortion begins. OAuth tokens are becoming intrusion pivots. AI workspaces are leaking conversations across tenants. Plugin updates are turning into delivery channels. Long-lived proxy infrastructure is reminding defenders that inspection systems can also become evidence exposure.</p>
+
+      <p class="emphasis">For enterprise teams across the Gulf, the uncomfortable question is no longer only whether the business application is exposed. It is whether the defensive layer can survive first contact.</p>
+
+      <div class="section-break">The blindfold tactic</div>
+
+      <p>Fresh reporting describes a ransomware-aligned framework designed to disable victim security tools before the main extortion sequence begins. The strategic implication is blunt: many incident response plans assume telemetry remains reliable during the incident. That assumption is now a risk item.</p>
+
+      <p>If the first move is to suppress endpoint protection, reduce security operations center visibility, and force responders into partial evidence, containment becomes a governance problem as much as a technical one. Executives need to know which defensive controls are tamper-resistant, which privileged changes are independently logged, and which recovery decisions can proceed when primary tooling is degraded.</p>
+
+      <div class="section-break">Delegated access becomes leverage</div>
+
+      <p>A separate report on a breach at a competitive-intelligence platform points to a sharper identity issue: OAuth tokens can give attackers a path into adjacent vendors and connected organizations. The lesson is not limited to one platform. Delegated access is now a silent inventory of business trust.</p>
+
+      <p>Tokens, integrations, browser sessions, marketplace connectors, and third-party workflows often move faster than the contract owners who approved them. When those permissions are not mapped, expired, and monitored, incident teams discover the real shape of the enterprise during the incident itself.</p>
+
+      <div class="section-break">The update path and the AI workspace</div>
+
+      <p>Software supply-chain risk also remains active. Multiple commercial WordPress plugins were reported backdoored after a supply-chain compromise, creating exposure for sites that believed they were merely consuming routine updates. For the region, that is not just a web-team problem. Customer portals, investor pages, campaign microsites, and recruitment journeys carry brand, data, and payment context even when they sit outside the core application estate.</p>
+
+      <p>At the same time, researchers detailed flaws in an open-source AI application platform that could expose chat data across tenants. Boards should treat that as a governance signal. AI pilots are not isolated experiments if they contain customer context, internal prompts, credentials, operational reasoning, or sensitive documents. Multi-tenant boundaries and workspace isolation require the same discipline as finance and identity systems.</p>
+
+      <div class="section-break">Old infrastructure still speaks</div>
+
+      <p>A decades-old proxy flaw, now described publicly as Squidbleed, can leak cleartext HTTP requests under certain conditions. The point is not nostalgia. Inspection, caching, and proxy infrastructure often has long life, broad visibility, and weak ownership. When those systems fail, they may expose the traffic they were meant to mediate.</p>
+
+      <p>Continuing fallout around network-device exposure and boot-chain research on mobile hardware reinforces the operational split leaders must maintain: some risks are patchable, some require compensating controls, and some demand replacement, isolation, or reduced trust.</p>
+
+      <div class="section-break">Today’s priorities</div>
+
+      <div class="action">
+        <span class="action-label">P0 · Defender survivability</span>
+        <p>Validate tamper resistance for endpoint, identity, logging, and backup controls. Confirm protected settings, independent logs, break-glass access, and recovery decisions that work even when primary telemetry is degraded.</p>
+      </div>
+
+      <div class="action">
+        <span class="action-label">P1 · Delegated-access governance</span>
+        <p>Inventory OAuth grants, service integrations, marketplace plugins, browser sessions, and third-party tokens tied to security, collaboration, customer, and web operations. Revoke stale grants and alert on unusual token use.</p>
+      </div>
+
+      <div class="action">
+        <span class="action-label">P2 · Critical ownership</span>
+        <p>Classify defensive infrastructure as business-critical. Proxies, security agents, AI workspaces, web plugins, and management dashboards need named owners, resilience tests, and recovery playbooks.</p>
+      </div>
+
+      <p class="emphasis">If the defensive layer is fragile, the enterprise is not merely exposed. It is negotiating with an attacker while wearing a blindfold.</p>
+    </main>
+
+    <footer>
+      <div class="sources">
+        <h2>Sources</h2>
+        <a class="source-item" href="https://www.infosecurity-magazine.com/news/gentlekiller-gentlemen-ransomware/"><strong>Infosecurity Magazine</strong> — framework reported disabling security software</a>
+        <a class="source-item" href="https://www.infosecurity-magazine.com/news/klue-breach-compromise/"><strong>Infosecurity Magazine</strong> — OAuth-token abuse after platform breach</a>
+        <a class="source-item" href="https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html"><strong>The Hacker News</strong> — commercial plugin supply-chain compromise</a>
+        <a class="source-item" href="https://thehackernews.com/2026/06/researchers-detail-difytap-flaws-in.html"><strong>The Hacker News</strong> — AI workspace tenancy flaws</a>
+        <a class="source-item" href="https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html"><strong>The Hacker News</strong> — proxy request-leakage issue</a>
+        <a class="source-item" href="https://www.infosecurity-magazine.com/news/ncsc-fortinet-customers-tackle/"><strong>Infosecurity Magazine</strong> — residual network-device exposure</a>
+        <a class="source-item" href="https://www.infosecurity-magazine.com/news/apple-bootrom-exploit-a12-a13/"><strong>Infosecurity Magazine</strong> — boot-chain hardware research</a>
+        <a class="source-item" href="https://research.checkpoint.com/2026/22nd-june-threat-intelligence-report/"><strong>Check Point Research</strong> — weekly threat-intelligence context</a>
+      </div>
+      <div class="signoff">CyberPulse Daily Brief · Tuesday, June 23, 2026 · Stay vigilant.</div>
+    </footer>
+  </div>
+</body>
+</html>
