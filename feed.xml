@@ -24,6 +24,19 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Credential Float</title>
+      <description>Today’s briefing argues that access is becoming liquid: credentials, workflow permissions, build authority, and agentic browser sessions are moving faster than governance can reconcile them. For Gulf security teams, the priority is to freeze reusable access, map where credentials travel, and measure containment speed before exposed identity becomes operational leverage.</description>
+      <content:encoded><![CDATA[<p>Today’s briefing argues that access is becoming liquid: credentials, workflow permissions, build authority, and agentic browser sessions are moving faster than governance can reconcile them. For Gulf security teams, the priority is to freeze reusable access, map where credentials travel, and measure containment speed before exposed identity becomes operational leverage.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-25.html">https://tusharvartak.com/posts/2026-06-25.html</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Credential_Float.mp3" length="8020424" type="audio/mpeg" />
+      <guid isPermaLink="false">056d763023af5921b5efac3b1187584c</guid>
+      <pubDate>Thu, 25 Jun 2026 04:05:27 +0000</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>67</itunes:episode>
+    </item>
+    <item>
       <title>The Defender Is in Scope</title>
       <description>Today’s brief examines a fresh operational pattern: attackers are increasingly targeting the tools, tokens, proxies, plugins, and AI workspaces enterprises rely on to defend and coordinate response. The action priority is resilience of the defensive layer itself — tamper resistance, delegated-access governance, and critical ownership for security infrastructure.</description>
       <content:encoded><![CDATA[<p>Today’s brief examines a fresh operational pattern: attackers are increasingly targeting the tools, tokens, proxies, plugins, and AI workspaces enterprises rely on to defend and coordinate response. The action priority is resilience of the defensive layer itself — tamper resistance, delegated-access governance, and critical ownership for security infrastructure.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-23.html">https://tusharvartak.com/posts/2026-06-23.html</a></li></ul>]]></content:encoded>

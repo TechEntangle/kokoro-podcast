@@ -210,5 +210,9 @@
   "The_Defender_Is_in_Scope.mp3": {
     "description": "Today’s brief examines a fresh operational pattern: attackers are increasingly targeting the tools, tokens, proxies, plugins, and AI workspaces enterprises rely on to defend and coordinate response. The action priority is resilience of the defensive layer itself — tamper resistance, delegated-access governance, and critical ownership for security infrastructure.",
     "urls": "https://tusharvartak.com/posts/2026-06-23.html"
+  },
+  "The_Credential_Float.mp3": {
+    "description": "Today’s briefing argues that access is becoming liquid: credentials, workflow permissions, build authority, and agentic browser sessions are moving faster than governance can reconcile them. For Gulf security teams, the priority is to freeze reusable access, map where credentials travel, and measure containment speed before exposed identity becomes operational leverage.",
+    "urls": "https://tusharvartak.com/posts/2026-06-25.html"
   }
 }
