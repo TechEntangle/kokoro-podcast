@@ -214,5 +214,9 @@
   "The_Credential_Float.mp3": {
     "description": "Today’s briefing argues that access is becoming liquid: credentials, workflow permissions, build authority, and agentic browser sessions are moving faster than governance can reconcile them. For Gulf security teams, the priority is to freeze reusable access, map where credentials travel, and measure containment speed before exposed identity becomes operational leverage.",
     "urls": "https://tusharvartak.com/posts/2026-06-25.html"
+  },
+  "The_Measurement_Failure.mp3": {
+    "description": "This weekend board-level briefing argues that the risk signal is shifting from control presence to adversary conversion: exploitation speed, latent permission, supplier concentration, automation confidence, and infrastructure resilience. The executive question is whether security metrics prove operational reduction of risk or merely report activity.",
+    "urls": "https://tusharvartak.com/posts/2026-06-26.html"
   }
 }
