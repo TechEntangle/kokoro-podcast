@@ -218,5 +218,9 @@
   "The_Measurement_Failure.mp3": {
     "description": "This weekend board-level briefing argues that the risk signal is shifting from control presence to adversary conversion: exploitation speed, latent permission, supplier concentration, automation confidence, and infrastructure resilience. The executive question is whether security metrics prove operational reduction of risk or merely report activity.",
     "urls": "https://tusharvartak.com/posts/2026-06-26.html"
+  },
+  "The_Friction_Budget.mp3": {
+    "description": "This weekend board-level briefing argues that enterprises need a deliberate friction budget: preserving extra review and stronger evidence where convenience can turn recovery, developer automation, local access, remote administration, or supplier dependence into executive risk. The focus is not slowing the business, but making the highest-consequence workflows intentionally harder to abuse.",
+    "urls": "https://tusharvartak.com/posts/2026-06-27.html"
   }
 }

@@ -24,6 +24,19 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Friction Budget</title>
+      <description>This weekend board-level briefing argues that enterprises need a deliberate friction budget: preserving extra review and stronger evidence where convenience can turn recovery, developer automation, local access, remote administration, or supplier dependence into executive risk. The focus is not slowing the business, but making the highest-consequence workflows intentionally harder to abuse.</description>
+      <content:encoded><![CDATA[<p>This weekend board-level briefing argues that enterprises need a deliberate friction budget: preserving extra review and stronger evidence where convenience can turn recovery, developer automation, local access, remote administration, or supplier dependence into executive risk. The focus is not slowing the business, but making the highest-consequence workflows intentionally harder to abuse.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-27.html">https://tusharvartak.com/posts/2026-06-27.html</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Friction_Budget.mp3" length="8462792" type="audio/mpeg" />
+      <guid isPermaLink="false">b8d4a8fdcf50b985360b70a501bbe419</guid>
+      <pubDate>Sat, 27 Jun 2026 04:05:00 +0000</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>69</itunes:episode>
+    </item>
+    <item>
       <title>The Measurement Failure</title>
       <description>This weekend board-level briefing argues that the risk signal is shifting from control presence to adversary conversion: exploitation speed, latent permission, supplier concentration, automation confidence, and infrastructure resilience. The executive question is whether security metrics prove operational reduction of risk or merely report activity.</description>
       <content:encoded><![CDATA[<p>This weekend board-level briefing argues that the risk signal is shifting from control presence to adversary conversion: exploitation speed, latent permission, supplier concentration, automation confidence, and infrastructure resilience. The executive question is whether security metrics prove operational reduction of risk or merely report activity.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-26.html">https://tusharvartak.com/posts/2026-06-26.html</a></li></ul>]]></content:encoded>
