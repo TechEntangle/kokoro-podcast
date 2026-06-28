@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CyberPulse Daily — Forty-Eight Hours</title>
+  <meta name="description" content="A CyberPulse Daily Brief on exploitation tempo, persistence hunting, developer execution paths, and recovery-workflow hardening for Gulf enterprises.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg-primary:#0a0a0c;--bg-card:#16161a;--text-primary:#e8e6e3;--text-secondary:#9a9a9e;--text-muted:#5a5a5e;--accent:#c8372d;--accent-secondary:#e8a634;--border:#2a2a30;--glow:rgba(200,55,45,.20)}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#220f0d 0,#0a0a0c 34%,#060607 100%);color:var(--text-primary);font-family:'Source Serif 4',Georgia,serif;line-height:1.72;font-size:18px}.progress{position:fixed;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--accent),#e8a634);z-index:10}.container{max-width:760px;margin:0 auto;padding:54px 24px 72px}.masthead{display:flex;justify-content:space-between;align-items:center;margin-bottom:56px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted)}.logo{color:var(--accent);font-weight:700}.dateline{text-align:right}.episode{font-family:'IBM Plex Mono',monospace;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.18em;font-size:12px;margin-bottom:18px}.headline{font-family:'Playfair Display',serif;font-size:clamp(48px,8vw,84px);line-height:.94;margin:0 0 24px;letter-spacing:-.05em}.headline em{color:var(--accent);font-style:normal;text-shadow:0 0 34px var(--glow)}.subtitle{font-size:24px;line-height:1.42;color:var(--text-secondary);font-style:italic;margin:0 0 26px}.badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(200,55,45,.35);background:rgba(200,55,45,.08);border-radius:999px;padding:9px 14px;font-family:'IBM Plex Mono',monospace;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.12em}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}header{padding-bottom:46px;border-bottom:1px solid var(--border);animation:fade .8s ease-out both}.section-break{display:flex;align-items:center;gap:16px;margin:52px 0 26px;font-family:'IBM Plex Mono',monospace;color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:.18em}.section-break:before,.section-break:after{content:"";height:1px;background:linear-gradient(90deg,transparent,var(--accent));flex:1}.section-break:after{background:linear-gradient(90deg,var(--accent),transparent)}p{margin:0 0 22px}.lead{font-size:22px;color:#f2efec}.emphasis{border-left:3px solid var(--accent);padding-left:24px;font-style:italic;color:#f0d9d5}.action{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-secondary);border-radius:0 16px 16px 0;padding:22px 24px;margin:22px 0}.label{font-family:'IBM Plex Mono',monospace;color:var(--accent-secondary);font-size:11px;text-transform:uppercase;letter-spacing:.18em;font-weight:700;margin-bottom:10px}.sources{margin-top:58px;border-top:1px solid var(--border);padding-top:26px}.sources h2{font-family:'IBM Plex Mono',monospace;color:var(--accent);font-size:13px;text-transform:uppercase;letter-spacing:.18em}.source-item{display:block;color:var(--text-secondary);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.06);padding:12px 0;font-size:15px}.source-item strong{color:var(--text-primary)}.signoff{text-align:center;margin-top:54px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.14em}@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(max-width:640px){body{font-size:17px}.masthead{display:block}.dateline{text-align:left;margin-top:10px}.container{padding:40px 18px 58px}.subtitle{font-size:21px}}
+  </style>
+</head>
+<body>
+  <div class="progress"></div>
+  <main class="container">
+    <header>
+      <div class="masthead"><div class="logo">CyberPulse</div><div class="dateline">Sunday<br>June 28, 2026</div></div>
+      <div class="episode">Threat Intelligence Update</div>
+      <h1 class="headline"><em>Forty-Eight</em> Hours</h1>
+      <p class="subtitle">The board risk is no longer the existence of a vulnerable system. It is whether enterprise decision speed is now slower than attacker operating speed.</p>
+      <div class="badge"><span class="dot"></span> Operational Threat Intelligence</div>
+    </header>
+
+    <section>
+      <div class="section-break">Executive Signal</div>
+      <p class="lead">Forty-eight hours is now long enough for a disclosed weakness to attract public exploit activity, for an engineering platform to receive web shells, for a developer repository to become a command launcher, and for recovery material to turn private coordination into evidence for someone else.</p>
+      <p>The fresh signal for Gulf enterprises is exploitation tempo. This edition deliberately moves away from the last four briefings’ approval, credential, measurement, and friction frames. Today’s operating question is narrower: can the enterprise move from signal to containment before the attacker moves from access to persistence?</p>
+      <p class="emphasis">The leadership failure is not missing every advisory. It is allowing ordinary governance cadence to survive in workflows where the attacker’s cadence is measured in hours.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Persistence Before Closure</div>
+      <p>Fresh reporting on a product lifecycle management platform describes active exploitation of a remote code execution flaw, with web shells appearing even after patches became available. Engineering platforms often hold product data, supplier records, design files, and operational dependencies. They are business-memory systems, not just back-office software.</p>
+      <p>If these systems are internet reachable, weakly segmented, or patched without a hunt for persistence, the enterprise may close the door after the intruder has already installed a handle. The operational priority is evidence of exploitation: unusual child processes, unexpected files, new accounts, suspicious outbound connections, and persistence created before remediation.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Local Access Becomes Root</div>
+      <p>New Linux research details a flaw where cached binaries can be poisoned in memory, enabling root access while file-integrity checks still appear clean. This is not a board debate about kernel internals. It is a reminder that endpoint assurance cannot rely only on disk evidence.</p>
+      <p>Response teams should elevate memory behavior, loaded modules, unusual privilege transitions, and suspicious local escalation attempts into executive risk reporting. Once a local foothold can become privileged control, the business impact changes from device compromise to platform trust erosion.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Developer Execution Paths</div>
+      <p>A recently disclosed flaw in a cloud coding assistant showed how repository configuration could cause local processes to run through model-context settings. The weekend edition treated this as a governance-friction issue. Today’s operational distinction is execution policy.</p>
+      <p>Security teams need to know which repositories are allowed to define tool behavior, which assistant workflows can launch local commands, which plug-ins or model-context files are trusted, and how quickly suspicious helper processes can be contained. In developer environments, project configuration is increasingly close to code execution.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Recovery as Exposure</div>
+      <p>Fresh reporting describes state-linked operators using deceptive support messages to obtain commercial messaging credentials and backup recovery material. The lesson is direct: recovery is part of the attack surface. A recovery key that can reconstruct a conversation deserves the same protection as the conversation itself.</p>
+      <p>Executive chat, legal coordination, crisis rooms, and incident-response channels should not inherit ordinary collaboration backup rules. Regional enterprises should separate high-sensitivity recovery workflows, vault recovery material, rotate exposed keys, and test whether support-style lures can still persuade staff to disclose access material.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Campaign Conversion</div>
+      <p>Reporting on a new loader campaign shows familiar post-exploitation tooling arriving through fresh packaging. The names matter less than the sequence: initial access becomes command execution, beaconing, lateral movement preparation, and hands-on keyboard opportunity. In the same news cycle, a network controller flaw was reportedly exploited months before public disclosure, reminding leaders that risk clocks can start before formal advisories.</p>
+      <p>A major model provider has also previewed tighter cyber safeguards for an advanced release. That belongs in the same brief because offensive discovery and defensive guardrails are now being negotiated at platform scale. Exploit discovery, command execution, and guardrail design are compressing into the same strategic field.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Priority Actions</div>
+      <div class="action"><div class="label">P0 — Hunt Before You Declare Closure</div><p>For engineering lifecycle platforms, exposed management interfaces, and high-value web applications, verify exploitation artifacts before closing remediation. Hunt for web shells, unexpected child processes, new accounts, scheduled tasks, modified service behavior, suspicious outbound traffic, and persistence created before or during patching.</p></div>
+      <div class="action"><div class="label">P1 — Restrict Developer-Side Execution</div><p>Treat repository configuration, model-context files, plug-ins, helper scripts, and assistant-launched commands as production-adjacent risk. Require allow lists, logging, sandboxing, and a containment path for suspicious local processes launched from development tooling.</p></div>
+      <div class="action"><div class="label">P2 — Harden Recovery Workflows</div><p>Rotate and vault messaging recovery keys, separate executive and crisis-channel backups from ordinary collaboration, require extra verification for support-driven recovery requests, and rehearse response if archived communications are exposed.</p></div>
+    </section>
+
+    <section>
+      <div class="section-break">Closing Assessment</div>
+      <p>The board takeaway is not that every alert deserves emergency theater. It is that some clocks are now too short for ordinary governance. Where attackers can move from disclosure to persistence, local access to root, repository clone to command execution, or recovery prompt to archived communications, leadership needs containment motions that are already rehearsed.</p>
+      <p class="emphasis">The next mature metric is not ticket age. It is clock risk: how fast the enterprise can reduce attacker opportunity inside the first forty-eight hours.</p>
+    </section>
+
+    <section class="sources">
+      <h2>Sources</h2>
+      <a class="source-item" href="https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html"><strong>The Hacker News</strong> — active exploitation of engineering lifecycle platform flaw</a>
+      <a class="source-item" href="https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html"><strong>The Hacker News</strong> — Linux pedit COW privilege-escalation research</a>
+      <a class="source-item" href="https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html"><strong>The Hacker News</strong> — developer assistant repository-configuration execution risk</a>
+      <a class="source-item" href="https://thehackernews.com/2026/06/ukraine-says-russian-intelligence-used.html"><strong>The Hacker News</strong> — messaging credential and recovery-material targeting</a>
+      <a class="source-item" href="https://thehackernews.com/2026/06/new-sharkloader-malware-deploys-cobalt.html"><strong>The Hacker News</strong> — loader malware and post-exploitation tooling</a>
+      <a class="source-item" href="https://www.infosecurity-magazine.com/news/cisco-vulnerability-exploited/"><strong>Infosecurity Magazine</strong> — network controller flaw exploited before disclosure</a>
+      <a class="source-item" href="https://thehackernews.com/2026/06/openai-limits-gpt-56-rollout-as-sol.html"><strong>The Hacker News</strong> — advanced model release with tighter cyber safeguards</a>
+      <a class="source-item" href="https://www.infosecurity-magazine.com/news/macos-xpc-flaw-disable-edr-mdm/"><strong>Infosecurity Magazine</strong> — endpoint management bypass research</a>
+    </section>
+
+    <div class="signoff">CyberPulse Daily Brief • Sunday, June 28, 2026 • Stay vigilant</div>
+  </main>
+</body>
+</html>

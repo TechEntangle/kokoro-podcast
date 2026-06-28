@@ -24,6 +24,19 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>Forty-Eight Hours</title>
+      <description>Today’s operational brief argues that Gulf enterprises must manage exploitation tempo as a board-level risk: attackers are compressing the time from disclosure, repository trust, local foothold, and recovery abuse into persistence and privileged control. The action model is clock-risk thinking: hunt for exploitation, restrict developer execution paths, and harden recovery workflows.</description>
+      <content:encoded><![CDATA[<p>Today’s operational brief argues that Gulf enterprises must manage exploitation tempo as a board-level risk: attackers are compressing the time from disclosure, repository trust, local foothold, and recovery abuse into persistence and privileged control. The action model is clock-risk thinking: hunt for exploitation, restrict developer execution paths, and harden recovery workflows.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-28.html">https://tusharvartak.com/posts/2026-06-28.html</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Forty-Eight_Hours.mp3" length="8639048" type="audio/mpeg" />
+      <guid isPermaLink="false">a2d298729bde42d054a076fb27869b93</guid>
+      <pubDate>Sun, 28 Jun 2026 04:05:33 +0000</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>70</itunes:episode>
+    </item>
+    <item>
       <title>The Friction Budget</title>
       <description>This weekend board-level briefing argues that enterprises need a deliberate friction budget: preserving extra review and stronger evidence where convenience can turn recovery, developer automation, local access, remote administration, or supplier dependence into executive risk. The focus is not slowing the business, but making the highest-consequence workflows intentionally harder to abuse.</description>
       <content:encoded><![CDATA[<p>This weekend board-level briefing argues that enterprises need a deliberate friction budget: preserving extra review and stronger evidence where convenience can turn recovery, developer automation, local access, remote administration, or supplier dependence into executive risk. The focus is not slowing the business, but making the highest-consequence workflows intentionally harder to abuse.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-06-27.html">https://tusharvartak.com/posts/2026-06-27.html</a></li></ul>]]></content:encoded>

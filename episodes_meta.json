@@ -222,5 +222,9 @@
   "The_Friction_Budget.mp3": {
     "description": "This weekend board-level briefing argues that enterprises need a deliberate friction budget: preserving extra review and stronger evidence where convenience can turn recovery, developer automation, local access, remote administration, or supplier dependence into executive risk. The focus is not slowing the business, but making the highest-consequence workflows intentionally harder to abuse.",
     "urls": "https://tusharvartak.com/posts/2026-06-27.html"
+  },
+  "Forty-Eight_Hours.mp3": {
+    "description": "Today’s operational brief argues that Gulf enterprises must manage exploitation tempo as a board-level risk: attackers are compressing the time from disclosure, repository trust, local foothold, and recovery abuse into persistence and privileged control. The action model is clock-risk thinking: hunt for exploitation, restrict developer execution paths, and harden recovery workflows.",
+    "urls": "https://tusharvartak.com/posts/2026-06-28.html"
   }
 }
