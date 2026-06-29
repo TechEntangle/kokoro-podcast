@@ -226,5 +226,9 @@
   "Forty-Eight_Hours.mp3": {
     "description": "Today’s operational brief argues that Gulf enterprises must manage exploitation tempo as a board-level risk: attackers are compressing the time from disclosure, repository trust, local foothold, and recovery abuse into persistence and privileged control. The action model is clock-risk thinking: hunt for exploitation, restrict developer execution paths, and harden recovery workflows.",
     "urls": "https://tusharvartak.com/posts/2026-06-28.html"
+  },
+  "Permission_Receipts.mp3": {
+    "description": "Today’s CyberPulse Daily Brief argues that static access governance is no longer enough. Gulf enterprises need evidence at the moment of action: agent authorization, cloud destination ownership, supplier sessions, recovery events, and remote-access activity must all produce inspectable permission receipts.",
+    "urls": "https://cybersecuritynews.com/redamon-ai-tool/\nhttps://www.helpnetsecurity.com/2026/06/26/proofs-x401-establishes-an-open-protocol-for-ai-agent-identity-and-authorization/\nhttps://cybersecuritynews.com/bucket-hijacking-attack/\nhttps://www.helpnetsecurity.com/2026/06/26/mirage2fa-phishing-kit-microsoft-365-html-smuggling/\nhttps://www.helpnetsecurity.com/2026/06/26/black-kite-european-cyber-threats-report/\nhttps://www.cybersecuritydive.com/news/fcc-emergency-alerts-cybersecurity-requirements/823880/\nhttps://www.cybersecuritydive.com/news/water-utilities-remote-access-nist-guidance/823776/\nhttps://www.helpnetsecurity.com/2026/06/26/akrites-open-source-security-framework/\nhttps://tusharvartak.com/posts/2026-06-29.html"
   }
 }
