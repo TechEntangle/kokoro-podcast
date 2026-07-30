@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CyberPulse Daily — Borrowed Legitimacy</title>
+  <meta name="description" content="A CyberPulse daily threat intelligence brief for Gulf enterprise security leaders on adversary use of legitimate-looking uploads, logins, consoles, automation bridges, fraud infrastructure, and operational controls.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg-primary:#0a0a0c; --bg-card:#16161a; --text-primary:#e8e6e3; --text-secondary:#9a9a9e; --text-muted:#5a5a5e; --accent:#c8372d; --accent-secondary:#e8a634; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top left, rgba(200,55,45,.16), transparent 34rem), var(--bg-primary); color:var(--text-primary); font-family:'Source Serif 4', Georgia, serif; line-height:1.72; }
+    .progress { position:fixed; top:0; left:0; width:100%; height:2px; background:linear-gradient(90deg,var(--accent),transparent); z-index:5; }
+    .container { max-width:760px; margin:0 auto; padding:48px 24px 72px; }
+    header { padding:32px 0 42px; border-bottom:1px solid rgba(232,230,227,.12); animation:fade .7s ease both; }
+    .masthead { display:flex; justify-content:space-between; align-items:center; gap:24px; font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--text-secondary); }
+    .logo { color:var(--text-primary); font-weight:700; }
+    .logo::before { content:''; display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--accent); margin-right:10px; box-shadow:0 0 18px var(--accent); }
+    .label { margin-top:54px; color:var(--accent-secondary); font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:.18em; font-size:12px; font-weight:700; }
+    h1 { margin:14px 0 16px; font-family:'Playfair Display', serif; font-size:clamp(48px, 8vw, 82px); line-height:.92; letter-spacing:-.045em; font-weight:900; }
+    h1 em { color:var(--accent); font-style:normal; }
+    .dek { color:var(--text-secondary); font-size:22px; font-style:italic; line-height:1.45; margin:0; }
+    .badge { display:inline-flex; align-items:center; gap:10px; margin-top:28px; border:1px solid rgba(200,55,45,.42); color:#f0c1bd; border-radius:999px; padding:8px 14px; font-family:'IBM Plex Mono', monospace; font-size:11px; text-transform:uppercase; letter-spacing:.12em; background:rgba(200,55,45,.08); }
+    .badge .dot { width:7px; height:7px; border-radius:50%; background:var(--accent); box-shadow:0 0 16px var(--accent); }
+    p { font-size:19px; margin:24px 0; }
+    .section-break { display:flex; align-items:center; gap:18px; margin:46px 0 22px; font-family:'IBM Plex Mono', monospace; font-size:11px; text-transform:uppercase; letter-spacing:.2em; color:var(--accent); }
+    .section-break::before, .section-break::after { content:''; height:1px; background:rgba(232,230,227,.16); flex:1; }
+    .emphasis { border-left:3px solid var(--accent); padding-left:24px; color:#f0eeeb; font-style:italic; }
+    .action { margin:22px 0; background:var(--bg-card); border:1px solid rgba(232,230,227,.11); border-left:3px solid var(--accent-secondary); border-radius:0 16px 16px 0; padding:20px 22px; }
+    .action-label { display:block; color:var(--accent-secondary); font-family:'IBM Plex Mono', monospace; font-weight:700; font-size:11px; text-transform:uppercase; letter-spacing:.18em; margin-bottom:8px; }
+    .action p { margin:0; font-size:17px; line-height:1.62; }
+    .sources { margin-top:54px; padding-top:28px; border-top:1px solid rgba(232,230,227,.12); }
+    .sources h2 { font-family:'IBM Plex Mono', monospace; font-size:12px; text-transform:uppercase; letter-spacing:.18em; color:var(--text-secondary); }
+    .source-item { display:block; margin:13px 0; color:var(--text-secondary); font-family:'IBM Plex Mono', monospace; font-size:12px; line-height:1.5; text-decoration:none; }
+    .source-item strong { color:var(--text-primary); }
+    .source-item:hover { color:var(--accent-secondary); }
+    footer { margin-top:56px; text-align:center; color:var(--text-muted); font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
+    @keyframes fade { from { opacity:0; transform:translateY(10px);} to { opacity:1; transform:none;} }
+    @media (max-width:640px) { .container { padding:32px 18px 56px; } .masthead { align-items:flex-start; flex-direction:column; } p { font-size:18px; } }
+  </style>
+</head>
+<body>
+  <div class="progress"></div>
+  <main class="container">
+    <header>
+      <div class="masthead">
+        <div class="logo">CyberPulse</div>
+        <div>Thursday · July 30, 2026 · Gulf Brief</div>
+      </div>
+      <div class="label">Threat Intelligence Update</div>
+      <h1>Borrowed <em>Legitimacy</em></h1>
+      <p class="dek">Attackers are converting ordinary-looking business activity — uploads, login pages, consoles, automation bridges, phone farms, and control interfaces — into authority.</p>
+      <div class="badge"><span class="dot"></span>Operational Threat Intelligence</div>
+    </header>
+
+    <section>
+      <div class="section-break">Executive Signal</div>
+      <p>Today’s sharper signal is not a single exploit class. It is adversary use of legitimate-looking paths. A normal image upload becomes a secrets leak. A familiar login page becomes a tailored credential trap. A management console becomes a policy rewrite point. A model-context bridge becomes command execution. A phone farm becomes account creation and takeover capacity at industrial scale.</p>
+      <p class="emphasis">For Gulf enterprises, the uncomfortable question is whether the business can still distinguish legitimate action from adversary use of a legitimate path when speed, outsourcing, and automation are all rising together.</p>
+      <p>The focus today is the legitimacy layer — the places where systems grant authority because an action appears routine. That layer is expanding through customer-facing applications, internal automation, administrative platforms, and outsourced fraud infrastructure.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Application Inputs Become Credentials</div>
+      <p>A critical flaw in a widely used web framework’s storage component can allow unauthenticated attackers to read arbitrary server files through crafted image uploads when specific image-processing configurations are present. The exposed material can include application secrets, database passwords, cloud storage credentials, and application programming interface tokens.</p>
+      <p>The operational consequence is credential conversion. Security teams should not treat the issue as a narrow file-read defect. Once secrets are exposed, downstream cloud storage, connected databases, signing keys, and internal service identities enter the incident scope.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Automation Authority Is Exposed</div>
+      <p>Researchers also disclosed a maximum-severity vulnerability in an open-source agent orchestration harness where hundreds of tools, including shell execution, database operations, agent management, and memory storage, could be reachable through an unauthenticated model-context bridge bound broadly by default.</p>
+      <p>That is not merely an artificial intelligence security curiosity. It is an enterprise authority problem. Automation systems often sit near source code, operations workflows, secrets, and privileged execution paths. If those systems are reachable without strong access control, productivity infrastructure becomes an attacker-operated administration surface.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Consoles and Virtual Estates</div>
+      <p>Fresh critical virtualization-management flaws include authentication bypass, code execution, and virtual machine escape scenarios. Separately, public exploit material is now available for an actively exploited security-management authentication bypass that can grant full administrative privileges where exposure conditions are present.</p>
+      <p>These are high-priority because they sit where enterprises make infrastructure decisions. A compromised console can change policy, alter routing, weaken inspection, or move laterally through systems that defenders normally trust to enforce control.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Deception Looks Native</div>
+      <p>A phishing-as-a-service kit is now building per-victim pages using live screenshots of the target organization’s real website. That shifts the deception model from brand imitation to environment imitation. The user does not just see a familiar logo; the user sees a familiar digital workplace.</p>
+      <p>In parallel, researchers documented off-the-shelf phone-farm kits that lower the cost of account creation, account takeover, social engineering, and fraud operations. The critical issue is credibility at scale: hostile operators can buy infrastructure that looks and behaves like legitimate user activity before a defender sees malware.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Operational Disruption</div>
+      <p>More than thirty community water systems in one regional jurisdiction were targeted in a coordinated cyberattack, with one plant taken offline and others reporting communications or automated-control disruption. The incident is a reminder that local infrastructure risk often appears through connectivity, vendor-supported automation, and thinly staffed operational environments.</p>
+      <p>A new breach-cost analysis adds the financial context: average incident cost has climbed close to five million dollars globally, with lost business and trust erosion as major contributors. The board-level conclusion is direct: adversary impersonation of legitimate workflows creates both technical and commercial consequence.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Priority Actions</div>
+      <div class="action"><span class="action-label">P0 · Cut Reachability to Authority</span><p>Review internet and broad internal reachability for image upload processors, storage handlers, agent orchestration services, virtualization managers, and security management consoles. Remove broad exposure where it is not required and enforce administrative access through tightly governed paths.</p></div>
+      <div class="action"><span class="action-label">P1 · Hunt Credential Conversion</span><p>Search for unexpected reads of environment files, secrets, keys, and configuration stores; unusual administrative token creation; suspicious console login patterns; unexpected model-context bridge traffic; and cloud activity following application-layer anomalies.</p></div>
+      <div class="action"><span class="action-label">P2 · Rehearse Deception-Resistant Operations</span><p>Test service-desk, payment, and operations teams against live-site impersonation, synthetic voice pressure, account recovery abuse, and communications failure. Confirm that manual operational procedures can continue when automation is unavailable or untrusted.</p></div>
+    </section>
+
+    <section>
+      <div class="section-break">Closing Assessment</div>
+      <p>The enterprise does not fail only when an attacker breaks something. It fails when systems grant power to an action because it looks normal. Today’s risk is borrowed legitimacy — and the defensive task is to make legitimacy provable, revocable, and monitored.</p>
+    </section>
+
+    <section class="sources">
+      <h2>Sources</h2>
+      <a class="source-item" href="https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html"><strong>01 · The Hacker News</strong> — Critical Rails flaw could allow server file reads through image uploads</a>
+      <a class="source-item" href="https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html"><strong>02 · The Hacker News</strong> — Ruflo MCP flaw enables unauthenticated command execution and memory poisoning</a>
+      <a class="source-item" href="https://thehackernews.com/2026/07/three-critical-vmware-flaws-allow-auth.html"><strong>03 · The Hacker News</strong> — Critical virtualization flaws include authentication bypass, code execution, and VM escape</a>
+      <a class="source-item" href="https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"><strong>04 · The Hacker News</strong> — Public exploit material released for an actively exploited security-management authentication bypass</a>
+      <a class="source-item" href="https://www.infosecurity-magazine.com/news/logokit-phishing-real-time/"><strong>05 · Infosecurity Magazine</strong> — LogoKit phishing kit builds real-time victim-site screenshots</a>
+      <a class="source-item" href="https://www.infosecurity-magazine.com/news/researchers-aienhanced-phone-fraud/"><strong>06 · Infosecurity Magazine</strong> — Researchers warn of an off-the-shelf phone-farm fraud economy</a>
+      <a class="source-item" href="https://thehackernews.com/2026/07/coordinated-cyberattack-targets-30.html"><strong>07 · The Hacker News</strong> — Coordinated attack disrupts community water systems</a>
+      <a class="source-item" href="https://www.infosecurity-magazine.com/news/cost-of-a-data-breach-5m-ibm/"><strong>08 · Infosecurity Magazine</strong> — Breach-cost analysis reports average incident cost near five million dollars</a>
+      <a class="source-item" href="https://thehackernews.com/2026/07/73-of-organizations-say-they-are-not.html"><strong>09 · The Hacker News</strong> — Incident-response readiness survey finds major execution gaps</a>
+    </section>
+
+    <footer>CyberPulse Daily · Thursday, July 30, 2026 · Stay vigilant.</footer>
+  </main>
+</body>
+</html>

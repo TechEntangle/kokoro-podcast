@@ -24,6 +24,19 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>Borrowed Legitimacy</title>
+      <description>Today’s briefing argues that the decisive risk signal is adversary use of legitimate-looking business actions: uploads, login pages, administrative consoles, automation bridges, phone farms, and operational technology controls. For Gulf security leaders, the priority is to reduce reachability, detect credential conversion, and rehearse recovery when trusted workflows are impersonated.</description>
+      <content:encoded><![CDATA[<p>Today’s briefing argues that the decisive risk signal is adversary use of legitimate-looking business actions: uploads, login pages, administrative consoles, automation bridges, phone farms, and operational technology controls. For Gulf security leaders, the priority is to reduce reachability, detect credential conversion, and rehearse recovery when trusted workflows are impersonated.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html">https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html</a></li><li><a href="https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html">https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html</a></li><li><a href="https://thehackernews.com/2026/07/three-critical-vmware-flaws-allow-auth.html">https://thehackernews.com/2026/07/three-critical-vmware-flaws-allow-auth.html</a></li><li><a href="https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html">https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html</a></li><li><a href="https://www.infosecurity-magazine.com/news/logokit-phishing-real-time/">https://www.infosecurity-magazine.com/news/logokit-phishing-real-time/</a></li><li><a href="https://www.infosecurity-magazine.com/news/researchers-aienhanced-phone-fraud/">https://www.infosecurity-magazine.com/news/researchers-aienhanced-phone-fraud/</a></li><li><a href="https://thehackernews.com/2026/07/coordinated-cyberattack-targets-30.html">https://thehackernews.com/2026/07/coordinated-cyberattack-targets-30.html</a></li><li><a href="https://www.infosecurity-magazine.com/news/cost-of-a-data-breach-5m-ibm/">https://www.infosecurity-magazine.com/news/cost-of-a-data-breach-5m-ibm/</a></li><li><a href="https://thehackernews.com/2026/07/73-of-organizations-say-they-are-not.html">https://thehackernews.com/2026/07/73-of-organizations-say-they-are-not.html</a></li><li><a href="https://tusharvartak.com/posts/2026-07-30.html">https://tusharvartak.com/posts/2026-07-30.html</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Borrowed_Legitimacy.mp3" length="8613704" type="audio/mpeg" />
+      <guid isPermaLink="false">fa092c7baab893f17849ec5a2dbc4064</guid>
+      <pubDate>Thu, 30 Jul 2026 04:05:23 +0000</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>80</itunes:episode>
+    </item>
+    <item>
       <title>Cut the Circuit</title>
       <description>Today’s brief argues that the next executive resilience test is separability: whether critical systems, management fabrics, and operational environments can be deliberately isolated before an incident becomes enterprise-wide. Fresh reporting covers operational isolation guidance, exposed server controllers, D-N-S hijacking, public exploit code, botnet self-defense, remote management abuse, and accelerated security research.</description>
       <content:encoded><![CDATA[<p>Today’s brief argues that the next executive resilience test is separability: whether critical systems, management fabrics, and operational environments can be deliberately isolated before an incident becomes enterprise-wide. Fresh reporting covers operational isolation guidance, exposed server controllers, D-N-S hijacking, public exploit code, botnet self-defense, remote management abuse, and accelerated security research.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-07-29.html">https://tusharvartak.com/posts/2026-07-29.html</a></li></ul>]]></content:encoded>
@@ -34,7 +47,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>80</itunes:episode>
+      <itunes:episode>79</itunes:episode>
     </item>
     <item>
       <title>The Payout Line</title>
@@ -47,7 +60,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>79</itunes:episode>
+      <itunes:episode>78</itunes:episode>
     </item>
     <item>
       <title>The Assurance Gap</title>
@@ -60,7 +73,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>78</itunes:episode>
+      <itunes:episode>77</itunes:episode>
     </item>
     <item>
       <title>The Sandbox Had a Door</title>
@@ -73,7 +86,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>77</itunes:episode>
+      <itunes:episode>76</itunes:episode>
     </item>
     <item>
       <title>Hidden Cargo</title>
@@ -86,7 +99,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>76</itunes:episode>
+      <itunes:episode>75</itunes:episode>
     </item>
     <item>
       <title>The Permission Market</title>
@@ -99,7 +112,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>75</itunes:episode>
+      <itunes:episode>74</itunes:episode>
     </item>
     <item>
       <title>Shelf Life</title>
@@ -112,7 +125,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>74</itunes:episode>
+      <itunes:episode>73</itunes:episode>
     </item>
     <item>
       <title>Pressure Ledger</title>
@@ -125,7 +138,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>73</itunes:episode>
+      <itunes:episode>72</itunes:episode>
     </item>
     <item>
       <title>Fast Paths</title>
@@ -138,7 +151,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>72</itunes:episode>
+      <itunes:episode>71</itunes:episode>
     </item>
     <item>
       <title>Permission Receipts</title>
@@ -151,7 +164,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>71</itunes:episode>
+      <itunes:episode>70</itunes:episode>
     </item>
     <item>
       <title>Forty-Eight Hours</title>
@@ -164,7 +177,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>70</itunes:episode>
+      <itunes:episode>69</itunes:episode>
     </item>
     <item>
       <title>The Friction Budget</title>
@@ -177,7 +190,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>69</itunes:episode>
+      <itunes:episode>68</itunes:episode>
     </item>
     <item>
       <title>The Measurement Failure</title>
@@ -190,7 +203,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>68</itunes:episode>
+      <itunes:episode>67</itunes:episode>
     </item>
     <item>
       <title>The Credential Float</title>
@@ -203,7 +216,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>67</itunes:episode>
+      <itunes:episode>66</itunes:episode>
     </item>
     <item>
       <title>The Defender Is in Scope</title>
@@ -216,7 +229,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>66</itunes:episode>
+      <itunes:episode>65</itunes:episode>
     </item>
     <item>
       <title>Secrets in Plain Sight</title>
@@ -229,7 +242,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>65</itunes:episode>
+      <itunes:episode>64</itunes:episode>
     </item>
     <item>
       <title>The Revenue Surface</title>
@@ -238,19 +251,6 @@
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Revenue_Surface.mp3" length="9076232" type="audio/mpeg" />
       <guid isPermaLink="false">158b95db9d6d098e12c733737d48e22b</guid>
       <pubDate>Fri, 19 Jun 2026 04:04:05 +0000</pubDate>
-      <itunes:duration>00:00:00</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:author>Tushar Vartak</itunes:author>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>64</itunes:episode>
-    </item>
-    <item>
-      <title>Borrowed Legitimacy</title>
-      <description>Attackers are converting legitimate platforms, marketplace signals, developer tools, remote access utilities, and security infrastructure into operational cover. Today’s brief focuses on how enterprise teams across the Gulf should verify, monitor, and revoke inherited legitimacy before it becomes persistence, data theft, or business disruption.</description>
-      <content:encoded><![CDATA[<p>Attackers are converting legitimate platforms, marketplace signals, developer tools, remote access utilities, and security infrastructure into operational cover. Today’s brief focuses on how enterprise teams across the Gulf should verify, monitor, and revoke inherited legitimacy before it becomes persistence, data theft, or business disruption.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://thehackernews.com/2026/06/crypto-clipper-campaign-abuses-fake.html">https://thehackernews.com/2026/06/crypto-clipper-campaign-abuses-fake.html</a></li><li><a href="https://thehackernews.com/2026/06/microsoft-confirms-rogueplanet-defender_02022423645.html">https://thehackernews.com/2026/06/microsoft-confirms-rogueplanet-defender_02022423645.html</a></li><li><a href="https://thehackernews.com/2026/06/junior-hacker-used-tailscale-and.html">https://thehackernews.com/2026/06/junior-hacker-used-tailscale-and.html</a></li><li><a href="https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html">https://thehackernews.com/2026/06/malicious-jetbrains-plugins-steal-ai.html</a></li><li><a href="https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html">https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html</a></li><li><a href="https://thehackernews.com/2026/06/cisa-warns-of-actively-exploited-joomla.html">https://thehackernews.com/2026/06/cisa-warns-of-actively-exploited-joomla.html</a></li><li><a href="https://www.infosecurity-magazine.com/news/gitbait-github-pages-sheetbest/">https://www.infosecurity-magazine.com/news/gitbait-github-pages-sheetbest/</a></li><li><a href="https://www.infosecurity-magazine.com/news/sensitive-ai-data-upload-doubles/">https://www.infosecurity-magazine.com/news/sensitive-ai-data-upload-doubles/</a></li><li><a href="https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/">https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/</a></li><li><a href="https://tusharvartak.com/posts/2026-06-18.html">https://tusharvartak.com/posts/2026-06-18.html</a></li></ul>]]></content:encoded>
-      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Borrowed_Legitimacy.mp3" length="8642504" type="audio/mpeg" />
-      <guid isPermaLink="false">fa092c7baab893f17849ec5a2dbc4064</guid>
-      <pubDate>Thu, 18 Jun 2026 04:05:22 +0000</pubDate>
       <itunes:duration>00:00:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
