@@ -266,5 +266,9 @@
   "Cut_the_Circuit.mp3": {
     "description": "Today’s brief argues that the next executive resilience test is separability: whether critical systems, management fabrics, and operational environments can be deliberately isolated before an incident becomes enterprise-wide. Fresh reporting covers operational isolation guidance, exposed server controllers, D-N-S hijacking, public exploit code, botnet self-defense, remote management abuse, and accelerated security research.",
     "urls": "https://tusharvartak.com/posts/2026-07-29.html"
+  },
+  "The_Handoff_Point.mp3": {
+    "description": "Today’s briefing argues that risk is concentrating where control changes hands: travel networks, support chats, identity pages, model test environments, package intake, browser extensions, and managed data services. The operational priority is custody governance — proving who can receive control, limiting how long it lasts, and revoking it fast when the transfer looks wrong.",
+    "urls": "https://thehackernews.com/2026/08/hijacked-hotel-wi-fi-pushes-fake.html\nhttps://www.cybersecuritydive.com/news/hackers-microsoft-teams-ransomware-it-support/826591/\nhttps://www.infosecurity-magazine.com/news/teams-phishing-abused-legit/\nhttps://www.cybersecuritydive.com/news/anthropic-claude-ai-hacking-test/826708/\nhttps://www.bleepingcomputer.com/news/google/google-chrome-may-soon-block-new-tab-hijacker-extensions-by-default/\nhttps://www.securityweek.com/critical-flaw-led-to-azure-cosmos-db-pwnage/\nhttps://cloud.google.com/blog/topics/threat-intelligence/mitigation-guidance-for-supply-chain-compromise/\nhttps://blog.talosintelligence.com/ir-trends-q2-2026/\nhttps://tusharvartak.com/posts/2026-08-03.html"
   }
 }
