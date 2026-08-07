@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPulse — The Spare Circuit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg-primary:#0a0a0c; --bg-card:#16161a; --text-primary:#e8e6e3; --text-secondary:#9a9a9e; --text-muted:#5a5a5e; --accent:#e8a634; --accent-red:#c8372d; --border:#2b2b30; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top,#17120a 0,#0a0a0c 36%); color:var(--text-primary); font-family:'Source Serif 4',serif; font-size:20px; line-height:1.72; }
+    .progress { position:fixed; top:0; left:0; height:2px; width:100%; background:linear-gradient(90deg,var(--accent),transparent); z-index:20; }
+    .container { max-width:760px; margin:0 auto; padding:48px 22px 72px; }
+    header { padding:28px 0 46px; border-bottom:1px solid var(--border); animation:fade .7s ease both; }
+    .masthead { display:flex; justify-content:space-between; gap:24px; align-items:center; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:1.8px; text-transform:uppercase; color:var(--text-muted); }
+    .logo { color:var(--accent-red); font-weight:700; }
+    .episode { margin-top:42px; font-family:'IBM Plex Mono',monospace; color:var(--accent); font-size:12px; letter-spacing:2px; text-transform:uppercase; }
+    h1 { font-family:'Playfair Display',serif; font-size:clamp(48px,9vw,82px); line-height:.92; margin:18px 0 22px; letter-spacing:-.055em; }
+    h1 em { color:var(--accent); font-style:normal; }
+    .subtitle { color:var(--text-secondary); font-style:italic; font-size:24px; line-height:1.35; margin:0 0 24px; }
+    .badge { display:inline-flex; align-items:center; gap:10px; border:1px solid rgba(232,166,52,.35); color:var(--accent); border-radius:999px; padding:8px 12px; font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:1.6px; }
+    .dot { width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 16px var(--accent); }
+    .section-break { display:flex; align-items:center; gap:14px; margin:48px 0 26px; color:var(--accent); font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:2px; }
+    .section-break:before,.section-break:after { content:""; flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); }
+    p { margin:0 0 24px; }
+    .lead { font-size:24px; line-height:1.55; }
+    .emphasis { border-left:3px solid var(--accent); padding-left:24px; color:#f0eee9; font-style:italic; }
+    .question { background:var(--bg-card); border:1px solid var(--border); border-left:3px solid var(--accent); border-radius:0 14px 14px 0; padding:22px 24px; margin:18px 0; }
+    .q-label { font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--accent); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px; }
+    .sources { margin-top:54px; padding-top:30px; border-top:1px solid var(--border); }
+    .sources h2 { font-family:'IBM Plex Mono',monospace; color:var(--accent); font-size:13px; letter-spacing:2px; text-transform:uppercase; }
+    .source-item { font-family:'IBM Plex Mono',monospace; font-size:13px; line-height:1.55; margin:14px 0; color:var(--text-secondary); }
+    .source-item a { color:var(--text-primary); text-decoration-color:var(--accent); }
+    .signoff { margin-top:54px; text-align:center; color:var(--text-muted); font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:1.4px; }
+    @keyframes fade { from { opacity:0; transform:translateY(14px);} to { opacity:1; transform:none;} }
+    @media (max-width:640px) { body{font-size:18px}.masthead{display:block}.subtitle{font-size:21px}.container{padding:36px 18px 56px} }
+  </style>
+</head>
+<body>
+  <div class="progress"></div>
+  <main class="container">
+    <header>
+      <div class="masthead"><div class="logo">CyberPulse</div><div>Friday · August 7, 2026</div></div>
+      <div class="episode">Board-Level Strategic Brief</div>
+      <h1>The Spare <em>Circuit</em></h1>
+      <p class="subtitle">Resilience is no longer a recovery function. It is a governance test for how much safe capacity remains when several trusted layers fail together.</p>
+      <div class="badge"><span class="dot"></span>Emerging Risks · Board Audience</div>
+    </header>
+
+    <section>
+      <div class="section-break">Thesis</div>
+      <p class="lead">A spare circuit looks inefficient until the primary line burns. Then unused capacity, duplicate routing, manual fallback, and independent monitoring become the difference between disruption and institutional control.</p>
+      <p>This week’s intelligence arc moved through exploit timing, handoffs, approvals, and inspection quality. The weekend board question is different: what keeps running when virtual isolation, network infrastructure, hardware assumptions, industrial exposure, cryptographic design, database monitoring, and data-custody confidence are all under pressure at once?</p>
+      <p class="emphasis">The board should stop asking only whether the enterprise can prevent every intrusion. It should ask whether the enterprise has enough safe alternate capacity to continue operating when normal assumptions are withdrawn.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Pattern</div>
+      <p>Recent reporting points to a compound resilience problem. New virtualization escape research challenges assumptions about the wall between a privileged guest and the host layer. Network-platform advisories show how branch connectivity can become a business-wide blast radius. Processor-level research continues to pressure the story that hardware mitigations are static controls.</p>
+      <p>Industrial exposure adds a sharper operational signal. Thousands of programmable controllers remain reachable from the public internet, including assets tied to water, manufacturing, logistics, and facilities environments. That is not merely a technical hygiene failure. It is evidence that operational ownership, vendor management, and security accountability may not meet in the same budget conversation.</p>
+      <p>The cryptography and data layers carry the same message. Weak randomness in wallet applications turned a design flaw into direct economic loss. A database-resident toolkit shows how attackers can hide in the systems defenders often treat as central records. Continuing legal movement around a major cloud-data extortion campaign reminds boards that data theft becomes a second incident after containment: notification, evidence, insurance, customer confidence, and executive credibility.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Board Questions</div>
+      <div class="question"><div class="q-label">Question One</div>Which shared infrastructure layer would cause the greatest business interruption if its isolation assumptions failed?</div>
+      <div class="question"><div class="q-label">Question Two</div>Which industrial or facilities assets are internet-reachable, vendor-managed, or operationally owned outside the normal security governance path?</div>
+      <div class="question"><div class="q-label">Question Three</div>Where does the enterprise rely on inherited cryptography, token generation, recovery-code creation, or signing workflows without recent independent assurance?</div>
+      <div class="question"><div class="q-label">Question Four</div>If sensitive data was stolen tonight, who would lead the second incident — legal exposure, customer communication, evidence, insurance, and executive messaging — before technical containment was complete?</div>
+    </section>
+
+    <section>
+      <div class="section-break">Executive Readout</div>
+      <p>The answer is not a louder dashboard. It is resilience as an operating model: segmented recovery, degraded-mode playbooks, independently monitored crown-jewel data systems, tested manual workarounds, spare network paths, and pre-authorized decision rights when normal operations are unsafe.</p>
+      <p class="emphasis">Lean infrastructure can look efficient right up to the moment it has no alternate route. Boards do not need a perfect map of every flaw; they need evidence that when the primary circuit fails, the enterprise still has somewhere safe to send the current.</p>
+    </section>
+
+    <section class="sources">
+      <h2>Sources</h2>
+      <div class="source-item"><strong>1. The Hacker News</strong> — <a href="https://thehackernews.com/2026/08/new-zapscape-kvm-flaw-could-let.html">New Zapscape KVM Flaw Could Let Privileged L1 Guest Code Escape to Linux Hosts</a></div>
+      <div class="source-item"><strong>2. The Hacker News</strong> — <a href="https://thehackernews.com/2026/08/cisco-patches-12-sd-wan-and-ios-xe.html">Cisco Patches 12 SD-WAN and IOS XE Flaws, Including Three 9.8 CVSS Score Bugs</a></div>
+      <div class="source-item"><strong>3. The Hacker News</strong> — <a href="https://thehackernews.com/2026/08/new-interrupt-injection-attack-can.html">New Interrupt Injection Attack Can Bypass Spectre v2 Defenses on Intel and AMD CPUs</a></div>
+      <div class="source-item"><strong>4. The Hacker News</strong> — <a href="https://thehackernews.com/2026/08/over-4400-rockwell-plcs-exposed-online.html">Over 4,400 Rockwell PLCs Exposed Online, 22 Found in Water Attack Cities</a></div>
+      <div class="source-item"><strong>5. The Hacker News</strong> — <a href="https://thehackernews.com/2026/08/cryptojs-weak-rng-behind-57-million-in.html">CryptoJS Weak RNG Behind $5.7 Million in Drains Affects Five Crypto Wallet Apps</a></div>
+      <div class="source-item"><strong>6. Infosecurity Magazine</strong> — <a href="https://www.infosecurity-magazine.com/news/khunt-toolkit-oracle-database-sql/">Toolkit Hidden Inside Oracle Database Evades Endpoint Tools</a></div>
+      <div class="source-item"><strong>7. Infosecurity Magazine</strong> — <a href="https://www.infosecurity-magazine.com/news/violent-physical-crypto-thefts/">Violent Physical Crypto Thefts Surge to $30m in Losses</a></div>
+      <div class="source-item"><strong>8. Krebs on Security</strong> — <a href="https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/">Canadian Man Pleads Guilty in Snowflake Extortions</a></div>
+    </section>
+
+    <div class="signoff">CyberPulse Emerging Risks Brief · Friday, August 7, 2026 · Stay sharp.</div>
+  </main>
+</body>
+</html>
