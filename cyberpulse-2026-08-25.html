@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPulse — Three-Day Fuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg-primary:#0a0a0c;--bg-card:#16161a;--text-primary:#e8e6e3;--text-secondary:#9a9a9e;--text-muted:#5a5a5e;--accent:#c8372d;--accent-secondary:#e8a634;--border:#2a2a2e;}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top,#16161a 0,#0a0a0c 42%);color:var(--text-primary);font-family:'Source Serif 4',serif;line-height:1.72;font-size:18px}.progress{position:fixed;top:0;left:0;height:2px;background:var(--accent);width:0;z-index:10}.container{max-width:760px;margin:0 auto;padding:56px 24px 72px}.masthead{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;margin-bottom:72px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--text-muted)}.logo{color:var(--accent);font-weight:700}.dateline{text-align:right}.label{font-family:'IBM Plex Mono',monospace;color:var(--accent-secondary);font-size:12px;text-transform:uppercase;letter-spacing:2px;margin-bottom:18px}.classification{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:999px;padding:8px 14px;color:var(--text-secondary);font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:1.6px}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px var(--accent)}h1{font-family:'Playfair Display',serif;font-size:clamp(52px,9vw,86px);line-height:.92;margin:0 0 22px;font-weight:900;letter-spacing:-2px}h1 em{color:var(--accent);font-style:italic}.subtitle{font-size:23px;line-height:1.45;color:var(--text-secondary);font-style:italic;margin:0 0 26px}.section-break{display:flex;align-items:center;gap:18px;margin:56px 0 28px;color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase}.section-break:before,.section-break:after{content:"";height:1px;flex:1;background:var(--border)}p{margin:0 0 24px}.lead{font-size:22px;line-height:1.55;color:#f2f0ed}.emphasis{border-left:3px solid var(--accent);padding-left:24px;font-style:italic;color:var(--text-secondary)}.action{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-secondary);border-radius:0 14px 14px 0;padding:22px 24px;margin:24px 0}.action-label{display:block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-secondary);margin-bottom:10px;font-weight:700}.sources{margin-top:64px;padding-top:32px;border-top:1px solid var(--border)}.source-item{display:block;color:var(--text-secondary);text-decoration:none;margin:14px 0;font-size:15px}.source-item strong{color:var(--text-primary)}.signoff{text-align:center;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.5px;margin-top:60px}@media(max-width:640px){.masthead{display:block}.dateline{text-align:left;margin-top:12px}.container{padding:42px 20px 56px}}
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <main class="container">
+    <header>
+      <div class="masthead"><div class="logo">CYBERPULSE</div><div class="dateline">Tuesday / August 25, 2026<br>Gulf Executive Threat Brief</div></div>
+      <div class="label">Threat Intelligence Update</div>
+      <h1>Three-Day <em>Fuse</em></h1>
+      <p class="subtitle">The new enterprise risk is not only whether a critical system is vulnerable. It is whether leadership can authorize action before disclosure becomes compromise.</p>
+      <div class="classification"><span class="dot"></span>Operational Threat Intelligence</div>
+    </header>
+
+    <section>
+      <div class="section-break">Lead Signal</div>
+      <p class="lead">A fuse is not a deadline. It is the short, burning space between a visible spark and the point where no meeting can move fast enough to matter.</p>
+      <p>The last arc covered liability, speed, exits, keys, and triage. Today’s shift is the compression between public vulnerability knowledge and operational consequence. Current reporting shows exposed communications suites, product-lifecycle platforms, secure remote-access appliances, managed-service consoles, virtualization infrastructure, and cloud identity services forcing the same uncomfortable board question: who has the authority to move when the clock is no longer measured in weeks?</p>
+      <p>The clearest signal is an exploited mail and collaboration server flaw tracked as CVE-2026-73570. Dark Reading reports that the bug can allow unauthenticated command execution when notification processing is enabled, and that defenders were placed under a sharply compressed remediation window after active exploitation surfaced.</p>
+      <p class="emphasis">For executives, the issue is not simply mail-server patching. A compromised communications platform can expose calendars, contacts, attachments, administrator names, vendor relationships, maintenance routines, and internal naming conventions. It gives the attacker a map of how the enterprise makes decisions.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Engineering Data Becomes Extortion Fuel</div>
+      <p>BleepingComputer and The Hacker News report that a ransomware operation has targeted internet-facing product-lifecycle and apparel-lifecycle management platforms through CVE-2026-12569. The reported activity includes application web shells designed not just for command execution, but for credential recovery and theft of product and engineering data from inside the application.</p>
+      <p>This is a different class of business exposure. Product lifecycle platforms can contain design files, supplier context, manufacturing sequence, and sensitive program data. In sectors across the Gulf where industrial transformation, energy expansion, aviation, logistics, and critical construction programs are strategic priorities, that information is not merely technical documentation. It is future capacity and competitive intent.</p>
+      <p>The board-level question is direct: when exploitation starts against an engineering repository, can security isolate it without waiting for every stakeholder who benefits from keeping the platform online?</p>
+    </section>
+
+    <section>
+      <div class="section-break">Access Appliances and Service Paths</div>
+      <p>SecurityWeek reports continued ransomware exploitation against secure remote-access appliances, with attackers seeking root access, credential capture, and lateral movement. Separate reporting on managed-service tooling shows how remote monitoring platforms can become an account-takeover path when authentication bypass issues reach exposed environments.</p>
+      <p>Virtualization infrastructure adds another dimension. Dark Reading’s reporting on management-plane exploitation notes that patching may not remove persistence if attackers already deployed outbound remote access tooling. The practical message is blunt: remediation is not recovery. If the system was reachable during the exploit window, defenders need evidence that no access survived the patch.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Operational Actions</div>
+      <div class="action"><span class="action-label">P0 — Fuse Inventory</span>Inventory internet-exposed communications, remote-access, managed-service, virtualization, and engineering platforms. Rank each by business blast radius, not only severity score. Unauthenticated code execution, authentication bypass, credential access, and administrative takeover potential require named isolation authority.</div>
+      <div class="action"><span class="action-label">P1 — Patch as Incident Response</span>Convert urgent remediation on these platforms into an incident-response workflow: preserve evidence before reboot, inspect for web shells and new accounts, review outbound connections, invalidate sessions where relevant, and define executive notification thresholds before exploitation lands.</div>
+      <div class="action"><span class="action-label">P2 — Rehearse the Business Decision</span>Run a tabletop on disconnecting a product-lifecycle platform, mail gateway, remote-access appliance, or virtualization manager for six hours. If the approval chain is improvised during the exercise, the main vulnerability is governance latency.</div>
+    </section>
+
+    <section>
+      <div class="section-break">Extortion Has a Second Voice</div>
+      <p>Dark Reading also describes a malicious actor posing as an incident-recovery service and approaching ransomware victims with offers to return files or delete stolen data for a separate fee. That activity turns crisis communications into another attack surface.</p>
+      <p>During an incident, every unexpected helper, broker, recovery firm, and data-deletion offer should be routed through counsel, incident command, and threat-intelligence validation. The more chaotic the room, the easier it becomes for a second criminal voice to sound useful.</p>
+      <p class="emphasis">The fuse is not asking whether the enterprise can patch. It is asking whether leadership can authorize consequence before compromise becomes administrative history.</p>
+    </section>
+
+    <section class="sources">
+      <div class="section-break">Sources</div>
+      <a class="source-item" href="https://www.darkreading.com/vulnerabilities-threats/zimbra-flaw-exploitation-shrinking-window-patch"><strong>Dark Reading</strong> — Exploited Zimbra flaw and shrinking patch window</a>
+      <a class="source-item" href="https://www.bleepingcomputer.com/news/security/clop-ransomware-targets-windchill-flexplm-in-data-theft-attacks"><strong>BleepingComputer</strong> — Windchill and FlexPLM data-theft exploitation</a>
+      <a class="source-item" href="https://thehackernews.com/2026/08/clop-linked-windchill-web-shell.html"><strong>The Hacker News</strong> — Application-specific web shell against product-lifecycle systems</a>
+      <a class="source-item" href="https://www.securityweek.com/recent-sonicwall-vulnerabilities-exploited-in-ransomware-attacks/"><strong>SecurityWeek</strong> — Secure remote-access appliance exploitation</a>
+      <a class="source-item" href="https://www.securityweek.com/n-able-patches-vulnerability-exploited-to-hack-n-central-servers/"><strong>SecurityWeek</strong> — Managed-service platform account takeover exposure</a>
+      <a class="source-item" href="https://www.darkreading.com/vulnerabilities-threats/global-threat-campaign-critical-vmware-vcenter-flaw"><strong>Dark Reading</strong> — vCenter exploitation and persistence after patching</a>
+      <a class="source-item" href="https://www.securityweek.com/microsoft-rolls-out-22-fresh-security-patches/"><strong>SecurityWeek</strong> — Server-side cloud identity patching update</a>
+      <a class="source-item" href="https://www.darkreading.com/cyberattacks-data-breaches/ransom-busters-ransomware-actor-incident-recovery-service"><strong>Dark Reading</strong> — Ransomware affiliate posing as recovery service</a>
+    </section>
+
+    <div class="signoff">CyberPulse Daily Brief — Tuesday, August 25, 2026 — Stay vigilant.</div>
+  </main>
+  <script>window.addEventListener('scroll',()=>{const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('progress').style.width=p+'%';});</script>
+</body>
+</html>
