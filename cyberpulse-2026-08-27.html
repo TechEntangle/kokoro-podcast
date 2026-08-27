@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPulse — The Exposure Market</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg-primary:#0a0a0c;--bg-card:#16161a;--text-primary:#e8e6e3;--text-secondary:#9a9a9e;--text-muted:#5a5a5e;--accent:#c8372d;--accent-secondary:#e8a634;--border:#2a2a2e;}
+    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top,#17171d 0,#0a0a0c 44%);color:var(--text-primary);font-family:'Source Serif 4',serif;line-height:1.72;font-size:18px}.progress{position:fixed;top:0;left:0;height:2px;background:var(--accent);width:0;z-index:10}.container{max-width:760px;margin:0 auto;padding:56px 24px 72px}.masthead{display:flex;justify-content:space-between;gap:24px;align-items:flex-start;margin-bottom:72px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:var(--text-muted)}.logo{color:var(--accent);font-weight:700}.dateline{text-align:right}.label{font-family:'IBM Plex Mono',monospace;color:var(--accent-secondary);font-size:12px;text-transform:uppercase;letter-spacing:2px;margin-bottom:18px}.classification{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border);border-radius:999px;padding:8px 14px;color:var(--text-secondary);font-family:'IBM Plex Mono',monospace;font-size:11px;text-transform:uppercase;letter-spacing:1.6px}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px var(--accent)}h1{font-family:'Playfair Display',serif;font-size:clamp(52px,9vw,86px);line-height:.92;margin:0 0 22px;font-weight:900;letter-spacing:-2px}h1 em{color:var(--accent);font-style:italic}.subtitle{font-size:23px;line-height:1.45;color:var(--text-secondary);font-style:italic;margin:0 0 26px}.section-break{display:flex;align-items:center;gap:18px;margin:56px 0 28px;color:var(--accent);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase}.section-break:before,.section-break:after{content:"";height:1px;flex:1;background:var(--border)}p{margin:0 0 24px}.lead{font-size:22px;line-height:1.55;color:#f2f0ed}.emphasis{border-left:3px solid var(--accent);padding-left:24px;font-style:italic;color:var(--text-secondary)}.action{background:var(--bg-card);border:1px solid var(--border);border-left:3px solid var(--accent-secondary);border-radius:0 14px 14px 0;padding:20px 22px;margin:18px 0;color:var(--text-secondary)}.action-label{display:block;font-family:'IBM Plex Mono',monospace;color:var(--accent-secondary);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:10px}.sources a{display:block;color:var(--text-secondary);text-decoration:none;border-bottom:1px solid var(--border);padding:14px 0}.sources a:hover{color:var(--text-primary)}.signoff{text-align:center;font-family:'IBM Plex Mono',monospace;color:var(--text-muted);font-size:12px;letter-spacing:1px;margin-top:56px}@media(max-width:640px){.masthead{display:block}.dateline{text-align:left;margin-top:12px}body{font-size:17px}.container{padding:40px 20px 56px}}
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <main class="container">
+    <header>
+      <div class="masthead"><div class="logo">CYBERPULSE</div><div class="dateline">Thursday / August 27, 2026<br>Gulf Executive Threat Brief</div></div>
+      <div class="label">Threat Intelligence Update</div>
+      <h1>The Exposure <em>Market</em></h1>
+      <p class="subtitle">The new enterprise risk is not only what is vulnerable. It is what remains visible long enough to be priced, routed, chained, and sold into an attack path.</p>
+      <div class="classification"><span class="dot"></span>Operational Threat Intelligence</div>
+    </header>
+
+    <section>
+      <div class="section-break">Lead Signal</div>
+      <p class="lead">A market does not need to persuade every buyer. It only needs enough sellers, enough inventory, and a price that makes waiting look irrational.</p>
+      <p>The week’s arc has moved from authorization pressure to leakage velocity. Today’s pivot is exposure economics. Attackers are being handed a richer marketplace of reachable collaboration servers, self-hosted development platforms, edge-management systems, legacy middleware, identity debt, and rented routing infrastructure.</p>
+      <p>BleepingComputer reports new probing of a two-part collaboration-platform exploit chain: an authentication bypass followed by administrative enumeration against a second remote-code-execution path. The first stage has already been weaponized, the second has public exploit research, and internet telemetry still sees more than 8,700 exposed servers.</p>
+      <p class="emphasis">Even when a honeypot has not yet observed code execution, enumeration is not harmless. It is price discovery. Attackers are measuring which exposed systems deserve effort.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Development Systems Become Inventory</div>
+      <p>The second signal comes from Gitea, the self-hosted source-control platform. A critical flaw now under active exploitation lets a user with repository write access submit malicious patch content through the diffpatch endpoint and execute commands as the service account. In default configurations, open registration can give an outside visitor the access needed to begin.</p>
+      <p>Nearly 5,000 exposed instances remain visible in internet telemetry. For security leadership, the question is not limited to version status. It is whether code platforms allow open account creation, whether repository write access is governed, and whether secrets, runners, webhooks, and deployment tokens are reachable from the same service context.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Routers, Cameras, Voice, Relays</div>
+      <p>Edge infrastructure is adding more stock to the same market. Ubiquiti patched three maximum-severity flaws across video surveillance, operating-system, and voice applications. They are remotely reachable, low-complexity issues that require no user interaction. Separate telemetry counts more than 100,000 exposed UniFi OS instances, with the usual caveat that scanning data may include stale observations.</p>
+      <p>The more revealing story is the disruption of a commercialized quartermaster platform used to package scanning, proxy selection, relay routing, and obfuscation for state-linked espionage customers. The political label is less important than the business model: reconnaissance and routing are now services. Static blocking is weak when malicious traffic blends into rotating commercial proxy paths and consumer infrastructure.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Old Middleware, Live Prices</div>
+      <p>SecurityWeek reports broad exploitation of CVE-2026-21962, a maximum-severity WebLogic proxy flaw patched in January and now under emergency remediation pressure. Infosecurity Magazine separately reports active exploitation against TeamCity on-premises servers, where a critical flaw can allow unauthenticated access and command execution on exposed build infrastructure.</p>
+      <p>These are different products with the same board-level lesson. Old enterprise software does not leave the exposure market when the patch is published. It leaves only when ownership, version evidence, internet reachability, exploit-window review, and log evidence are closed.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Operational Actions</div>
+      <div class="action"><span class="action-label">P0 — Remove Unowned Exposure</span>For externally reachable collaboration platforms, Gitea, build servers, WebLogic connectors, UniFi management planes, and similar systems, require named owner, approved internet path, version evidence, exploit-window review, and log-retention status today. Disable open registration where it is not deliberately approved.</div>
+      <div class="action"><span class="action-label">P1 — Hunt Commercialized Reconnaissance</span>Review proxy-heavy traffic, rotating egress patterns, failed administrative enumeration, repository creation anomalies, unusual Git hooks, and management-plane authentication events. Do not depend on static blocklists alone when routing infrastructure is rented and rotated.</div>
+      <div class="action"><span class="action-label">P2 — Finish Non-Human Identity Governance</span>Snowflake’s service-account migration is a useful forcing function: map every service account to an application, owner, authentication method, secret location, privilege set, break-glass process, and expected failure mode before enforcement or intrusion exposes the gap.</div>
+    </section>
+
+    <section>
+      <div class="section-break">Patch Volume Is Not the Metric</div>
+      <p>Browser patch volume adds a final reminder. SecurityWeek reports that Chrome 152 fixed more than 300 vulnerabilities, most found internally using AI-assisted discovery, with ten marked critical and dozens more high severity. That is good engineering output, but it also changes executive expectations: discovery is accelerating, and vulnerability counts alone cannot decide where action goes first.</p>
+      <p>The decisive metric is exposed business function. A critical browser flaw, an open source-control server, an edge-management console, a build server, or an old middleware connector each carries different blast radius depending on data, credentials, network position, and ownership clarity.</p>
+      <p class="emphasis">The exposure market rewards delay because delay creates inventory. The defensive answer is removal: fewer reachable systems, fewer anonymous paths to write access, fewer unmanaged devices, fewer unowned service accounts, and fewer excuses for not knowing what is visible.</p>
+    </section>
+
+    <section class="sources">
+      <div class="section-break">Sources</div>
+      <a class="source-item" href="https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-sharepoint-rce-chain-with-poc-exploit/"><strong>BleepingComputer</strong> — Collaboration-platform exploit chain probing</a>
+      <a class="source-item" href="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-gitea-flaw-in-code-injection-attacks/"><strong>BleepingComputer</strong> — Gitea code-injection exploitation</a>
+      <a class="source-item" href="https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-security-vulnerabilities/"><strong>BleepingComputer</strong> — Maximum-severity UniFi security fixes</a>
+      <a class="source-item" href="https://www.bleepingcomputer.com/news/security/fbi-disrupts-proxy-network-enabling-chinese-espionage-operations/"><strong>BleepingComputer</strong> — Relay-network and proxy-infrastructure disruption</a>
+      <a class="source-item" href="https://www.securityweek.com/cisa-warns-of-exploited-oracle-weblogic-vulnerability/"><strong>SecurityWeek</strong> — Exploited WebLogic proxy vulnerability</a>
+      <a class="source-item" href="https://www.infosecurity-magazine.com/news/australia-exploitation-teamcity/"><strong>Infosecurity Magazine</strong> — TeamCity on-premises exploitation warning</a>
+      <a class="source-item" href="https://www.securityweek.com/chrome-152-patches-over-300-vulnerabilities/"><strong>SecurityWeek</strong> — Chrome 152 vulnerability volume</a>
+      <a class="source-item" href="https://www.bleepingcomputer.com/news/security/snowflake-ends-service-account-passwords-now-comes-the-hard-part/"><strong>BleepingComputer</strong> — Service-account password migration and identity debt</a>
+    </section>
+
+    <div class="signoff">CyberPulse Daily Brief — Thursday, August 27, 2026 — Stay vigilant.</div>
+  </main>
+  <script>window.addEventListener('scroll',()=>{const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('progress').style.width=p+'%';});</script>
+</body>
+</html>
