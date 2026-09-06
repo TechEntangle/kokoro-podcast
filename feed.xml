@@ -24,6 +24,19 @@
       <itunes:category text="Books" />
     </itunes:category>
     <item>
+      <title>The Exposure Market</title>
+      <description>Description: Today’s CyberPulse Daily Brief frames the current threat pattern as exposure pricing: attackers are sorting reachable access appliances, browser fleets, endpoint agents, web administration surfaces, databases, and AI workflow systems by how quickly each can become leverage. Gulf security leaders should rank assets by exploitability, privilege proximity, credential value, business dependency, and containment readiness.</description>
+      <content:encoded><![CDATA[<p>Description: Today’s CyberPulse Daily Brief frames the current threat pattern as exposure pricing: attackers are sorting reachable access appliances, browser fleets, endpoint agents, web administration surfaces, databases, and AI workflow systems by how quickly each can become leverage. Gulf security leaders should rank assets by exploitability, privilege proximity, credential value, business dependency, and containment readiness.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://tusharvartak.com/posts/2026-09-06.html">https://tusharvartak.com/posts/2026-09-06.html</a></li></ul>]]></content:encoded>
+      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Exposure_Market.mp3" length="8325704" type="audio/mpeg" />
+      <guid isPermaLink="false">c17757d07e2fcc8c058a269010c7f376</guid>
+      <pubDate>Sun, 06 Sep 2026 04:06:53 +0000</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:author>Tushar Vartak</itunes:author>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>91</itunes:episode>
+    </item>
+    <item>
       <title>The Exception Ledger</title>
       <description>Description: Today’s board-level CyberPulse briefing frames the weekend risk as accumulated exceptions: exposed access paths, inherited database privileges, broad security-tool permissions, workflow automation, browser exposure, and administrative keys that turn old decisions into fresh leverage. Gulf leadership should require named ownership, expiry, containment playbooks, and proof that temporary risk can actually be revoked.</description>
       <content:encoded><![CDATA[<p>Description: Today’s board-level CyberPulse briefing frames the weekend risk as accumulated exceptions: exposed access paths, inherited database privileges, broad security-tool permissions, workflow automation, browser exposure, and administrative keys that turn old decisions into fresh leverage. Gulf leadership should require named ownership, expiry, containment playbooks, and proof that temporary risk can actually be revoked.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html">https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html</a></li><li><a href="https://www.bleepingcomputer.com/news/security/cisa-sonicwall-sma1000-flaws-now-exploited-by-ransomware-gangs/">https://www.bleepingcomputer.com/news/security/cisa-sonicwall-sma1000-flaws-now-exploited-by-ransomware-gangs/</a></li><li><a href="https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/">https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/</a></li><li><a href="https://www.securityweek.com/sangoma-switchvox-vulnerabilities-exploited-in-the-wild/">https://www.securityweek.com/sangoma-switchvox-vulnerabilities-exploited-in-the-wild/</a></li><li><a href="https://www.securityweek.com/12-year-old-postgresql-vulnerability-enables-database-server-takeover/">https://www.securityweek.com/12-year-old-postgresql-vulnerability-enables-database-server-takeover/</a></li><li><a href="https://www.securityweek.com/vmware-workstation-and-fusion-updates-patch-critical-vulnerability/">https://www.securityweek.com/vmware-workstation-and-fusion-updates-patch-critical-vulnerability/</a></li><li><a href="https://www.securityweek.com/google-patches-6th-chrome-zero-day-of-2026/">https://www.securityweek.com/google-patches-6th-chrome-zero-day-of-2026/</a></li><li><a href="https://www.securityweek.com/vulnerabilities-patched-in-crowdstrike-tenable-products/">https://www.securityweek.com/vulnerabilities-patched-in-crowdstrike-tenable-products/</a></li><li><a href="https://tusharvartak.com/posts/2026-09-05.html">https://tusharvartak.com/posts/2026-09-05.html</a></li></ul>]]></content:encoded>
@@ -34,7 +47,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>91</itunes:episode>
+      <itunes:episode>90</itunes:episode>
     </item>
     <item>
       <title>The Reaction Budget</title>
@@ -47,7 +60,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>90</itunes:episode>
+      <itunes:episode>89</itunes:episode>
     </item>
     <item>
       <title>The Hot Path</title>
@@ -60,7 +73,7 @@
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>89</itunes:episode>
+      <itunes:episode>88</itunes:episode>
     </item>
     <item>
       <title>Minted Authority</title>
@@ -69,19 +82,6 @@
       <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/Minted_Authority.mp3" length="8451848" type="audio/mpeg" />
       <guid isPermaLink="false">11ffb4b126ccd93c9902319984258ba0</guid>
       <pubDate>Wed, 02 Sep 2026 04:04:32 +0000</pubDate>
-      <itunes:duration>00:00:00</itunes:duration>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:author>Tushar Vartak</itunes:author>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>88</itunes:episode>
-    </item>
-    <item>
-      <title>The Exposure Market</title>
-      <description>Description: Today’s briefing argues that exposed systems have become market inventory: collaboration servers, self-hosted source control, edge-management planes, legacy middleware, build servers, relay infrastructure, and non-human identity debt are all being priced by attackers before defenders finish ownership and remediation. The operational response is to remove unowned exposure, detect commercialized reconnaissance, and finish service-account governance before enforcement or intrusion forces the issue.</description>
-      <content:encoded><![CDATA[<p>Description: Today’s briefing argues that exposed systems have become market inventory: collaboration servers, self-hosted source control, edge-management planes, legacy middleware, build servers, relay infrastructure, and non-human identity debt are all being priced by attackers before defenders finish ownership and remediation. The operational response is to remove unowned exposure, detect commercialized reconnaissance, and finish service-account governance before enforcement or intrusion forces the issue.</p><h3>Links &amp; Resources</h3><ul><li><a href="https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-sharepoint-rce-chain-with-poc-exploit/">https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-sharepoint-rce-chain-with-poc-exploit/</a></li><li><a href="https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-gitea-flaw-in-code-injection-attacks/">https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-gitea-flaw-in-code-injection-attacks/</a></li><li><a href="https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-security-vulnerabilities/">https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-security-vulnerabilities/</a></li><li><a href="https://www.bleepingcomputer.com/news/security/fbi-disrupts-proxy-network-enabling-chinese-espionage-operations/">https://www.bleepingcomputer.com/news/security/fbi-disrupts-proxy-network-enabling-chinese-espionage-operations/</a></li><li><a href="https://www.securityweek.com/cisa-warns-of-exploited-oracle-weblogic-vulnerability/">https://www.securityweek.com/cisa-warns-of-exploited-oracle-weblogic-vulnerability/</a></li><li><a href="https://www.infosecurity-magazine.com/news/australia-exploitation-teamcity/">https://www.infosecurity-magazine.com/news/australia-exploitation-teamcity/</a></li><li><a href="https://www.securityweek.com/chrome-152-patches-over-300-vulnerabilities/">https://www.securityweek.com/chrome-152-patches-over-300-vulnerabilities/</a></li><li><a href="https://www.bleepingcomputer.com/news/security/snowflake-ends-service-account-passwords-now-comes-the-hard-part/">https://www.bleepingcomputer.com/news/security/snowflake-ends-service-account-passwords-now-comes-the-hard-part/</a></li><li><a href="https://tusharvartak.com/posts/2026-08-27.html">https://tusharvartak.com/posts/2026-08-27.html</a></li></ul>]]></content:encoded>
-      <enclosure url="https://techentangle.github.io/kokoro-podcast/episodes/The_Exposure_Market.mp3" length="9244424" type="audio/mpeg" />
-      <guid isPermaLink="false">c17757d07e2fcc8c058a269010c7f376</guid>
-      <pubDate>Thu, 27 Aug 2026 04:04:52 +0000</pubDate>
       <itunes:duration>00:00:00</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:author>Tushar Vartak</itunes:author>
