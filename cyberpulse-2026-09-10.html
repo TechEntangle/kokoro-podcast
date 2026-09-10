@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CyberPulse Daily — The Permission Forge</title>
+<meta name="description" content="Attackers are increasingly targeting systems that manufacture permission: consoles, repositories, collaboration platforms, browsers, voice tools, and business application kernels." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg-primary:#0a0a0c;--bg-card:#16161a;--text-primary:#e8e6e3;--text-secondary:#9a9a9e;--text-muted:#5a5a5e;--accent:#c8372d;--accent-secondary:#e8a634;--border:#2a2a2f}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 20% 0%,rgba(200,55,45,.18),transparent 34%),var(--bg-primary);color:var(--text-primary);font-family:'Source Serif 4',serif;font-size:19px;line-height:1.72}.progress{position:fixed;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent-secondary));z-index:20}.container{max-width:760px;margin:0 auto;padding:64px 22px 80px}.masthead{display:flex;justify-content:space-between;gap:24px;align-items:center;margin-bottom:54px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.16em;font-size:12px;color:var(--text-muted)}.logo{color:var(--text-primary);font-weight:700}.logo span{color:var(--accent)}.dateline{text-align:right}.episode-label{font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.22em;color:var(--accent-secondary);font-size:12px;margin-bottom:18px}h1{font-family:'Playfair Display',serif;font-size:clamp(52px,10vw,92px);line-height:.92;margin:0 0 22px;font-weight:900;letter-spacing:-.055em}h1 em{font-style:italic;color:var(--accent)}.subtitle{font-size:24px;line-height:1.45;color:var(--text-secondary);font-style:italic;margin:0 0 26px}.badge{display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(200,55,45,.45);border-radius:999px;padding:8px 13px;font-family:'IBM Plex Mono',monospace;color:var(--text-secondary);font-size:12px;text-transform:uppercase;letter-spacing:.14em}.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 18px var(--accent)}header{padding-bottom:34px;border-bottom:1px solid var(--border);margin-bottom:42px;animation:fade .75s ease both}.section-break{display:flex;align-items:center;gap:14px;margin:46px 0 24px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.2em;color:var(--accent-secondary);font-size:12px}.section-break:before,.section-break:after{content:"";height:1px;background:var(--border);flex:1}.lead:first-letter{float:left;font-family:'Playfair Display',serif;font-size:74px;line-height:.82;padding-right:10px;color:var(--accent)}p{margin:0 0 24px}.emphasis{border-left:3px solid var(--accent);padding-left:24px;color:var(--text-secondary);font-style:italic}.action-block{background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.015));border:1px solid var(--border);border-left:3px solid var(--accent-secondary);border-radius:0 16px 16px 0;padding:22px 24px;margin:22px 0}.action-label{font-family:'IBM Plex Mono',monospace;color:var(--accent-secondary);font-size:11px;text-transform:uppercase;letter-spacing:.2em;font-weight:700;margin-bottom:8px}.sources{margin-top:56px;padding-top:28px;border-top:1px solid var(--border)}.source-item{display:block;margin:0 0 14px;color:var(--text-secondary);font-family:'IBM Plex Mono',monospace;font-size:13px;line-height:1.5;text-decoration:none}.source-item strong{color:var(--text-primary)}.signoff{text-align:center;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:.16em;margin-top:54px}@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@media(max-width:640px){body{font-size:18px}.container{padding-top:42px}.masthead{align-items:flex-start;flex-direction:column}.dateline{text-align:left}h1{font-size:56px}.subtitle{font-size:21px}}
+</style>
+</head>
+<body>
+<div class="progress"></div>
+<main class="container">
+<header>
+  <div class="masthead"><div class="logo">Cyber<span>Pulse</span></div><div class="dateline">Thursday · September 10, 2026<br>Gulf Executive Threat Brief</div></div>
+  <div class="episode-label">Threat Intelligence Update</div>
+  <h1>The Permission <em>Forge</em></h1>
+  <p class="subtitle">Attackers are no longer satisfied with finding keys. They are targeting the systems that can create them.</p>
+  <div class="badge"><span class="dot"></span>Operational Threat Intelligence</div>
+</header>
+
+<p class="lead">A forge does not ask whether the metal should become a key. It only needs heat, pressure, and a mold. That is the Thursday signal: the week has moved from exposed routes and inherited exceptions into something sharper. Current exploitation is converging on systems that manufacture permission.</p>
+
+<p>That phrase is deliberate. The most important systems in this brief are not merely vulnerable servers. They are collaboration platforms that hold internal records, browser fleets that carry executive sessions, enterprise application kernels that anchor business logic, firewall management consoles that define enforcement, voice systems that route work, repositories that publish software artifacts, and low-code workflow tools that store secrets.</p>
+
+<p class="emphasis">For enterprise security teams across the Gulf, the priority is not only patching what is exposed. It is identifying which exposed systems can mint authority after the first compromise.</p>
+
+<div class="section-break">The threat pattern</div>
+
+<p>The first pressure point is collaboration infrastructure. A widely deployed content platform flaw, CVE-2026-45659, is now tied to ransomware abuse after being tracked as active exploitation since early July. The flaw can allow low-privilege attackers to reach remote code execution through unsafe deserialization. In business terms, a document platform that stores contracts, procedures, records, and operational workflows can become an internal launch site for data pressure and movement.</p>
+
+<p>The second pressure point is the browser. A major browser vendor patched 230 vulnerabilities this week, including CVE-2026-87491, an actively exploited V8 engine zero-day. Browser flaws are often treated as endpoint hygiene. That framing is too narrow. The browser is now the employee operating surface for finance portals, supplier systems, software consoles, identity prompts, customer tools, and executive communications. One crafted page can become a path toward session exposure and follow-on execution.</p>
+
+<p>The third pressure point is core business application infrastructure. Enterprise resource planning kernel fixes include maximum-severity issues such as CVE-2026-44756 and CVE-2026-58240. Reported exploitation paths can lead to administrative command execution across application servers. These are not back-office footnotes. In many enterprises, they sit near transaction records, inventory, human resources, finance workflows, and business data that executives assume is governed by process rather than reachable through code paths.</p>
+
+<div class="section-break">Where authority becomes fragile</div>
+
+<p>Security management is the most uncomfortable signal. A maximum-severity firewall management flaw, CVE-2026-20079, is now confirmed as exploited and can let unauthenticated remote attackers execute commands as root on vulnerable management servers. The console designed to govern enforcement can itself become the permission forge. Once management authority is compromised, policy changes, device visibility, log trust, and containment assumptions must all be treated as suspect.</p>
+
+<p>Communications and workflow tooling add more evidence. Enterprise voice management exploitation around CVE-2026-9586 enables unauthenticated database manipulation and remote code execution. Artifact repository exploitation around CVE-2026-82329 shows attackers minting administrator tokens against software distribution infrastructure. Low-code and model-workflow platforms are also being probed for reconnaissance and credential harvesting. The shared pattern is straightforward: attackers are looking for places that create keys, sign updates, route work, or store secrets.</p>
+
+<div class="section-break">Required action</div>
+
+<div class="action-block">
+  <div class="action-label">P0 · Today</div>
+  <p>Identify every internet-reachable system that can create permissions, issue tokens, manage policy, publish artifacts, control communications, or execute business logic. Prioritize the exploited flaws named in this brief, then hunt for command execution, unexpected administrator creation, suspicious token issuance, unusual scheduled tasks, and management-console changes since early July.</p>
+</div>
+
+<div class="action-block">
+  <div class="action-label">P1 · This week</div>
+  <p>Move permission-forging systems into a separate executive exposure register. Include owner, version, external reachability, privileged dependencies, recovery objective, monitoring coverage, latest compromise review, and business consequence if the system becomes hostile.</p>
+</div>
+
+<div class="action-block">
+  <div class="action-label">P2 · This month</div>
+  <p>Run containment tests that assume one trusted system is already compromised. Verify whether a hostile management console can change enforcement policy, whether a repository can issue administrator tokens without a high-signal alert, whether a workflow platform can read secrets, and whether a content server can reach identity stores, backup shares, or finance data without new approval.</p>
+</div>
+
+<p class="emphasis">A forge is dangerous because it turns raw material into authority. Today’s defensive question is not only who has the keys. It is which systems are still allowed to make them.</p>
+
+<section class="sources">
+  <div class="section-break">Sources</div>
+  <a class="source-item" href="https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-flaw-now-exploited-in-ransomware-attacks/"><strong>BleepingComputer</strong> — SharePoint flaw now exploited in ransomware attacks</a>
+  <a class="source-item" href="https://www.bleepingcomputer.com/news/security/google-patches-seventh-chrome-zero-day-exploited-in-attacks-this-year/"><strong>BleepingComputer</strong> — Browser zero-day patched after in-the-wild exploitation</a>
+  <a class="source-item" href="https://www.bleepingcomputer.com/news/security/sap-warns-of-maximum-severity-overpass-kernel-vulnerability/"><strong>BleepingComputer</strong> — Maximum-severity SAP kernel vulnerabilities</a>
+  <a class="source-item" href="https://www.bleepingcomputer.com/news/security/cisco-confirms-cve-2026-20079-secure-fmc-flaw-exploited-in-attacks/"><strong>BleepingComputer</strong> — Secure firewall management flaw confirmed exploited</a>
+  <a class="source-item" href="https://www.securityweek.com/sangoma-switchvox-vulnerabilities-exploited-in-the-wild/"><strong>SecurityWeek</strong> — Switchvox vulnerabilities exploited in the wild</a>
+  <a class="source-item" href="https://www.securityweek.com/microsoft-patches-record-974-vulnerabilities-including-two-exploited-zero-days/"><strong>SecurityWeek</strong> — Record September patch release includes exploited zero-days</a>
+  <a class="source-item" href="https://www.securityweek.com/hackers-start-exploiting-critical-langflow-vulnerability/"><strong>SecurityWeek</strong> — Critical Langflow exploitation and credential probing</a>
+  <a class="source-item" href="https://www.securityweek.com/critical-jfrog-artifactory-vulnerability-reportedly-exploited-in-the-wild/"><strong>SecurityWeek</strong> — Critical Artifactory vulnerability reportedly exploited</a>
+</section>
+
+<div class="signoff">CyberPulse Daily Brief · Thursday, September 10, 2026 · Stay vigilant</div>
+</main>
+<script>window.addEventListener('scroll',()=>{const h=document.documentElement;const p=(h.scrollTop)/(h.scrollHeight-h.clientHeight)*100;document.querySelector('.progress').style.width=p+'%';});</script>
+</body>
+</html>
