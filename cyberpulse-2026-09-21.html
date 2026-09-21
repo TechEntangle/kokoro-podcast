@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CyberPulse — Assumed Inside (2026-09-21)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Serif+4:ital,wght@0,400;0,500;0,700;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-primary:#0a0a0c; --bg-card:#16161a; --text-primary:#e8e6e3; --text-secondary:#9a9a9e; --text-muted:#5a5a5e;
+  --accent:#c8372d; --accent-secondary:#e8a634; --radius:10px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:"Source Serif 4",serif}
+.container{max-width:760px;margin:0 auto;padding:28px 18px 64px}
+.topbar{position:fixed;left:0;top:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);width:0;z-index:9999}
+.fade-in{opacity:0;animation:fade .8s ease .1s forwards}
+@keyframes fade{to{opacity:1}}
+.masthead{display:flex;align-items:center;justify-content:space-between;margin-top:18px}
+.logo{font-family:"IBM Plex Mono",monospace;font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--text-secondary)}
+.dateline{font-family:"IBM Plex Mono",monospace;color:var(--text-secondary);font-size:13px}
+.episode-label{font-family:"IBM Plex Mono",monospace;color:var(--text-secondary);font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-top:14px}
+.hero{margin:18px 0 8px;border-radius:var(--radius);overflow:hidden;background:#0e0e12;border:1px solid #222}
+.hero img{display:block;width:100%;height:auto}
+.h1{font-family:"Playfair Display",serif;font-weight:900;font-size:42px;line-height:1.1;margin:10px 0 8px;padding-bottom:10px;border-bottom:3px solid var(--accent)}
+.h1 em{color:var(--accent);font-style:normal}
+.dek{font-style:italic;color:var(--text-secondary);margin:6px 0 14px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#141417;border:1px solid #2a2a2e;border-radius:999px;padding:6px 12px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--text-secondary)}
+.badge .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+.section{display:flex;align-items:center;gap:14px;color:var(--text-secondary);margin:26px 0}
+.section::before,.section::after{content:"";height:1px;background:#2a2a2e;flex:1}
+.lead{font-size:19px;line-height:1.6}
+.emph{border-left:3px solid var(--accent);padding-left:18px;font-style:italic;color:#d6d4d0;margin:18px 0}
+.card{background:var(--bg-card);border:1px solid #232327;border-left:3px solid var(--accent-secondary);border-radius:0 var(--radius) var(--radius) 0;padding:14px 16px;margin:12px 0}
+.card .label{font-family:"IBM Plex Mono",monospace;color:var(--accent-secondary);font-size:11px;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+.card ul{margin:8px 0 0 18px;padding:0}
+.card li{margin:8px 0}
+.meta{font-family:"IBM Plex Mono",monospace;color:var(--text-muted);font-size:12px;text-align:center;margin-top:32px}
+.sources{margin-top:28px}
+.sources h3{font-family:"IBM Plex Mono",monospace;color:var(--text-secondary);font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.sources ol{margin:10px 0 0 18px}
+.sources li{margin:8px 0;color:var(--text-secondary)}
+.sources a{color:#9ecbff;text-decoration:none}
+.sources a:hover{text-decoration:underline}
+</style>
+<script>
+// progress
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement;const sc=h.scrollTop;const mx=h.scrollHeight-h.clientHeight;const pct=Math.max(0,Math.min(1,sc/mx));document.querySelector('.topbar').style.width=(pct*100)+'%';
+});
+</script>
+</head>
+<body>
+<div class="topbar"></div>
+<div class="container">
+  <div class="masthead fade-in">
+    <div class="logo">CYBERPULSE</div>
+    <div class="dateline">Monday, September 21, 2026 — Operational Threat Intelligence</div>
+  </div>
+  <div class="episode-label fade-in">Threat Intelligence Update • Daily Brief</div>
+  <div class="hero fade-in">
+    <img alt="Reviewed cover for 2026-09-21" src="/assets/covers/2026-09-21-apiframe-clean.png" />
+  </div>
+  <h1 class="h1 fade-in">Assumed <em>Inside</em></h1>
+  <p class="dek fade-in">Identity gates, security controllers, workflow engines, and the browser all showed the same failure mode this week: privilege granted by assumption, then reused everywhere.</p>
+  <div class="badge fade-in"><span class="dot"></span> Operational Threat Intelligence</div>
+
+  <div class="section">Lead</div>
+  <p class="lead">A critical identity gateway flaw under active exploitation, renewed abuse of centralized firewall management, a remote code execution in a workflow orchestrator, a web supply‑chain script injection via stolen delivery keys, and a browser‑to‑system exploit chain defined the last seventy‑two hours across the region. The common pattern: trust conferred without fresh proof.</p>
+
+  <div class="section">Today’s signals</div>
+  <p><strong>Identity edge</strong>: A widely deployed network access platform confirmed a flaw that lets an unauthenticated party be treated as trusted. Immediate steps: patch, revoke cached sessions, rotate admin credentials, and investigate administrative actions originating from unfamiliar infrastructure.</p>
+  <p><strong>Security controllers</strong>: Previously patched issues in a centralized firewall controller are being leveraged in intrusions by crimeware and state‑linked actors, with web shells, tunneling, and credential harvesting observed. Treat all controllers as tier‑zero: segmented, monitored, and protected by out‑of‑band approvals.</p>
+  <p><strong>Workflow orchestration</strong>: A popular microservices engine can execute code from crafted inline workflow content with no login. Upgrade now, disable risky inline definitions, and require signed, reviewed changes for workflows.</p>
+  <p><strong>Web supply chain</strong>: A global communications provider reported theft of a content‑delivery key used to inject hostile JavaScript into customer sites. Enforce subresource integrity and a strict content security policy; rotate any key capable of altering user‑facing content.</p>
+  <p><strong>Browser chain</strong>: Active use of an exploit kit chaining a recent browser engine bug with a Windows elevation highlights the need to push out‑of‑band updates and enforce hardware‑backed, phishing‑resistant authentication.</p>
+
+  <div class="emph">Assumptions as access: a gate that presumes trust, a controller treated like an appliance, a workflow that executes whatever sits inside the box, a browser path from one tab to device control, and a stolen key that rewrites your public face.</div>
+
+  <div class="section">P0 • P1 • P2</div>
+  <div class="card">
+    <div class="label">P0 — Contain authority drift</div>
+    <ul>
+      <li>Put identity providers, network policy controllers, hypervisor admin planes, and orchestration servers behind strong auth with device attestation.</li>
+      <li>Invalidate admin‑scope tokens and sessions; rotate controller secrets; enable flight‑recorder logging on management actions.</li>
+      <li>Remove unrestricted egress from management consoles; enforce explicit allowlists.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="label">P1 — Harden content paths</div>
+    <ul>
+      <li>Enforce subresource integrity and a strict content security policy across public sites and portals.</li>
+      <li>Require signed commits and peer review for changes touching orchestration, IaC, identity enforcement, and browser extensions.</li>
+      <li>Upgrade impacted workflow engines; disable risky inline features until the next control review.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <div class="label">P2 — Accelerate endpoint resilience</div>
+    <ul>
+      <li>Force an out‑of‑band browser update; verify sandbox and elevation fixes are present.</li>
+      <li>Require device compliance before granting admin scopes; re‑run a tabletop for controller takeover and restore from known‑good offline backups.</li>
+    </ul>
+  </div>
+
+  <div class="section">At a glance</div>
+  <ul>
+    <li>Identity: fix assumption gates; purge sessions; rotate admin credentials.</li>
+    <li>Controllers: treat as tier‑zero; segment; monitor; require out‑of‑band approvals.</li>
+    <li>Developers: lock workflow engines; review and sign all orchestration changes.</li>
+    <li>Web: enable subresource integrity and a strict content security policy; rotate delivery keys.</li>
+    <li>Endpoints: push emergency browser updates; enforce hardware‑backed authentication.</li>
+  </ul>
+
+  <div class="sources">
+    <h3>Sources</h3>
+    <ol>
+      <li class="source-item"><a href="https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html" target="_blank" rel="noopener">Identity gateway flaw actively exploited</a></li>
+      <li class="source-item"><a href="https://blog.talosintelligence.com/fmc-ongoing-exploitation" target="_blank" rel="noopener">Centralized firewall controller exploitation</a></li>
+      <li class="source-item"><a href="https://www.securityweek.com/critical-orkes-conductor-vulnerability-exploited-in-attacks" target="_blank" rel="noopener">Orchestration engine RCE under attack</a></li>
+      <li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites" target="_blank" rel="noopener">Web script injection via stolen delivery keys</a></li>
+      <li class="source-item"><a href="https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html" target="_blank" rel="noopener">Browser engine zero‑day exploited</a></li>
+      <li class="source-item"><a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-september-2026/" target="_blank" rel="noopener">Monthly OS updates and exploited issues</a></li>
+      <li class="source-item"><a href="https://www.securityweek.com/new-check-point-zero-day-vulnerability-exploited-in-the-wild" target="_blank" rel="noopener">Security management zero‑day context</a></li>
+    </ol>
+  </div>
+
+  <div class="meta">Sign‑off • CyberPulse Daily • Monday, September 21, 2026</div>
+</div>
+<script>
+// initial progress width
+(function(){const h=document.documentElement;const mx=h.scrollHeight-h.clientHeight;document.querySelector('.topbar').style.width=(mx? (h.scrollTop/mx)*100:0)+'%';})();
+</script>
+</body>
+</html>
