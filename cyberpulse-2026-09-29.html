@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>CyberPulse - Private <em>by</em> Default (2026-09-29)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Playfair+Display:wght@900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-primary:#0a0a0c; --bg-card:#16161a; --text-primary:#e8e6e3; --text-secondary:#9a9a9e; --text-muted:#5a5a5e;
+  --accent:#c8372d; --accent-secondary:#e8a634; --ok:#2ecc71; --warn:#e8a634; --bad:#c8372d;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Source Serif 4',serif}
+.container{max-width:760px;margin:0 auto;padding:24px}
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--accent);width:0;z-index:999}
+header{padding-top:16px;padding-bottom:8px;border-bottom:1px solid #242428}
+.mast{display:flex;align-items:center;justify-content:space-between;opacity:.95;animation:fadeIn .8s ease}
+.logo{font-family:'Playfair Display',serif;font-weight:900;letter-spacing:.5px}
+.logo span{color:var(--accent)}
+.meta{font-family:'IBM Plex Mono',monospace;color:var(--text-secondary);font-size:12px;text-transform:uppercase;letter-spacing:1.5px}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid #2a2a30;border-radius:8px;padding:6px 10px;margin-top:10px;background:var(--bg-card)}
+.badge .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+h1{font-family:'Playfair Display',serif;font-weight:900;font-size:40px;line-height:1.1;margin:18px 0 8px 0}
+h1 em{font-style:normal;color:var(--accent)}
+.dek{font-style:italic;color:var(--text-secondary)}
+.section-break{display:flex;align-items:center;gap:12px;color:var(--text-secondary);margin:28px 0}
+.section-break:before,.section-break:after{content:"";flex:1;height:1px;background:#2a2a30}
+.emph{border-left:3px solid var(--accent);padding:8px 16px;margin:16px 0;font-style:italic;background:rgba(200,55,45,0.06)}
+.action{background:var(--bg-card);border:1px solid #2a2a30;border-left:3px solid var(--accent-secondary);padding:14px 16px;border-radius:6px;margin:16px 0}
+.action .label{font-family:'IBM Plex Mono',monospace;color:var(--accent-secondary);font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+.sources{border-top:1px solid #2a2a30;margin-top:36px;padding-top:18px}
+.sources ol{padding-left:18px}
+.sources a{color:#93c5fd;text-decoration:none}
+.sources strong{font-weight:600}
+footer{margin:36px 0 12px 0;text-align:center;color:var(--text-muted);font-family:'IBM Plex Mono',monospace}
+a{color:#ffd28a}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (max-width:640px){h1{font-size:32px}}
+</style>
+<script>
+window.addEventListener('scroll',()=>{
+  const p=document.querySelector('.progress');
+  const h=document.documentElement;
+  const sc=h.scrollTop/(h.scrollHeight-h.clientHeight)*100; p.style.width=sc+'%';
+});
+</script>
+</head>
+<body>
+<div class="progress"></div>
+<div class="container">
+  <header>
+    <div class="mast">
+      <div class="logo">Cyber<span>Pulse</span></div>
+      <div class="meta">Tue, Sep 29, 2026 &nbsp;&bull;&nbsp; Daily Brief &nbsp;&bull;&nbsp; Operational Threat Intelligence</div>
+    </div>
+    <div class="badge"><span class="dot"></span><span>Threat Intelligence Update</span></div>
+    <h1>Private <em>by</em> Default</h1>
+    <div class="dek">Live exploitation across gateways, identity enforcement, switches, repositories, and the public web compresses remediation windows to hours. Make systems private first &mdash; then patch and hunt.</div>
+  </header>
+
+  <div class="section-break">Today's signal</div>
+  <p>Private is no longer a luxury flag; it is the default for safe operations. When management consoles and developer platforms stay reachable, the gap between warning and impact collapses. The fastest measurable risk reduction is exposure control &mdash; then repair with confidence.</p>
+  <p class="emph">The theme connects to the week &mdash; we have tracked forged authority, purchased credibility, and preemption. The shift today is breadth and speed across management-tier systems: probes are turning into payloads within hours.</p>
+
+  <div class="section-break">What changed</div>
+  <p><strong>Remote access &amp; delivery:</strong> Two fresh critical, unauthenticated paths to code execution on application delivery appliances triggered private advisories to take systems offline. Treat temporary takedowns as professional risk management while fixes land; bring services back under controlled ingress only after validation.</p>
+  <p><strong>Identity enforcement API:</strong> A maximum-severity bypass in an enforcement platform&rsquo;s application programming interface allows unauthenticated access leading to root-level control. Restrict reachability first, upgrade to supported fixed versions, then validate integrity using logs outside the device.</p>
+  <p><strong>Campus/branch switches:</strong> Active exploitation of a stack overflow reachable over HTTP on certain smart-managed switches moved from reconnaissance to automated data theft. Block management listeners at the boundary and stage firmware updates; quarantine nodes with unexplained changes.</p>
+  <p><strong>Public web engine:</strong> The dominant content platform shipped an emergency release to close a path traversal that can escalate into code execution. Recon started within hours of the patch and shifted to file-writes and command stagers this week. Assume testing already happened; deploy the fix and audit temp/upload directories for unexpected PHP files.</p>
+  <p><strong>Self-hosted repositories:</strong> A maximum-severity path traversal in a popular source control platform enables unauthenticated reads of arbitrary files through a commits API. Exploitation includes exfiltration of configuration files and SSH material. Take instances private now, patch to fixed builds, rotate tokens, and restrict external access.</p>
+  <p><strong>Patch velocity:</strong> A major platform vendor&rsquo;s monthly release set a new record near one thousand identifiers with multiple zero-day elevation paths and a cluster of wormable issues. Do not chase volume blindly &mdash; decide what stays reachable long enough to matter, then patch with purpose.</p>
+
+  <div class="section-break">Actions</div>
+  <div class="action">
+    <div class="label">P0 &mdash; Immediate</div>
+    Inventory every administrative console, developer platform, and security appliance answering from user networks or the public internet. If it is not behind a private link, jump host, or access proxy with strong authentication, remove reachability now.
+  </div>
+  <div class="action">
+    <div class="label">P1 &mdash; 72 hours</div>
+    Gateways/delivery: follow takedown or restriction guidance while staging fixes. Identity enforcement: pin access to a narrow allow-list, upgrade to supported fixed versions, and verify integrity from outside the device. Switches: apply patched firmware and quarantine nodes with unexpected config changes.
+  </div>
+  <div class="action">
+    <div class="label">P2 &mdash; This week</div>
+    Content platform: move to the emergency release and remove any newly written executable files in temp/upload paths. Repositories: upgrade, revoke and rotate secrets, and tighten external access to admin endpoints. Document isolation steps so &ldquo;power down&rdquo; is a routine, not a scramble.
+  </div>
+
+  <div class="section-break">Sources</div>
+  <section class="sources">
+    <ol>
+      <li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-citrix-flaws-by-wednesday/" target="_blank"><strong>BleepingComputer</strong> &mdash; Application delivery appliances &mdash; two exploited zero-days</a></li>
+      <li class="source-item"><a href="https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues" target="_blank"><strong>Dark Reading</strong> &mdash; Identity enforcement API bypass under exploitation</a></li>
+      <li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-zyxel-flaw-by-thursday/" target="_blank"><strong>BleepingComputer</strong> &mdash; Smart-managed switches exploited</a></li>
+      <li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/hackers-start-exploiting-critical-wordpress-flaw-for-code-execution/" target="_blank"><strong>BleepingComputer</strong> &mdash; Content platform path traversal exploited</a></li>
+      <li class="source-item"><a href="https://darkreading.com/cyberattacks-data-breaches/maximum-severity-gitlab-flaw-supply-chains-risk" target="_blank"><strong>Dark Reading</strong> &mdash; Self-hosted repository path traversal exploited</a></li>
+      <li class="source-item"><a href="https://darkreading.com/vulnerabilities-threats/patch-tuesday-another-record-974-cves" target="_blank"><strong>Dark Reading</strong> &mdash; Record patch cycle and prioritization</a></li>
+      <li class="source-item"><a href="https://blog.talosintelligence.com/fmc-ongoing-exploitation/" target="_blank"><strong>Cisco Talos</strong> &mdash; Management-tier exploitation activity</a></li>
+      <li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/cisa-warns-of-sharepoint-wso2-adobe-commerce-flaws-exploited-in-attacks" target="_blank"><strong>BleepingComputer</strong> &mdash; Additional actively exploited enterprise software flaws</a></li>
+    </ol>
+  </section>
+
+  <footer>
+    CyberPulse &bull; Tue, Sep 29, 2026 &bull; Daily Brief &bull; Built for executive and practitioner teams across the Gulf
+  </footer>
+</div>
+</body>
+</html>
