@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberPulse Daily — Access <em>Without</em> Asking (2026-10-05)</title>
+  <meta name="description" content="Pre-auth paths into admin control, a file-write zero-day in an email security layer, helpdesk double zero-days used for intrusion, agentic automation attempting SQL injection against public sites, and a browser-side campaign that turns users into code runners — reduce unauthenticated reach to control, shorten authority, and monitor automation abuse." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Playfair+Display:wght@900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-primary:#0a0a0c; --bg-card:#16161a; --text-primary:#e8e6e3; --text-secondary:#9a9a9e; --text-muted:#5a5a5e;
+      --accent:#c8372d; --accent-secondary:#e8a634; --ok:#24c17c; --warn:#e8a634
+    }
+    html,body{margin:0;padding:0;background:var(--bg-primary);color:var(--text-primary)}
+    .container{max-width:760px;margin:0 auto;padding:24px}
+    .progress{position:fixed;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,var(--accent),#ff7a6d);transform-origin:left;transform:scaleX(0)}
+    @supports(selector(:has(*))){body:has(.end:in-view) .progress{transform:scaleX(1)}}
+    header{display:flex;justify-content:space-between;align-items:center;margin:8px 0 20px 0;opacity:.98;animation:fadeIn .7s ease-out}
+    .logo{font-family:"Playfair Display",serif;font-weight:900;letter-spacing:.5px}
+    .dateline{font-family:"IBM Plex Mono",monospace;color:var(--text-secondary);font-size:13px}
+    h1{font-family:"Playfair Display",serif;font-weight:900;margin:.2rem 0 .4rem 0;letter-spacing:.2px}
+    h1 em{color:var(--accent);font-style:normal}
+    .subtitle{font-style:italic;color:var(--text-secondary);margin-top:2px}
+    .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid #2a2a30;border-radius:999px;padding:6px 10px;margin-top:14px;font-family:"IBM Plex Mono",monospace;color:var(--text-secondary);font-size:12px}
+    .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+    .section-break{display:flex;align-items:center;gap:16px;color:var(--text-secondary);margin:28px 0 14px 0}
+    .section-break:before,.section-break:after{content:"";flex:1;height:1px;background:#27272e}
+    .emphasis{border-left:3px solid var(--accent);padding:0 0 0 24px;font-style:italic;color:#d6d3cf}
+    .actions{display:flex;flex-direction:column;gap:14px;margin-top:10px}
+    .action{background:var(--bg-card);border:1px solid #282a33;border-left:3px solid var(--accent-secondary);border-radius:10px;padding:14px}
+    .action .label{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-secondary)}
+    .action ul{margin:.3rem 0 0 1.2rem;padding:0}
+    .action li{margin:.35rem 0}
+    footer{margin:36px 0 10px 0;text-align:center;color:var(--text-muted);font-family:"IBM Plex Mono",monospace}
+    .sources{margin-top:28px}
+    .sources h3{font-family:"IBM Plex Mono",monospace;color:var(--text-secondary);font-size:14px;letter-spacing:1px;text-transform:uppercase}
+    .sources ol{margin:.4rem 0 0 1.1rem;padding:0}
+    .sources li{margin:.4rem 0;color:var(--text-secondary)}
+    .sources a{color:#9ecbff;text-decoration:none}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  </style>
+  <script>
+    addEventListener('scroll',()=>{
+      const s=document.scrollingElement;const p=document.querySelector('.progress');
+      const t=(s.scrollTop)/(s.scrollHeight-s.clientHeight+0.0001);p.style.transform=`scaleX(${t})`;
+    },{passive:true});
+  </script>
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="container">
+    <header>
+      <div class="logo">CyberPulse</div>
+      <div class="dateline">Monday, October 5, 2026 — Daily Brief</div>
+    </header>
+    <div class="section-break">Operational Threat Intelligence</div>
+    <h1>Access <em>Without</em> Asking</h1>
+    <p class="subtitle">Pre–authentication paths into admin control, a file–write zero–day in a mail security layer, helpdesk double zero–days used for intrusion, agentic automation attempting SQL injection against public sites, and a browser campaign that turns users into code runners.</p>
+    <div class="badge"><span class="dot"></span> Classification: Operational Threat Intelligence</div>
+
+    <div class="section-break">Lead</div>
+    <p>Across the region, the fastest path to damage right now is not a novel payload — it is walking straight into authority without ever proving who you are. A critical flaw in a widely deployed network control console granted pre‑authentication access to administrative APIs. A file‑write zero‑day in an email security layer was exploited before most teams could read the advisory. And fresh exploit details for an application delivery controller show how unauthenticated memory errors still translate to shell‑level control. The pattern is simple: public services that aggregate control are being probed for any gap that lets an unauthenticated request land inside the trusted path.</p>
+
+    <p class="emphasis">Executive takeaway: exposure economics, not slogans. If a single console, workflow engine, or gateway can assert power over many nodes, it is a primary target. If a browser session can be turned into a programmable agent, it is a data‑theft surface. If a repository, ticketing tool, or build step can import code or templates from outside your tenant, it is a delivery system in waiting.</p>
+
+    <div class="section-break">What changed in the last 72 hours</div>
+    <p>Investigators documented an attack on a well‑known vulnerability disclosure institute that chained two previously unknown bugs in a helpdesk platform — one to run code from the outside, one to escalate to root. Separately, researchers tracking agentic automation observed scripted queries that attempted basic SQL injection against public sector sites while harvesting data at scale. Meanwhile, criminal operators refined a “ClickFix”‑style social technique that persuades users to paste JavaScript into their own browsers, pivoting from operating‑system commands to tampering with live web sessions. A wallet platform also disclosed a service‑side incident — contained, but a reminder that authentication tokens and provider infrastructure are a hidden attack surface.</p>
+
+    <div class="section-break">Actions</div>
+    <div class="actions">
+      <div class="action">
+        <div class="label">P0 — Remove unauthenticated reach to control</div>
+        <ul>
+          <li>Make management and admin APIs private by default. Treat “single‑pane” systems — network control, email security, identity, device management — as privileged identities with no public endpoints.</li>
+          <li>Hunt for pre‑auth artifacts in logs. Review requests to login endpoints and their URL‑encoded variants; flag unexpected POSTs that never completed a real session.</li>
+          <li>For appliances with recent critical advisories, assume potential compromise and inspect startup scripts, scheduled tasks, and web roots for unfamiliar files — especially anything newly writable by the web process.</li>
+        </ul>
+      </div>
+      <div class="action">
+        <div class="label">P1 — Shorten authority and watch automation</div>
+        <ul>
+          <li>Reduce token and session lifetimes for consoles that can change network paths, push config, or run code. Tie high‑risk actions to step‑up verification, even for insiders.</li>
+          <li>Instrument browser‑side telemetry for sensitive internal apps. Detect JavaScript that hooks fetch or replaces clipboard values. Treat user‑installed “helper” extensions as execution environments.</li>
+          <li>Put helpdesk, ticketing, and workflow platforms on the same threat model as source control and CI. Disable or strictly review plug‑ins and integrations that can run code or templates from outside your tenant. Lock service accounts with least privilege and rotate credentials on any advisory that mentions session leakage or de‑serialization.</li>
+        </ul>
+      </div>
+      <div class="action">
+        <div class="label">P2 — Contain the blast when something slips</div>
+        <ul>
+          <li>Separate authority creation from authority use. Different people — and different service principals — should grant roles, approve policy, and execute changes. Enforce it in the platform.</li>
+          <li>Stage rapid response for newly published exploit details. When technical write‑ups land for edge devices or middleware, move incident response up a day: snapshot, compare, isolate, then patch.</li>
+          <li>Validate backups and recovery for systems that act on behalf of many — email security, network control, identity orchestration, and build systems. If one of them fails open, you still need to keep operating.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-break">Sources</div>
+    <div class="sources">
+      <h3>References</h3>
+      <ol>
+        <li class="source-item"><a href="https://www.securityweek.com/cisco-patches-exploited-catalyst-sd-wan-zero-day-vulnerability/"><strong>SecurityWeek</strong> — Cisco patches exploited Catalyst SD‑WAN Manager zero‑day</a></li>
+        <li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/fortinet-warns-of-critical-fortimail-flaw-exploited-in-zero-day-attacks/"><strong>BleepingComputer</strong> — FortiMail flaw exploited as a zero‑day</a></li>
+        <li class="source-item"><a href="https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit-details.html"><strong>The Hacker News</strong> — NetScaler CVE‑2026‑88772 exploit details</a></li>
+        <li class="source-item"><a href="https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw.html"><strong>The Hacker News</strong> — Zimbra flaw exploited to deploy web shells</a></li>
+        <li class="source-item"><a href="https://www.securityweek.com/zammad-zero-days-exploited-in-ai-powered-divd-hack/"><strong>SecurityWeek</strong> — Helpdesk double zero‑days used in intrusion</a></li>
+        <li class="source-item"><a href="https://www.securityweek.com/ai-agents-aimed-sql-injection-at-us-and-canadian-government-sites/"><strong>SecurityWeek</strong> — Agentic automation attempted SQLi against public sites</a></li>
+        <li class="source-item"><a href="https://blog.talosintelligence.com/clickfix-moves-into-the-browser"><strong>Cisco Talos</strong> — ClickFix moves into the browser (crypto theft via injected JS)</a></li>
+        <li class="source-item"><a href="https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/"><strong>BleepingComputer</strong> — Wallet platform discloses service‑side incident</a></li>
+      </ol>
+    </div>
+
+    <footer class="end">— CyberPulse Daily • Monday, October 5, 2026 • Stay vigilant</footer>
+  </div>
+</body>
+</html>
