@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CyberPulse — Authentication Under Strain (2026-10-07)</title>
+  <meta name="description" content="An administrative interface bypass, a sign‑in crash condition on an access gateway, and an email security traversal converge on one point: identity controls can fail in both directions. Isolate and upgrade the management plane, protect authentication continuity where single‑sign‑on is in use, and treat boundary‑device file placement as potential persistence until ruled out." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-primary: #0a0a0c;
+      --bg-card: #16161a;
+      --text-primary: #e8e6e3;
+      --text-secondary: #9a9a9e;
+      --text-muted: #5a5a5e;
+      --accent: #c8372d; /* daily red */
+      --accent-secondary: #e8a634; /* gold for actions */
+    }
+    html, body { margin: 0; padding: 0; background: var(--bg-primary); color: var(--text-primary); font-family: 'Source Serif 4', serif; }
+    .progress { position: fixed; top:0; left:0; height:2px; width:0; background: var(--accent); z-index: 1000; }
+    .container { max-width: 760px; margin: 0 auto; padding: 28px 20px 80px; }
+    header { display:flex; align-items:flex-end; justify-content:space-between; gap:16px; margin-top: 18px; }
+    .logo { font-family: 'IBM Plex Mono', monospace; font-weight: 600; letter-spacing: 2px; font-size: 13px; color: var(--text-secondary); }
+    .dateline { font-family: 'IBM Plex Mono', monospace; color: var(--text-secondary); font-size: 12px; }
+    .episode-label { margin-top: 10px; font-family:'IBM Plex Mono', monospace; color: var(--text-secondary); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
+    h1 { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 40px; line-height: 1.08; margin: 10px 0 10px; }
+    h1 em { color: var(--accent); font-style: normal; }
+    .subtitle { font-style: italic; color: var(--text-secondary); margin-bottom: 12px; }
+    .class-badge { display:inline-flex; align-items:center; gap:8px; font-family:'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-secondary); padding: 6px 10px; border: 1px solid var(--text-muted); border-radius: 12px; }
+    .dot { width:8px; height:8px; border-radius:50%; background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+    .underline { height:2px; width: 64px; background: var(--accent); margin: 14px 0 24px; }
+    p { line-height: 1.6; font-size: 18px; }
+    .emphasis { border-left: 3px solid var(--accent); padding-left: 20px; font-style: italic; color: var(--text-secondary); }
+    .section-break { display:flex; align-items:center; gap:16px; margin: 34px 0 10px; color: var(--text-secondary); text-transform: uppercase; font-family:'IBM Plex Mono', monospace; letter-spacing: 2px; font-size: 12px; }
+    .section-break:before, .section-break:after { content:""; flex: 1; height:1px; background: #2a2a30; }
+    .actions { margin-top: 6px; display: grid; gap: 14px; }
+    .action { background: var(--bg-card); border: 1px solid #2a2a30; border-left: 3px solid var(--accent-secondary); border-radius: 8px; padding: 14px 16px; }
+    .action .label { font-family:'IBM Plex Mono', monospace; color: var(--accent-secondary); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; display:block; margin-bottom: 6px; }
+    .sources { margin-top: 26px; }
+    .sources h3 { font-family:'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-secondary); letter-spacing: 2px; text-transform: uppercase; }
+    .sources ol { padding-left: 18px; }
+    .sources li { margin: 8px 0; color: var(--text-secondary); }
+    .sources a { color: var(--text-primary); text-decoration: none; border-bottom: 1px dotted #444; }
+    footer { margin-top: 40px; text-align: center; color: var(--text-muted); font-family:'IBM Plex Mono', monospace; font-size: 12px; }
+    @media (max-width: 640px) { h1 { font-size: 32px; } .container { padding: 20px 16px 72px; } }
+  </style>
+  <script>
+    document.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const top = doc.scrollTop || document.body.scrollTop;
+      const height = doc.scrollHeight - doc.clientHeight;
+      const p = Math.max(0, Math.min(1, top / height));
+      document.querySelector('.progress').style.width = (p * 100) + '%';
+    });
+  </script>
+</head>
+<body>
+  <div class="progress"></div>
+  <div class="container">
+    <header>
+      <div class="logo">CYBERPULSE</div>
+      <div class="dateline">Wednesday, Oct 7, 2026 · Operational Threat Intelligence</div>
+    </header>
+
+    <div class="episode-label">Daily Brief</div>
+    <h1><em>Authentication</em> Under Strain</h1>
+    <div class="subtitle">Identity can fail in both directions: a management door that lets requests pass as trusted, and a sign‑in path that can be jammed shut on demand.</div>
+    <div class="class-badge"><span class="dot"></span> Classification: Operational Threat Intelligence</div>
+    <div class="underline"></div>
+
+    <p>Across the region this morning, risk is concentrated at the two edges of identity: one door that can be slipped without a key, and another that can be jammed shut on demand. A critical weakness in a large‑scale software‑defined network manager allowed requests to reach an administrative programming interface as if they were already trusted. In parallel, a flaw in a popular access gateway’s sign‑in protocol lets crafted sign‑in traffic crash the service repeatedly, turning availability into the attack. Add an email security gateway issue that lets an outsider place files on the underlying system, and you have a simple picture: if identity and boundary tooling misbehave, everything behind them inherits the problem.</p>
+
+    <p class="emphasis">Continuity sentence only: the last two days showed how edge exposure compresses response time — today the shift is that the identity path itself is unreliable in both directions.</p>
+
+    <div class="section-break">Management plane</div>
+    <p>Several reputable analyses detail how a crafted web request can bypass an authentication rule in a central software‑defined network manager, delivering administrative access to a specific application interface. Cloud‑hosted tenants received vendor‑managed updates, but customer‑managed instances require emergency upgrades by branch. There is no effective workaround beyond isolating the management portal and upgrading to the fixed releases. Logs show patterns where a single character in a security check path is URL‑encoded — a small detail with outsized impact when the interface is reachable from untrusted networks.</p>
+
+    <div class="section-break">Authentication continuity</div>
+    <p>A separate flaw in an access gateway’s sign‑in handling can be triggered only when the device is configured for a specific single‑sign‑on role. In that condition, crafted authentication requests crash a service responsible for sign‑in, causing restarts and extended outages. Teams have reported repeated crashes on unpatched builds before and after disclosure, and national authorities have confirmed exploitation. The vendor’s current assessment limits impact to service disruption, not code execution — but repeated resets at the front door of your applications are not a benign nuisance. Authentication continuity is a security control.</p>
+
+    <div class="section-break">Mail security placement</div>
+    <p>An advisory confirms that a path traversal flaw in a widely used email protection product allows an unauthenticated outsider to write arbitrary files via crafted web requests. Writing the right file in the right place is often a short path to command execution. Even where a vendor states that only write access is confirmed, prudent teams assume that placement can become persistence. Because mail protection sits in the path of every message, compromise becomes both visibility and leverage for an adversary.</p>
+
+    <div class="section-break">Actions</div>
+    <div class="actions">
+      <div class="action">
+        <span class="label">P0 — Immediate</span>
+        <p>Pull all customer‑managed administrative portals for network and identity platforms off the public internet; upgrade affected software‑defined network managers to their fixed branch releases; then hunt for URL‑encoded security‑check patterns and service‑account misuse in the vendor‑named logs. Rotate credentials, keys, and tokens where access may have occurred.</p>
+      </div>
+      <div class="action">
+        <span class="label">P1 — Same day</span>
+        <p>Inventory access gateways configured for single‑sign‑on roles; prioritize those that front privileged administration or time‑sensitive operations; preserve logs before restarts; upgrade to fixed builds; require incident‑response review for any repeated crash on an affected branch. Treat authentication continuity as a security control and test failover without weakening sign‑in strength or logging.</p>
+      </div>
+      <div class="action">
+        <span class="label">P2 — This week</span>
+        <p>For email security gateways exposed to the internet, apply mitigations or updates; compare key system files against vendor‑published hashes; shorten credential life and hunt for web‑shell placement until updates land. Standardize that any boundary system capable of writing files is treated as a privileged identity with explicit monitoring.</p>
+      </div>
+    </div>
+
+    <div class="section-break">Why it matters</div>
+    <p>Identity is an engine, not a veneer. When the systems that decide who may act can be tricked into granting power, or jammed into denying everyone, risk multiplies faster than normal change can handle. Tighten reach to management interfaces, make sign‑in redundancy preserve the same strength and logging as the primary path, and treat any boundary that can write files as a privileged identity until proven otherwise.</p>
+
+    <section class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li class="source-item"><strong>Field Effect</strong> — <a href="https://fieldeffect.com/blog/citrix-patches-another-exploited-netscaler-vulnerability" target="_blank" rel="noopener">Citrix patches another exploited NetScaler vulnerability</a></li>
+        <li class="source-item"><strong>NHS England Digital</strong> — <a href="https://digital.nhs.uk/cyber-alerts/2026/cc-4862" target="_blank" rel="noopener">Active exploitation of NetScaler SAML flaw</a></li>
+        <li class="source-item"><strong>CISA</strong> — <a href="https://www.cisa.gov/news-events/alerts/2026/09/27/critical-zero-day-vulnerabilities-exploited-citrix-netscaler-adc-gateway" target="_blank" rel="noopener">NetScaler ADC/Gateway exploited vulnerabilities</a></li>
+        <li class="source-item"><strong>Rapid7</strong> — <a href="https://www.rapid7.com/blog/post/etr-critical-cisco-catalyst-sd-wan-manager-api-authentication-bypass-exploited-in-the-wild-cve-2026-76504/" target="_blank" rel="noopener">Cisco SD‑WAN Manager authentication bypass exploited</a></li>
+        <li class="source-item"><strong>The Hacker News</strong> — <a href="https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html" target="_blank" rel="noopener">Auth bypass added to KEV after active exploitation</a></li>
+        <li class="source-item"><strong>Cybersecurity Dive</strong> — <a href="https://www.cybersecuritydive.com/news/fortinet-critical-flaw-fortimail-exploitation/832017/" target="_blank" rel="noopener">FortiMail path traversal under exploitation</a></li>
+        <li class="source-item"><strong>The Register</strong> — <a href="https://www.theregister.com/security/2026/10/02/fortinet-sounds-the-alarm-over-actively-exploited-fortimail-zero-day/5300803" target="_blank" rel="noopener">FortiMail zero‑day lets outsiders write files</a></li>
+        <li class="source-item"><strong>Europol</strong> — <a href="https://www.europol.europa.eu/media-press/newsroom/news/teenager-suspected-of-leading-killsec-ransomware-group-law-enforcement-seizes-servers-and-leak-site" target="_blank" rel="noopener">International operation seizes ransomware leak site</a></li>
+      </ol>
+    </section>
+
+    <footer>
+      CyberPulse Daily &middot; Wednesday, October 7, 2026 &middot; Operational Threat Intelligence
+    </footer>
+  </div>
+</body>
+</html>
