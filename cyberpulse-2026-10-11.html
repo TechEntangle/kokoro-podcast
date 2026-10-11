@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CyberPulse Daily — <em>The First Write Wins</em> (2026-10-11)</title>
+<meta name="description" content="An unauthenticated file-write in a mail-security platform, emergency fixes on a major remote-access gateway, a zero-day on a software-defined network edge, and a critical identity-suite flaw put one theme in focus: write paths at the boundary create authority." />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg-primary:#0a0a0c; --bg-card:#16161a; --text-primary:#e8e6e3; --text-secondary:#9a9a9e; --text-muted:#5a5a5e; --accent:#c8372d; --accent-secondary:#e8a634;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Source Serif 4',serif;line-height:1.6}
+.container{max-width:760px;margin:0 auto;padding:28px 20px 64px}
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--accent);width:0;z-index:20}
+header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin:22px 0 8px}
+.logo{font-family:'IBM Plex Mono',monospace;color:var(--text-secondary);letter-spacing:1px}
+.dateline{font-family:'IBM Plex Mono',monospace;color:var(--text-secondary)}
+.h1{font-family:'Playfair Display',serif;font-weight:900;font-size:38px;line-height:1.2;margin:8px 0 6px;border-bottom:3px solid var(--accent);padding-bottom:8px}
+.h1 em{color:var(--accent);font-style:normal}
+.subtitle{font-style:italic;color:var(--text-secondary);margin:2px 0 8px}
+.badge{display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;color:var(--text-secondary);font-size:12px;margin:10px 0}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+.section-break{display:flex;align-items:center;gap:12px;color:var(--text-secondary);margin:28px 0 10px}
+.section-break::before,.section-break::after{content:"";flex:1;height:1px;background:#2a2a2f}
+.emphasis{border-left:3px solid var(--accent);padding:10px 16px;font-style:italic;background:rgba(200,55,45,0.06);border-radius:0 6px 6px 0}
+.actions{display:grid;gap:12px;margin:18px 0}
+.action{background:var(--bg-card);border:1px solid #24242a;border-left:3px solid var(--accent-secondary);padding:12px 14px;border-radius:0 8px 8px 0}
+.action .label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent-secondary)}
+.meta{font-family:'IBM Plex Mono',monospace;color:var(--text-muted);text-align:center;margin-top:36px}
+.sources{margin-top:28px}
+.sources ol{padding-left:18px}
+.sources a{color:#9ecbff;text-decoration:none}
+.sources a:hover{text-decoration:underline}
+.at-a-glance{background:var(--bg-card);border:1px solid #24242a;padding:12px 14px;border-radius:8px}
+.at-a-glance h3{margin:4px 0 8px;font-size:16px;color:var(--text-secondary)}
+.at-a-glance ul{margin:0 0 0 18px}
+</style>
+<script>
+addEventListener('scroll',()=>{const p=document.querySelector('.progress');const h=document.documentElement;const sc=h.scrollTop;const m=h.scrollHeight-h.clientHeight;p.style.width=(m? (sc/m*100):0)+'%'});
+</script>
+</head>
+<body>
+<div class="progress"></div>
+<div class="container">
+  <header>
+    <div class="logo">CyberPulse • Daily Brief</div>
+    <div class="dateline">Sunday, October 11, 2026</div>
+  </header>
+  <div class="h1">CyberPulse Daily — <em>The First Write Wins</em></div>
+  <div class="subtitle">Write paths at the boundary create authority. Treat them like crown‑jewel code.</div>
+  <div class="badge"><span class="dot"></span> Operational Threat Intelligence</div>
+
+  <div class="at-a-glance">
+    <h3>At a glance</h3>
+    <ul>
+      <li>Mail gateway path traversal enables unauthenticated file writes; exploitation preceded disclosure.</li>
+      <li>Remote‑access platform issues show why sign‑in continuity must preserve the same assurances as primary paths.</li>
+      <li>Software‑defined network edge zero‑day reminds teams to isolate administrative programming interfaces.</li>
+      <li>Identity suite deserialization bug demonstrates how complex inputs can become code execution.</li>
+      <li>Ransomware and mailbox‑theft data point to industrialized discovery and quick conversions to leverage.</li>
+    </ul>
+  </div>
+
+  <div class="section-break">Lead</div>
+  <p class="emphasis">Across the region this morning, the fastest path to leverage is not a stolen password — it is the first successful write. When an internet‑facing service can be convinced to place a file where it should never go, the attacker sets the rules.</p>
+
+  <div class="section-break">What changed today</div>
+  <p>Vendor guidance and independent analysis confirm an unauthenticated path traversal in a widely deployed secure‑mail platform that allows arbitrary file placement via crafted web requests. Exploitation preceded disclosure, and a feature toggle is the immediate mitigation while fixed builds ship. Treat public web interfaces with that feature enabled as incident‑response work, not routine patching.</p>
+  <p>On remote‑access infrastructure, emergency updates on a major application‑delivery and sign‑in platform — including a critical memory‑handling flaw — underline a simple rule: devices that sit between users and work must fail without locking out the enterprise, and redundancy must preserve identity guarantees, logging, and rate‑limits.</p>
+  <p>On the network edge, a software‑defined routing platform reported a zero‑day after field cases surfaced indicators. The common pattern holds: if traffic can reach administrative programming paths, an attacker can often impersonate trust. Keep the management plane off the public internet and make it dull to reach.</p>
+  <p>Identity middleware is also in focus: a critical deserialization flaw in a well‑known access suite shows how unauthenticated network inputs can turn into code execution. Inventory instances, confirm which are internet‑reachable, and schedule fixed versions now.</p>
+
+  <div class="section-break">Actions</div>
+  <div class="actions">
+    <div class="action"><div class="label">P0 — edge write paths</div>
+      <ul>
+        <li>For the affected mail platform, disable the optional encryption feature per vendor guidance and restrict internet access to the management interface until fixed builds are applied.</li>
+        <li>Hunt for new or modified files on boundary devices and for web requests matching published indicators.</li>
+      </ul>
+    </div>
+    <div class="action"><div class="label">P1 — sign‑in continuity</div>
+      <ul>
+        <li>Apply the latest emergency updates to the remote‑access platform and confirm high‑availability preserves the same authentication strength, logging, and throttling as the primary path.</li>
+        <li>Isolate administrative programming interfaces for SD‑WAN and routing platforms; require out‑of‑band access.</li>
+      </ul>
+    </div>
+    <div class="action"><div class="label">P2 — identity & extortion posture</div>
+      <ul>
+        <li>Inventory the affected identity suite, prioritize internet‑reachable instances, and stage fixed versions.</li>
+        <li>Augment mailbox monitoring to detect collection at scale, not just sign‑in events; assume extortion without encryption remains a durable model.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-break">Context</div>
+  <p>Recent incident‑response and market‑tracking data show a new yearly high for cyber extortion, with much of the growth concentrated in mid‑market organizations. In parallel, a multinational advisory described mailbox theft at scale by a commercial operator working with state interests. The common thread is industrialization: automated discovery, quick conversions to leverage, and the reuse of whatever access still works tomorrow.</p>
+
+  <div class="section-break">Sources</div>
+  <section class="sources">
+    <ol>
+      <li class="source-item"><a href="https://fortiguard.fortinet.com/psirt/FG-IR-26-175" target="_blank" rel="noopener">Fortinet PSIRT: FG‑IR‑26‑175 (FortiMail path traversal; exploitation reported; workaround guidance)</a></li>
+      <li class="source-item"><a href="https://labs.cloudsecurityalliance.org/wp-content/uploads/2026/10/CSA_research_note_fortimail_zero_day_cve_2026_104286_20261004-csa-styled.pdf" target="_blank" rel="noopener">Cloud Security Alliance: FortiMail zero‑day research note</a></li>
+      <li class="source-item"><a href="https://community.citrix.com/techzone-blogs/110_security-updates/protecting-customers-immediate-guidance-for-cve-2026-107406-in-netscaler-adc-and-netscaler-gateway-r1631/" target="_blank" rel="noopener">Vendor blog: Immediate guidance for critical NetScaler issue</a></li>
+      <li class="source-item"><a href="https://digital.nhs.uk/cyber-alerts/2026/cc-4865" target="_blank" rel="noopener">National health authority cyber alert: critical NetScaler RCE risk</a></li>
+      <li class="source-item"><a href="https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/" target="_blank" rel="noopener">Help Net Security: SD‑WAN zero‑day exploited in the wild</a></li>
+      <li class="source-item"><a href="https://us-cert.cisa.gov/news-events/news/cisa-fbi-nsa-and-international-partners-warn-china-based-cybersecurity-company-enabling-threat" target="_blank" rel="noopener">Multinational advisory: commercial operator enabling threat activity</a></li>
+      <li class="source-item"><a href="https://www.infosecurity-magazine.com/news/ransomware-attacks-reach-record/" target="_blank" rel="noopener">Infosecurity Magazine: ransomware activity reaches a new high for 2026</a></li>
+      <li class="source-item"><a href="https://blackkite.com/reports/2026-ransomware-report" target="_blank" rel="noopener">Black Kite: 2026 ransomware report</a></li>
+    </ol>
+  </section>
+
+  <div class="meta">Sign‑off — Sunday, October 11, 2026</div>
+</div>
+</body>
+</html>
