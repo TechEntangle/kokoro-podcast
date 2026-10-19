@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberPulse — Short Windows, Wide Blast Radius (2026-10-19)</title>
+  <meta name="description" content="Remote gateways and mail infrastructure face live exploitation, multiple gateway vendors ship critical fixes, a maximum-severity plugin flaw enables unauthenticated code execution, and the monthly platform bundle raises patch pressure. P0: pull admin planes off the internet and patch the edge. P1: revoke sessions and cut token lifetimes. P2: treat plugin governance as production security and update client libraries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Playfair+Display:wght@800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg-primary:#0a0a0c; --bg-card:#16161a; --text-primary:#e8e6e3; --text-secondary:#9a9a9e; --text-muted:#5a5a5e; --accent:#c8372d; --accent-secondary:#e8a634; --border:#2b2b30; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at top,#120c0c 0,#0a0a0c 36%); color:var(--text-primary); font-family:'Source Serif 4',serif; font-size:20px; line-height:1.72; }
+    .progress { position:fixed; top:0; left:0; height:2px; width:100%; background:linear-gradient(90deg,var(--accent),transparent); z-index:20; }
+    .container { max-width:760px; margin:0 auto; padding:48px 22px 72px; }
+    header { padding:28px 0 46px; border-bottom:1px solid var(--border); animation:fade .7s ease both; }
+    .masthead { display:flex; justify-content:space-between; gap:24px; align-items:center; font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:1.8px; text-transform:uppercase; color:var(--text-muted); }
+    .logo { color:var(--accent); font-weight:700; }
+    .episode { margin-top:42px; font-family:'IBM Plex Mono',monospace; color:var(--accent); font-size:12px; letter-spacing:2px; text-transform:uppercase; }
+    h1 { font-family:'Playfair Display',serif; font-size:clamp(48px,9vw,82px); line-height:.92; margin:18px 0 22px; letter-spacing:-.055em; }
+    h1 em { color:var(--accent); font-style:normal; }
+    .subtitle { color:var(--text-secondary); font-style:italic; font-size:24px; line-height:1.35; margin:0 0 24px; }
+    .badge { display:inline-flex; align-items:center; gap:10px; border:1px solid rgba(200,55,45,.35); color:var(--accent); border-radius:999px; padding:8px 12px; font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:1.6px; }
+    .dot { width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 16px var(--accent); }
+    .section-break { display:flex; align-items:center; gap:14px; margin:48px 0 26px; color:var(--accent); font-family:'IBM Plex Mono',monospace; font-size:11px; text-transform:uppercase; letter-spacing:2px; }
+    .section-break:before,.section-break:after { content:""; flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); }
+    p { margin:0 0 24px; }
+    .lead { font-size:24px; line-height:1.55; }
+    .emphasis { border-left:3px solid var(--accent); padding-left:24px; color:#f0eee9; font-style:italic; }
+    .action { background:var(--bg-card); border:1px solid var(--border); border-left:3px solid var(--accent-secondary); border-radius:0 14px 14px 0; padding:22px 24px; margin:18px 0; }
+    .a-label { font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--accent-secondary); letter-spacing:2px; text-transform:uppercase; margin-bottom:8px; }
+    ul { padding-left:22px; }
+    .sources { margin-top:54px; padding-top:30px; border-top:1px solid var(--border); }
+    .sources h2 { font-family:'IBM Plex Mono',monospace; color:var(--accent); font-size:13px; letter-spacing:2px; text-transform:uppercase; }
+    .source-item { font-family:'IBM Plex Mono',monospace; font-size:13px; line-height:1.55; margin:14px 0; color:var(--text-secondary); }
+    .source-item a { color:var(--text-primary); text-decoration-color:var(--accent); }
+    .signoff { margin-top:54px; text-align:center; color:var(--text-muted); font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:1.4px; }
+    @keyframes fade { from { opacity:0; transform:translateY(14px);} to { opacity:1; transform:none;} }
+    @media (max-width:640px) { body{font-size:18px}.masthead{display:block}.subtitle{font-size:21px}.container{padding:36px 18px 56px} }
+  </style>
+</head>
+<body>
+  <div class="progress"></div>
+  <main class="container">
+    <header>
+      <div class="masthead"><div class="logo">CyberPulse</div><div>Monday · October 19, 2026</div></div>
+      <div class="episode">Operational Threat Intelligence</div>
+      <h1>Short <em>Windows</em>, Wide Blast Radius</h1>
+      <p class="subtitle">Remote gateways and mail infrastructure face live exploitation, multiple gateway vendors ship critical fixes, a maximum‑severity plugin flaw enables unauthenticated code execution, and the monthly platform bundle raises patch pressure.</p>
+      <div class="badge"><span class="dot"></span>Daily Brief · Operational Threat Intelligence</div>
+    </header>
+
+    <section>
+      <div class="section-break">Lead</div>
+      <p class="lead">The attack tempo is outpacing normal operations again — not because there is one headline flaw, but because edge and platform updates landed alongside live exploitation of remote gateways and mail infrastructure. Last week reminded us that tokens buy quiet entry. Today’s pressure is the speed penalty: when boundary devices and high‑value platforms publish fixes or land on a known‑exploited list, cycles measured in days leave hours of exposure. That is where impact will be set this week.</p>
+      <p class="emphasis">Shorten exposure on the boundary, compress token lifetimes, and prioritize fixes that gate identity and content.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Signals</div>
+      <p><strong>Remote gateways:</strong> An authentication bypass delivering command execution is being hammered in the wild. Post‑exploitation focuses on directory reconnaissance and credential harvesting rather than noisy persistence. Treat upgrades as mandatory now; assume device‑resident secrets have been read and rotate accordingly.</p>
+      <p><strong>Mail infrastructure:</strong> A path traversal allows arbitrary file writes on popular filtering appliances. Workarounds exist while releases roll, but the architectural fix is unchanged: never expose management, restrict administration to trusted networks, and separate administrative credentials from day‑to‑day identity.</p>
+      <p><strong>Edge vendor updates:</strong> Multiple critical gateway fixes shipped, with researchers noting that even patched devices are being probed and crashed by novel inputs. Resilience depends on exposure design as much as code: pull SAML and admin roles behind brokers and conditional access.</p>
+      <p><strong>Monthly platform bundle:</strong> Fixes span remote code execution in media paths and privilege escalation across subsystems. Prioritize remote services and content parsers first, then elevation flaws on assets that run admin tooling.</p>
+      <p><strong>Web stack governance:</strong> A maximum‑severity plugin flaw enables unauthenticated uploads that become code execution. Extension governance is production security: enforce allowlists, pinned versions, and change review.</p>
+      <p><strong>Client libraries:</strong> A high‑severity transport‑library bug shows a server‑side trigger leading to client memory corruption. Portable exploitation is hard, but crashes are disruptive and reuse is broad. Rebuild base images and update anything that links against common transfer libraries.</p>
+    </section>
+
+    <section>
+      <div class="section-break">Actions</div>
+      <div class="action"><div class="a-label">P0 — Boundary exposure</div>
+        <ul>
+          <li>Inventory every internet‑reachable gateway and mail appliance. If any administrative surface is public, move it behind a broker or disable it until it is.</li>
+          <li>Apply the newest gateway and mail fixes; verify versions on‑device after change. Hunt for web shells, unexpected files, and recent services or tasks created by non‑standard users.</li>
+        </ul>
+      </div>
+      <div class="action"><div class="a-label">P1 — Identity hardening</div>
+        <ul>
+          <li>Revoke sessions when sensitive passwords change; do not rely on password updates alone.</li>
+          <li>Reduce token lifetimes for privileged roles to hours, require a fresh prompt on elevation, and enforce conditional access tied to device health and known networks.</li>
+        </ul>
+      </div>
+      <div class="action"><div class="a-label">P2 — Operational resilience</div>
+        <ul>
+          <li>Treat plugin governance as production change management: allowlists, pinned versions, and continuous diff monitoring on web stacks.</li>
+          <li>Roll platform updates with bias toward remote services and parsers; rebuild images where client libraries were patched.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sources">
+      <h2>Sources</h2>
+      <div class="source-item"><strong>1. The Hacker News</strong> — <a href="https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html">Ivanti Connect Secure authentication‑bypass under active exploitation</a></div>
+      <div class="source-item"><strong>2. BleepingComputer</strong> — <a href="https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/">BeyondTrust zero‑day exploited since August; patches released</a></div>
+      <div class="source-item"><strong>3. SecurityWeek</strong> — <a href="https://www.securityweek.com/citrix-urges-immediate-patching-of-critical-netscaler-vulnerability/">Critical NetScaler gateway flaw; immediate patching urged</a></div>
+      <div class="source-item"><strong>4. SecurityWeek</strong> — <a href="https://www.securityweek.com/f5-juniper-networks-patch-critical-vulnerabilities/">F5 and Juniper ship critical security fixes</a></div>
+      <div class="source-item"><strong>5. BleepingComputer</strong> — <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/">October 2026 Patch Tuesday overview</a></div>
+      <div class="source-item"><strong>6. The Hacker News</strong> — <a href="https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html">FortiMail file‑write zero‑day under active exploitation</a></div>
+      <div class="source-item"><strong>7. The Hacker News</strong> — <a href="https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html">curl HTTP/2 upload use‑after‑free fixed; client crash and RCE demonstrated</a></div>
+      <div class="source-item"><strong>8. The Hacker News</strong> — <a href="https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html">WordPress Bricksforge CVSS 10.0 exploited; unauthenticated RCE</a></div>
+    </section>
+
+    <div class="signoff">CyberPulse Daily Brief · Monday, October 19, 2026 · Stay vigilant.</div>
+  </main>
+</body>
+</html>
