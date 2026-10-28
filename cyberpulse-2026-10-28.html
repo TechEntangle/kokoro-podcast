@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CyberPulse - The Unrevoked Hour (2026-10-28)</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Source+Serif+4:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg-primary:#0a0a0c; --bg-card:#16161a; --text-primary:#e8e6e3; --text-secondary:#9a9a9e; --text-muted:#5a5a5e;
+  --accent:#c8372d; --accent-secondary:#e8a634; --radius:10px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg-primary);color:var(--text-primary);font-family:'Source Serif 4',serif;}
+.container{max-width:760px;margin:0 auto;padding:28px 20px 64px}
+header{position:relative;padding-top:18px;animation:fadeIn .7s ease both}
+.progress{position:fixed;top:0;left:0;height:2px;background:var(--accent);width:0;z-index:9999}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.masthead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.logo{font-family:'Playfair Display',serif;font-weight:900;font-size:20px;letter-spacing:.5px}
+.logo em{color:var(--accent);font-style:normal}
+.dateline{font-family:'IBM Plex Mono',monospace;color:var(--text-secondary);font-size:12px}
+.h1{font-family:'Playfair Display',serif;font-weight:900;font-size:38px;line-height:1.12;margin:10px 0 6px;border-bottom:3px solid var(--accent);padding-bottom:8px}
+.h1 em{color:var(--accent);font-style:normal}
+.sub{font-style:italic;color:var(--text-secondary);margin:6px 0 10px}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(200,55,45,.12);border:1px solid var(--accent);color:var(--text-primary);padding:6px 10px;border-radius:999px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.section-break{display:flex;align-items:center;gap:14px;margin:28px 0 14px;color:var(--text-secondary);text-transform:uppercase;letter-spacing:1.5px;font-family:'IBM Plex Mono',monospace;font-size:11px}
+.section-break:before,.section-break:after{content:"";flex:1;height:1px;background:#2a2a2e}
+.emph{border-left:3px solid var(--accent);padding:10px 16px;font-style:italic;background:rgba(255,255,255,0.02);border-radius:0 var(--radius) var(--radius) 0}
+.action{background:var(--bg-card);border:1px solid #2a2a2e;border-left:3px solid var(--accent-secondary);padding:14px 16px;border-radius:0 var(--radius) var(--radius) 0;margin:14px 0}
+.action .label{font-family:'IBM Plex Mono',monospace;color:var(--accent-secondary);font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px}
+ul{padding-left:18px}
+a{color:#9ecbff;text-decoration:none}
+a:hover{text-decoration:underline}
+footer{margin-top:36px;text-align:center;color:var(--text-muted);font-family:'IBM Plex Mono',monospace;font-size:12px}
+.sources{margin-top:30px}
+.sources h3{font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:2px;font-size:12px;color:var(--text-secondary)}
+.sources ol{margin:10px 0 0;padding-left:20px}
+.sources strong{font-weight:600}
+@media (max-width:640px){.h1{font-size:30px}}
+</style>
+<script>
+window.addEventListener('scroll',()=>{
+  const p = document.querySelector('.progress');
+  const h = document.documentElement;
+  const scrolled = (h.scrollTop)/(h.scrollHeight - h.clientHeight);
+  p.style.width = Math.max(0, Math.min(1, scrolled))*100 + '%';
+});
+</script>
+</head>
+<body>
+<div class="progress"></div>
+<div class="container">
+  <header>
+    <div class="masthead">
+      <div class="logo">Cyber<em>Pulse</em></div>
+      <div class="dateline">Wednesday, October 28, 2026 · Daily Brief</div>
+    </div>
+    <div class="badge"><span class="dot"></span> Operational Threat Intelligence</div>
+    <h1 class="h1">The <em>Unrevoked</em> Hour</h1>
+    <div class="sub">The most expensive sixty minutes now begin after the first illicit session, not after malware: kill active tokens, fence controllers, and patch the middle of the stack.</div>
+  </header>
+
+  <div class="section-break">Today’s signal</div>
+  <p class="emph">The breach path today looks legitimate: a session that passed, a console that widened a role, or a humble decompressor turning hostile input into memory corruption. The shift is practical: shorten the lifetime of stolen sessions, remove public reachability from management consoles, and patch Brotli and P‑H‑P across every serving path.</p>
+
+  <div class="section-break">Access flows</div>
+  <p>Device code sign‑in was built for screens without keyboards. Criminal platforms turned it into scalable session capture. People are guided to enter a short code on a real sign‑in page that authorizes the attacker’s device. Standard revocation often kills only future sessions; the current access token can remain valid for roughly one hour. That is the unrevoked hour — time for mailbox searches, rogue device registration, and quiet forwarding rules from a validated account.</p>
+
+  <div class="section-break">Management plane</div>
+  <p>A critical injection flaw in a widely deployed SD‑W‑A‑N orchestrator lets even the lowest tenant role escalate to operator. An orchestrator is the brain of a fabric: it sets segmentation, routes traffic, and often holds secrets for edge devices. Upgrade on‑premise controllers now, restrict portals to trusted admin networks, and continuously review administrator actions and outbound traffic from the controller host.</p>
+
+  <div class="section-break">Middle of the stack</div>
+  <p>A high‑severity bug in the Brotli decompressor means crafted compressed streams can corrupt memory wherever Brotli handling is enabled. Inventory every place it lives — web servers, language runtimes, proxies, and content pipelines — and move each to a safe build. Apply current security builds on the web tier that runs P‑H‑P and use configuration hardening while change windows are negotiated.</p>
+
+  <div class="section-break">Actions</div>
+  <div class="action">
+    <div class="label">P0 — Close the token window</div>
+    <ul>
+      <li>Enable device‑tied sessions or token binding where supported; stage a one‑click containment that disables accounts to invalidate active sessions on suspected theft.</li>
+      <li>Detect unusual session reuse across distant locations and alert on rapid inbox rule creation, mass search, or sudden device registration.</li>
+    </ul>
+  </div>
+  <div class="action">
+    <div class="label">P1 — Lock down orchestrators</div>
+    <ul>
+      <li>Restrict portals to trusted admin networks; enforce multifactor for every tenant and partner account.</li>
+      <li>Upgrade to the vendor’s fixed release and alarm on outbound connections the orchestrator does not need.</li>
+    </ul>
+  </div>
+  <div class="action">
+    <div class="label">P2 — Patch the middle</div>
+    <ul>
+      <li>Enumerate every Brotli and P‑H‑P runtime in your stack — web servers, language runtimes, proxies, build images — and move them to safe builds.</li>
+      <li>Disable optional Brotli handling where it is not required until upgrades are complete.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <div>— CyberPulse Daily • Wednesday, October 28, 2026</div>
+  </footer>
+
+  <div class="sources">
+    <h3>Sources</h3>
+    <ol>
+      <li class="source-item"><strong>Microsoft</strong> — <a href="https://www.microsoft.com/en-us/security/blog/2026/09/22/unmasking-eviltokens-getting-to-the-root-of-device-code-phishing/" target="_blank" rel="noopener">Unmasking EvilTokens: device code phishing</a></li>
+      <li class="source-item"><strong>SecurityWeek</strong> — <a href="https://securityweek.com/ai-powered-phishing-platform-eviltokens-disrupted-by-microsoft" target="_blank" rel="noopener">AI-powered phishing platform disruption</a></li>
+      <li class="source-item"><strong>BleepingComputer</strong> — <a href="https://www.bleepingcomputer.com/news/security/critical-http2shell-brotli-vulnerability-triggers-emergency-patches" target="_blank" rel="noopener">Brotli decompressor vulnerability</a></li>
+      <li class="source-item"><strong>NVD</strong> — <a href="https://nvd.nist.gov/vuln/detail/CVE-2026-111497" target="_blank" rel="noopener">CVE-2026-111497</a></li>
+      <li class="source-item"><strong>CSA (Singapore)</strong> — <a href="https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2026-154/" target="_blank" rel="noopener">Node.js advisory</a></li>
+      <li class="source-item"><strong>Huntress</strong> — <a href="https://www.huntress.com/blog/php2shell-leaked-critical-php-vulnerabilities" target="_blank" rel="noopener">P‑H‑P twin vulnerabilities</a></li>
+      <li class="source-item"><strong>CISA</strong> — <a href="https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching" target="_blank" rel="noopener">Advisory on P‑H‑P fixes</a></li>
+      <li class="source-item"><strong>The Hacker News</strong> — <a href="https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html" target="_blank" rel="noopener">Orchestrator privilege escalation</a></li>
+    </ol>
+  </div>
+</div>
+</body>
+</html>
